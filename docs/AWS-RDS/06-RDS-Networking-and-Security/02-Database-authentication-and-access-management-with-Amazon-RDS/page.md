@@ -82,9 +82,7 @@ Kerberos / external identity providers
 * Trade-offs: strong SSO experience and centralized policy enforcement, but requires additional operational effort—deploying and maintaining directory services, configuring trust and network connectivity, and ensuring reliable integration with RDS.
 * Recommendation: evaluate Kerberos/AD only if enterprise SSO is a hard requirement; otherwise prefer IAM DB authentication for AWS-hosted workloads.
 
-<Callout icon="warning">
-  Kerberos and enterprise directory integrations provide strong SSO capabilities but introduce significant operational complexity. If you already use AWS and don’t require external enterprise SSO, prefer IAM database authentication.
-</Callout>
+> **warning** Kerberos and enterprise directory integrations provide strong SSO capabilities but introduce significant operational complexity. If you already use AWS and don’t require external enterprise SSO, prefer IAM database authentication.
 
 Segregating access and defining roles
 Authentication answers “who you are.” Authorization—what a user can do—should follow the principle of least privilege. Define clear roles, grant only necessary permissions, and combine IAM controls, DB-level grants, and network policies.
@@ -104,9 +102,7 @@ Implement roles by combining:
 * Network controls (VPC, security groups),
 * Audit and monitoring with CloudTrail, RDS logs, and Performance Insights.
 
-<Callout icon="lightbulb">
-  Use IAM groups and roles to centralize access control, prefer short-lived tokens (IAM DB auth) where possible, and always enable auditing (CloudTrail and DB logs) to track who connected and what actions were performed.
-</Callout>
+> **lightbulb** Use IAM groups and roles to centralize access control, prefer short-lived tokens (IAM DB auth) where possible, and always enable auditing (CloudTrail and DB logs) to track who connected and what actions were performed.
 
 The diagram below maps the three access levels (Service User, Service Administrator, Administrator) to common responsibilities and scope.
 
@@ -137,6 +133,4 @@ By combining the right authentication method (password, IAM DB authentication, o
 
 That’s it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/d6be4bcd-4df0-41c3-8957-7798cee20445" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/d6be4bcd-4df0-41c3-8957-7798cee20445)

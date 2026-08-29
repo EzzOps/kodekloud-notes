@@ -27,17 +27,25 @@ docs/
 └── ... (180 courses total)
 ```
 
-Each course maintains the original hierarchy:
+Each course maintains the **correct learning hierarchy** (modules/lessons ordered as in the actual KodeKloud course):
 ```
 docs/Course-Name/
-├── Module-1/
-│   ├── Topic-1/
+├── 01-Introduction/
+│   ├── 01-Course-Introduction/
 │   │   └── page.md
-│   └── Topic-2/
+│   └── 02-Why-take-this-course/
 │       └── page.md
-└── Module-2/
-    └── ...
+├── 02-Module-Name/
+│   ├── 01-Topic-1/
+│   │   └── page.md
+│   └── 02-Topic-2/
+│       └── page.md
+└── 99-Conclusion/
+    └── 01-Conclusion/
+        └── page.md
 ```
+
+**Note:** Module and lesson directories are prefixed with numerical order (01-, 02-, etc.) matching the actual KodeKloud course sequence — not alphabetical. Introduction is always first, Conclusion is always last.
 
 ## 🔍 Quick Search
 

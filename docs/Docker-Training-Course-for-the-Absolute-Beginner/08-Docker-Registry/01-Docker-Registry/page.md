@@ -50,9 +50,7 @@ After logging in, run the container by specifying the private registry in the im
 docker run private-registry.io/a
 ```
 
-<Callout icon="triangle-alert">
-  Ensure you log in before pulling or pushing images from a private registry. Failing to do so may result in errors indicating that the image cannot be found.
-</Callout>
+> **triangle-alert** Ensure you log in before pulling or pushing images from a private registry. Failing to do so may result in errors indicating that the image cannot be found.
 
 For instance, a cloud provider might require a login as follows:
 
@@ -104,8 +102,6 @@ docker pull 192.168.56.100:5000/my-image
 
 This article covered the essential aspects of the Docker Registry—from understanding the default behavior on Docker Hub to setting up and managing a private registry, whether hosted on a cloud provider or deployed on-premises. Experiment with these examples in your environment to deepen your understanding of managing and securing Docker images.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-training-course-for-the-absolute-beginner/module/6a9be8df-6796-4ca4-a1bc-d62bc9c86b7c/lesson/857264ea-71b4-494e-abf1-4b07179d786b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/docker-training-course-for-the-absolute-beginner/module/6a9be8df-6796-4ca4-a1bc-d62bc9c86b7c/lesson/857264ea-71b4-494e-abf1-4b07179d786b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/docker-training-course-for-the-absolute-beginner/module/6a9be8df-6796-4ca4-a1bc-d62bc9c86b7c/lesson/13072da9-d283-442e-96b6-f3f73a4e09e0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/docker-training-course-for-the-absolute-beginner/module/6a9be8df-6796-4ca4-a1bc-d62bc9c86b7c/lesson/13072da9-d283-442e-96b6-f3f73a4e09e0)

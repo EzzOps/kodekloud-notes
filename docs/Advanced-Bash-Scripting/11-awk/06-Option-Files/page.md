@@ -47,18 +47,14 @@ BEGIN {
 }
 ```
 
-<Callout icon="warning">
-  Using `#!/usr/bin/env awk -f` in a shebang can be unreliable on some systems because the shebang is passed as a single argument string and `env` may not split the interpreter from its option. Safer alternatives:
+> **warning** Using `#!/usr/bin/env awk -f` in a shebang can be unreliable on some systems because the shebang is passed as a single argument string and `env` may not split the interpreter from its option. Safer alternatives:
 
   * Use the explicit interpreter path (for example, `#!/usr/bin/awk -f`) when that path is known and consistent across target systems.
   * If your `/usr/bin/env` supports `-S` (GNU coreutils), use `#!/usr/bin/env -S awk -f` to allow argument splitting.
 
   For maximum portability, prefer an explicit awk interpreter path or invoke `awk -f script` from a shell wrapper.
-</Callout>
 
-<Callout icon="lightbulb">
-  The `-f` flag tells awk to read the program from a file. When using an awk shebang, include `-f` so the interpreter treats the script file as an awk program.
-</Callout>
+> **lightbulb** The `-f` flag tells awk to read the program from a file. When using an awk shebang, include `-f` so the interpreter treats the script file as an awk program.
 
 Two common styles for file-based awk programs
 

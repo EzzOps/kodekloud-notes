@@ -62,9 +62,7 @@ BlackboxAI then analyzes the code, considering key comments and the overall stru
 
 For the Flask backend, the generated documentation includes step-by-step instructions for installation and using the API.
 
-<Callout icon="lightbulb">
-  Ensure that your `requirements.txt` accurately reflects the dependencies required to run your Flask application.
-</Callout>
+> **lightbulb** Ensure that your `requirements.txt` accurately reflects the dependencies required to run your Flask application.
 
 ### 1. Installing Dependencies and Running the Application
 
@@ -147,14 +145,10 @@ Before pushing your repository to GitHub, ensure your documentation is complete 
 
 Once all details are validated, the generated documentation can assist both internal team members and the open-source community in understanding and utilizing your application efficiently.
 
-<Callout icon="lightbulb">
-  Leveraging AI-driven tools like BlackboxAI can streamline your documentation process, making it easier to maintain and update as your project evolves.
-</Callout>
+> **lightbulb** Leveraging AI-driven tools like BlackboxAI can streamline your documentation process, making it easier to maintain and update as your project evolves.
 
 ***
 
 This article has detailed the process of creating and automating documentation for an image optimization application using BlackboxAI. With comprehensive inline comments and robust, auto-generated documentation, programmers can easily understand, use, and extend your application.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-assisted-development/module/f860b4d0-f972-47df-ba32-68d904941f09/lesson/e03c4210-2cea-4993-8cf0-179f8e46e0f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-assisted-development/module/f860b4d0-f972-47df-ba32-68d904941f09/lesson/e03c4210-2cea-4993-8cf0-179f8e46e0f6)

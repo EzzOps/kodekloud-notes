@@ -18,14 +18,10 @@ There are two primary scenarios:
 2. **Experienced with AWS**\
    If you have been working with AWS for around six months or more and are familiar with core concepts such as the global infrastructure or compute services like [EC2](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2), [ECS](https://learn.kodekloud.com/user/courses/amazon-elastic-container-service-aws-ecs), and [EKS](https://learn.kodekloud.com/user/courses/aws-eks), then this assessment is especially valuable. It will help you pinpoint both your strengths and areas where additional learning is needed. For example, if you are already comfortable with compute services, you might breeze through that section and instead focus on other topics to deepen your overall expertise.
 
-<Callout icon="lightbulb">
-  A lower score on this assessment is not a setback—it highlights areas for growth and improvement. Conversely, a high score indicates a strong foundation, though we still recommend progressing through the entire course to ensure you cover any hidden gaps.
-</Callout>
+> **lightbulb** A lower score on this assessment is not a setback—it highlights areas for growth and improvement. Conversely, a high score indicates a strong foundation, though we still recommend progressing through the entire course to ensure you cover any hidden gaps.
 
 No matter your background, use this assessment as a tool to understand your current level of AWS proficiency. It is particularly useful for those with prior AWS experience, enabling you to dive into the material with targeted focus and confidence.
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/1a87a522-2fb5-41e9-a36f-0157341c75d9/lesson/f85d42f5-de51-447f-b112-dbadac5d4121" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/1a87a522-2fb5-41e9-a36f-0157341c75d9/lesson/f85d42f5-de51-447f-b112-dbadac5d4121)

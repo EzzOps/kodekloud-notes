@@ -13,10 +13,8 @@ $ awk 'NR == 2 { print $3 }' minimovies.txt
 n
 ```
 
-<Callout icon="lightbulb">
-  `NR` is a built-in Awk variable representing the current record (line) number.\
+> **lightbulb** `NR` is a built-in Awk variable representing the current record (line) number.\
   Fields are referenced as `$1`, `$2`, etc.
-</Callout>
 
 ## Awk as a Domain-Specific Language
 
@@ -26,21 +24,15 @@ Awk is more than a simple filter—it’s a small programming language tailored 
 * Built-in variables (`NR`, `NF`, `FS`, `OFS`)
 * Control structures (`if`, `while`, `for`)
 
-<Frame>
-  ![The image is a slide titled "Introduction to awk," explaining that a Domain-Specific Language is a programming language designed for a specific subject area.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868664/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/introduction-to-awk-dsl-slide.jpg)
-</Frame>
+![The image is a slide titled "Introduction to awk," explaining that a Domain-Specific Language is a programming language designed for a specific subject area.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868664/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/introduction-to-awk-dsl-slide.jpg)
 
-<Callout icon="lightbulb">
-  Awk treats any sequence of spaces and tabs as the default field separator (`FS` = `[ \t]+`).
-</Callout>
+> **lightbulb** Awk treats any sequence of spaces and tabs as the default field separator (`FS` = `[ \t]+`).
 
 ## Handling Irregular Spacing
 
 Even if your data has inconsistent spacing, Awk splits fields correctly:
 
-<Frame>
-  ![The image is an introduction to "awk," highlighting its ability to create powerful programs or one-liner scripts for parsing large and complex text data easily.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868665/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/awk-introduction-text-parsing.jpg)
-</Frame>
+![The image is an introduction to "awk," highlighting its ability to create powerful programs or one-liner scripts for parsing large and complex text data easily.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868665/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/awk-introduction-text-parsing.jpg)
 
 ```bash theme={null}
 $ awk 'NR == 2 { print $3 }' minimovies.txt
@@ -99,9 +91,7 @@ $ ./hello.awk
 Hello, World!
 ```
 
-<Callout icon="triangle-alert">
-  Ensure the shebang path (`/usr/bin/awk`) matches your system’s Awk installation.
-</Callout>
+> **triangle-alert** Ensure the shebang path (`/usr/bin/awk`) matches your system’s Awk installation.
 
 Awk transforms text processing into an intuitive workflow by combining pattern matching, field manipulation, and a minimal scripting language. Whether you need quick one-liners or full scripts, Awk has you covered.
 
@@ -112,9 +102,7 @@ Awk transforms text processing into an intuitive workflow by combining pattern m
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/advanced-bash-scripting/module/0cddb337-89d3-4068-a878-37a0a342c22f/lesson/a72d19f2-bcef-45f0-9cc7-6eb02446b558" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/advanced-bash-scripting/module/0cddb337-89d3-4068-a878-37a0a342c22f/lesson/a72d19f2-bcef-45f0-9cc7-6eb02446b558)
 
 
 # awk print
@@ -139,9 +127,7 @@ awk [options] [program] [file...]
 | `program`      | Provide the awk program directly as a quoted string            |
 | `file...`      | One or more input files; if omitted, reads from standard input |
 
-<Callout icon="lightbulb">
-  Always quote your `program` (single or double quotes) so the shell passes it verbatim to awk.
-</Callout>
+> **lightbulb** Always quote your `program` (single or double quotes) so the shell passes it verbatim to awk.
 
 For full details, see the [GNU Awk Manual](https://www.gnu.org/software/gawk/manual/gawk.html).
 
@@ -171,9 +157,7 @@ hello world
 $
 ```
 
-<Callout icon="triangle-alert">
-  Without quotes around `{}`, many shells will interpret braces or special characters—always quote your action blocks!
-</Callout>
+> **triangle-alert** Without quotes around `{}`, many shells will interpret braces or special characters—always quote your action blocks!
 
 ## The `print` Statement
 
@@ -274,6 +258,4 @@ Awk accepts input from:
 * [Kurt Werner’s Awk Tutorial](https://www.grymoire.com/Unix/Awk.html)
 * [Awk on TLDP](https://tldp.org/LDP/abs/html/awk.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/advanced-bash-scripting/module/0cddb337-89d3-4068-a878-37a0a342c22f/lesson/3a318cf3-36c2-44f2-8a85-5fba886c2225" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/advanced-bash-scripting/module/0cddb337-89d3-4068-a878-37a0a342c22f/lesson/3a318cf3-36c2-44f2-8a85-5fba886c2225)

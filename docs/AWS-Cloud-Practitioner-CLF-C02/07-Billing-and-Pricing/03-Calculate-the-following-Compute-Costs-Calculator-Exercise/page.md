@@ -8,11 +8,9 @@ Welcome, Cloud Practitioners!
 
 In this exercise, we will guide you through your first billing practice session using the AWS Pricing Calculator. I'm Michael Forrester, and in this lesson, you will learn how to navigate billing dimensions and explore the various cost factors in AWS. This exercise is not about memorizing pricing structures but rather about understanding how different configurations impact your costs.
 
-<Callout icon="lightbulb">
-  * Familiarize yourself with billing practices using the AWS Pricing Calculator.
+> **lightbulb** * Familiarize yourself with billing practices using the AWS Pricing Calculator.
   * Experiment with different services and configurations.
   * Understand how parameters such as processor count, memory, licensing types, and regional differences affect cost.
-</Callout>
 
 Before we begin, here are some important points to consider:
 
@@ -26,18 +24,14 @@ Before we begin, here are some important points to consider:
 
 Below is an overview of the exercise details:
 
-<Frame>
-  ![The image outlines student exercises for billing, emphasizing familiarity, suggestions, relevant services, billing changes, and using Calculator.aws.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861431/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_90.jpg)
-</Frame>
+![The image outlines student exercises for billing, emphasizing familiarity, suggestions, relevant services, billing changes, and using Calculator.aws.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861431/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_90.jpg)
 
 ## Getting Started with the AWS Pricing Calculator
 
 1. Open your browser and navigate to [calculator.aws](https://calculator.aws).
 2. Click on "Create an estimate." (Logging in is not necessary unless you want to save your work.)
 
-<Frame>
-  ![The image shows the AWS Pricing Calculator interface, explaining how to estimate costs for AWS services, with steps and additional resources provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861432/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_120.jpg)
-</Frame>
+![The image shows the AWS Pricing Calculator interface, explaining how to estimate costs for AWS services, with steps and additional resources provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861432/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_120.jpg)
 
 ## Configuring an EC2 Instance
 
@@ -45,13 +39,9 @@ Below is an overview of the exercise details:
 
 * Begin by typing "EC2" in the search field. When the service appears, click on "Configure" to proceed with creating your cost estimate.
 
-<Frame>
-  ![The image shows the AWS Pricing Calculator interface, allowing users to select and configure AWS services, with options to search by location or service type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861433/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_130.jpg)
-</Frame>
+![The image shows the AWS Pricing Calculator interface, allowing users to select and configure AWS services, with options to search by location or service type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861433/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_130.jpg)
 
-<Frame>
-  ![The image shows the AWS Pricing Calculator interface for configuring Amazon EC2, including options for region, tenancy, and operating system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861434/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_140.jpg)
-</Frame>
+![The image shows the AWS Pricing Calculator interface for configuring Amazon EC2, including options for region, tenancy, and operating system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861434/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_140.jpg)
 
 ### Step 2: Naming and Task Details
 
@@ -61,9 +51,7 @@ For instance, you might name your estimate "Cloud Practitioner Demo for EC2" and
 * Create three T3 Xlarge instances in the same region, each configured with different licensing types: On-Demand, Reserved, Dedicated Hosts, and a one-year Savings Plan.
 * Identify both the smallest and the largest EC2 instances in terms of processor and memory. Tools like [ec2instances.info](https://www.ec2instances.info) can help you research and compare instance specifications.
 
-<Frame>
-  ![The image outlines tasks for calculating AWS EC2 compute costs, comparing T3.xlarge instances across regions, and exploring different licensing types and instance sizes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861435/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_180.jpg)
-</Frame>
+![The image outlines tasks for calculating AWS EC2 compute costs, comparing T3.xlarge instances across regions, and exploring different licensing types and instance sizes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861435/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_180.jpg)
 
 ## Exploring Different Instance Sizes
 
@@ -71,39 +59,29 @@ For instance, you might name your estimate "Cloud Practitioner Demo for EC2" and
 
 To illustrate, let’s find a small instance configuration. When searching for minimal resources, you might start by looking for an instance with 0.5 CPUs. While a direct match may not be available, you might identify options like the t2.micro (which offers one virtual CPU) or even the smaller t2.nano variant that provides one virtual CPU and 0.5 GB of RAM. The t2.nano is a low-cost, minimal resource option ideal for basic setups.
 
-<Frame>
-  ![The image shows a comparison table of Amazon EC2 instances, detailing instance types, memory, vCPUs, storage, network performance, and hourly costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861436/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_240.jpg)
-</Frame>
+![The image shows a comparison table of Amazon EC2 instances, detailing instance types, memory, vCPUs, storage, network performance, and hourly costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861436/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_240.jpg)
 
 ### Exploring High-Performance Instances
 
 For high-performance needs, inspect instances offering larger configurations—for example, those providing 400 or even 448 CPUs. You might also come across options with 128 CPUs. The objective here is not to determine a "correct" answer but to understand how costs scale with different performance levels.
 
-<Frame>
-  ![The image shows a comparison table of Amazon EC2 instances, detailing specifications like memory, vCPUs, and costs, with a focus on high-performance options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861437/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_260.jpg)
-</Frame>
+![The image shows a comparison table of Amazon EC2 instances, detailing specifications like memory, vCPUs, and costs, with a focus on high-performance options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861437/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_260.jpg)
 
 ## Back to the AWS Pricing Calculator: Configuring a T2 Nano Instance
 
 Now, let’s switch back to the AWS Pricing Calculator to work on a practical example with a T2 nano instance. This example uses a shared instance running Linux:
 
-<Frame>
-  ![The image shows an AWS pricing calculator interface for configuring an Amazon EC2 instance, specifically a t2.nano, with options for instance type, vCPUs, and memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861437/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_300.jpg)
-</Frame>
+![The image shows an AWS pricing calculator interface for configuring an Amazon EC2 instance, specifically a t2.nano, with options for instance type, vCPUs, and memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861437/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_300.jpg)
 
 The T2 nano is an economical option, offering one virtual CPU and 0.5 GB of RAM.
 
-<Frame>
-  ![The image shows an AWS pricing calculator for configuring an Amazon EC2 instance, detailing specifications and costs for a t2.nano instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861439/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_310.jpg)
-</Frame>
+![The image shows an AWS pricing calculator for configuring an Amazon EC2 instance, detailing specifications and costs for a t2.nano instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861439/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_310.jpg)
 
 At less than half a penny per hour, the T2 nano is an excellent example of cost efficiency. Adjust the available payment options if needed, then click "Save and add service" to see the service added to your estimate.
 
 When you review your estimate, the added Amazon EC2 service (identified as T2 nano) should be visible. It is advisable to give this service a clear, descriptive name (e.g., "t2.nano") for easy identification.
 
-<Frame>
-  ![The image shows an AWS pricing calculator estimate for Amazon EC2, with an upfront cost of \$49.93 and no monthly cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861440/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_340.jpg)
-</Frame>
+![The image shows an AWS pricing calculator estimate for Amazon EC2, with an upfront cost of \$49.93 and no monthly cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861440/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_340.jpg)
 
 ## Comparing Regional Prices and Licensing Options
 
@@ -116,13 +94,9 @@ When instructed to create a T3 Xlarge instance, the exercise will have you:
 * Apply different licensing types.
 * Evaluate cost implications based on various compute configurations.
 
-<Frame>
-  ![The image shows an AWS Pricing Calculator estimate with a total upfront cost of \$144.54 for Amazon EC2 services, with no monthly costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861441/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_380.jpg)
-</Frame>
+![The image shows an AWS Pricing Calculator estimate with a total upfront cost of \$144.54 for Amazon EC2 services, with no monthly costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861441/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_380.jpg)
 
-<Frame>
-  ![The image outlines tasks for calculating AWS EC2 compute costs, comparing T3.xlarge instances across regions, and exploring different licensing types and instance sizes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861442/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_390.jpg)
-</Frame>
+![The image outlines tasks for calculating AWS EC2 compute costs, comparing T3.xlarge instances across regions, and exploring different licensing types and instance sizes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861442/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Compute-Costs-Calculator-Exercise/frame_390.jpg)
 
 ***
 
@@ -130,6 +104,4 @@ Thank you for following along with this Compute Costs Calculator exercise. Exper
 
 Michael Forrester
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02/module/2bdfc163-f478-4c56-b843-e20f38ee028f/lesson/351f1fc4-7374-4a9c-9db9-9a78cc93eb1f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02/module/2bdfc163-f478-4c56-b843-e20f38ee028f/lesson/351f1fc4-7374-4a9c-9db9-9a78cc93eb1f)

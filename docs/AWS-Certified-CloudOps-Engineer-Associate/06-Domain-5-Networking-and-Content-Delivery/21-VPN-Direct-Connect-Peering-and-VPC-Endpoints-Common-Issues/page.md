@@ -27,13 +27,9 @@ VPNs are a popular solution for connecting over the public internet. However, th
 4. **Downtime and Reliability**\
    Relying on public internet connectivity may lead to occasional reliability challenges.
 
-<Frame>
-  ![The image lists common VPN issues: latency and performance, limited bandwidth, complex configuration, security vulnerabilities, and downtime and reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860938/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpn-issues-latency-performance-bandwidth.jpg)
-</Frame>
+![The image lists common VPN issues: latency and performance, limited bandwidth, complex configuration, security vulnerabilities, and downtime and reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860938/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpn-issues-latency-performance-bandwidth.jpg)
 
-<Callout icon="lightbulb">
-  Although VPNs utilize IPSec encryption for security, transmitting traffic over the public internet can expose you to vulnerabilities, especially as encryption methods continue to evolve.
-</Callout>
+> **lightbulb** Although VPNs utilize IPSec encryption for security, transmitting traffic over the public internet can expose you to vulnerabilities, especially as encryption methods continue to evolve.
 
 ***
 
@@ -52,13 +48,9 @@ Direct Connect offers a dedicated connection from your data center to AWS, compa
    Relying on a single Direct Connect connection may create redundancy issues.\
    **Solution:** Consider provisioning a backup connection or pairing Direct Connect with a VPN for improved redundancy.
 
-<Frame>
-  ![The image lists common issues with Direct Connect, including high initial cost, limited locations, long setup times, scalability limitations, and single point of failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860940/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/direct-connect-issues-list.jpg)
-</Frame>
+![The image lists common issues with Direct Connect, including high initial cost, limited locations, long setup times, scalability limitations, and single point of failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860940/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/direct-connect-issues-list.jpg)
 
-<Callout icon="triangle-alert">
-  Always plan for failover strategies when using Direct Connect to avoid a single point of failure.
-</Callout>
+> **triangle-alert** Always plan for failover strategies when using Direct Connect to avoid a single point of failure.
 
 ***
 
@@ -77,9 +69,7 @@ VPC peering facilitates connectivity between Virtual Private Clouds, but it come
 3. **Scaling and Bandwidth Limitations**\
    While traffic limitations are generally tied to EC2 instance performance, managing numerous peering connections can be challenging. Note that peering within the same region is free, whereas inter-region peering can incur additional data transfer costs.
 
-<Frame>
-  ![The image lists common issues with VPC peering, including route table complexity, no transitive peering, scaling challenges, bandwidth limitations, and cross-region peering costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860941/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpc-peering-issues-list.jpg)
-</Frame>
+![The image lists common issues with VPC peering, including route table complexity, no transitive peering, scaling challenges, bandwidth limitations, and cross-region peering costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860941/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpc-peering-issues-list.jpg)
 
 ***
 
@@ -96,15 +86,11 @@ VPC endpoints let you privately connect to AWS services without using the public
 3. **Cost Overhead**\
    With heavy usage, charges on interface endpoints (calculated per gigabyte) can add up. Although scaling limitations are rare, careful planning is recommended.
 
-<Frame>
-  ![The image lists common issues with VPC Endpoints, including limited service support, private DNS issues, network traffic flow complexity, cost overhead, and scaling limitations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860942/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpc-endpoints-common-issues.jpg)
-</Frame>
+![The image lists common issues with VPC Endpoints, including limited service support, private DNS issues, network traffic flow complexity, cost overhead, and scaling limitations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860942/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpc-endpoints-common-issues.jpg)
 
 An additional diagram highlights private DNS issues with VPC endpoints:
 
-<Frame>
-  ![The image illustrates a network diagram showing VPC endpoints and private DNS issues, highlighting the connection between a service consumer VPC and a service provider VPC within a region. It includes components like an availability zone, VPC endpoint, endpoint service, and load balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860943/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpc-endpoints-private-dns-diagram.jpg)
-</Frame>
+![The image illustrates a network diagram showing VPC endpoints and private DNS issues, highlighting the connection between a service consumer VPC and a service provider VPC within a region. It includes components like an availability zone, VPC endpoint, endpoint service, and load balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860943/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/vpc-endpoints-private-dns-diagram.jpg)
 
 ***
 
@@ -127,9 +113,7 @@ For enhanced security in your AWS environment, it is recommended to enable MFA, 
 
 For organizations with complex environments that connect multiple VPCs (e.g., Inventory, Finance, and E-Commerce), using a Transit Gateway can significantly simplify network routing management. This approach reduces configuration complexity and improves security overall:
 
-<Frame>
-  ![The image is a diagram showing the use of AWS Transit Gateway for centralized routing, connecting Inventory VPC, Finance VPC, and E-Commerce VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860944/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/aws-transit-gateway-routing-diagram.jpg)
-</Frame>
+![The image is a diagram showing the use of AWS Transit Gateway for centralized routing, connecting Inventory VPC, Finance VPC, and E-Commerce VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860944/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues/aws-transit-gateway-routing-diagram.jpg)
 
 The diagram clearly demonstrates how a Transit Gateway improves upon direct VPC peering by centralizing routing, especially in environments with multiple interconnections.
 
@@ -139,6 +123,4 @@ Keep these considerations in mind while designing and managing your AWS networki
 
 Catch you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-sysops-administrator-associate/module/fd99c412-5efc-46e2-99ce-bb9c581fec27/lesson/301f0e4c-0860-4ed2-952c-3de47c831da7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-sysops-administrator-associate/module/fd99c412-5efc-46e2-99ce-bb9c581fec27/lesson/301f0e4c-0860-4ed2-952c-3de47c831da7)

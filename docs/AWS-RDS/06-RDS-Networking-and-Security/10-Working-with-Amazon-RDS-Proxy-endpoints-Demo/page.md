@@ -30,9 +30,7 @@ From the RDS console navigate to Databases and click Create database. Use Standa
 
 Scroll down and enable Public access for this RDS instance so the EC2 instance we launch in the same account/region can reach it for the demo. If you’re operating inside an organizational or production AWS account, do not enable public access — use private subnets and correct network controls instead.
 
-<Callout icon="warning">
-  Enabling public access exposes the database to the internet. For production or organizational environments, prefer private subnets, restricted security groups, and bastion hosts.
-</Callout>
+> **warning** Enabling public access exposes the database to the internet. For production or organizational environments, prefer private subnets, restricted security groups, and bastion hosts.
 
 Further down the Create database page, enable Create an RDS Proxy for this DB instance. When enabled, RDS will create the IAM role and the Secrets Manager secret that the proxy uses to authenticate to the database. The console may indicate there is no additional RDS Proxy charge for this configuration; confirm current RDS Proxy pricing for your region and account before relying on it.
 
@@ -70,9 +68,7 @@ After the DB and proxy are created, open RDS → Proxies. Click the proxy to vie
 
 The proxy creates and references a Secrets Manager secret containing the DB credentials. Go to Secrets Manager → Secrets and locate the secret created for the RDS proxy. Click Retrieve secret value to view or copy the current username and password. Only users or roles with IAM permission to read that secret can retrieve the raw credentials.
 
-<Callout icon="lightbulb">
-  Best practice: grant only the minimum IAM permissions required to access the Secrets Manager secret. Use secret rotation to rotate database passwords automatically and reduce credential exposure.
-</Callout>
+> **lightbulb** Best practice: grant only the minimum IAM permissions required to access the Secrets Manager secret. Use secret rotation to rotate database passwords automatically and reduce credential exposure.
 
 ## 4. Install MySQL client on the EC2 instance and connect through the proxy
 
@@ -130,8 +126,6 @@ That completes this demo of creating an RDS DB, enabling an RDS Proxy, and conne
 * [Amazon RDS documentation](https://docs.aws.amazon.com/rds/index.html)
 * [MySQL client documentation](https://dev.mysql.com/doc/refman/en/mysql.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/13c995ab-e24b-469c-9ab0-d78da8d12629" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/13c995ab-e24b-469c-9ab0-d78da8d12629)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/e060def9-09df-4d94-97aa-1d814a08bde1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/e060def9-09df-4d94-97aa-1d814a08bde1)

@@ -50,13 +50,9 @@ RDS offers both License Included pricing and [Bring Your Own License (BYOL)](htt
 | Standard   | Mid-sized applications            | Balanced feature set and cost.                                     |
 | Enterprise | Mission-critical, large workloads | Full feature set (advanced HA, performance features), higher cost. |
 
-<Callout icon="lightbulb">
-  If you plan to use Windows authentication with RDS SQL Server, integrate RDS with [AWS Directory Service (Microsoft AD)](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad.html) to enable seamless AD-based user and group management.
-</Callout>
+> **lightbulb** If you plan to use Windows authentication with RDS SQL Server, integrate RDS with [AWS Directory Service (Microsoft AD)](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad.html) to enable seamless AD-based user and group management.
 
-<Callout icon="warning">
-  Licensing model and SQL Server edition significantly affect total cost of ownership and available features. Review AWS License Included vs BYOL and the capabilities of each SQL Server edition before production deployment.
-</Callout>
+> **warning** Licensing model and SQL Server edition significantly affect total cost of ownership and available features. Review AWS License Included vs BYOL and the capabilities of each SQL Server edition before production deployment.
 
 ## When SQL Server on RDS is a good fit
 
@@ -95,6 +91,4 @@ SQL Server on RDS is a strong fit when:
 
 In summary, Microsoft SQL Server on Amazon RDS delivers managed operations and deep Microsoft ecosystem integration for Windows-centric, enterprise applications—provided you evaluate licensing, network architecture, and HA/security configurations before going into production.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/0525aa45-ab52-4496-8a27-0ab6ec827d6f/lesson/b1a0670c-7e6f-4006-9413-1af20ccb1dee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-rds/module/0525aa45-ab52-4496-8a27-0ab6ec827d6f/lesson/b1a0670c-7e6f-4006-9413-1af20ccb1dee)

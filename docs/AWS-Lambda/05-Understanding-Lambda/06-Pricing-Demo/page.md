@@ -35,9 +35,7 @@ Open your browser and go to [https://calculator.aws](https://calculator.aws). No
 2. In **Search all services**, type **Lambda** and select **AWS Lambda**.
 3. Click **Configure**.
 
-<Frame>
-  ![The image shows the AWS Pricing Calculator interface, specifically the "Select service" section, where users can search for and configure AWS services like AWS Lambda, AWS Step Functions, and AWS AppSync.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863183/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-select-service.jpg)
-</Frame>
+![The image shows the AWS Pricing Calculator interface, specifically the "Select service" section, where users can search for and configure AWS services like AWS Lambda, AWS Step Functions, and AWS AppSync.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863183/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-select-service.jpg)
 
 ## 3. Configure Your Lambda Estimate
 
@@ -51,9 +49,7 @@ On the Lambda configuration page, enter the following:
 
 3. **Free Tier**
 
-<Callout icon="lightbulb">
-  By default, AWS includes the free tier (1M requests and 400,000 GB-seconds). Deselect **Include free tier** to see actual charges.
-</Callout>
+> **lightbulb** By default, AWS includes the free tier (1M requests and 400,000 GB-seconds). Deselect **Include free tier** to see actual charges.
 
 4. **Architecture**\
    Choose **ARM** (Graviton) for lower compute costs (default is x86).
@@ -72,17 +68,13 @@ On the Lambda configuration page, enter the following:
 
 After inputting these values, the calculator displays a cost forecast.
 
-<Frame>
-  ![The image shows the AWS Pricing Calculator interface for configuring an AWS Lambda service, with options to include or exclude the free tier and select a region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863184/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface.jpg)
-</Frame>
+![The image shows the AWS Pricing Calculator interface for configuring an AWS Lambda service, with options to include or exclude the free tier and select a region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863184/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface.jpg)
 
 ## 4. Review the Cost Estimate
 
 With our configuration, the estimated monthly cost is **\$29.80**.
 
-<Frame>
-  ![The image shows the AWS pricing calculator interface for configuring AWS Lambda, with fields for the number of requests, duration, memory, and storage allocation. The total monthly cost is displayed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863185/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface-2.jpg)
-</Frame>
+![The image shows the AWS pricing calculator interface for configuring AWS Lambda, with fields for the number of requests, duration, memory, and storage allocation. The total monthly cost is displayed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863185/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface-2.jpg)
 
 ## 5. Experiment with Settings
 
@@ -96,9 +88,7 @@ Use this table to explore how changes affect your monthly bill:
 | Execution Duration     | 900,000 ms (15 min max)            | Significant increase; optimize runtime |
 | Processor Architecture | x86 (default)                      | Higher compute cost vs. ARM            |
 
-<Callout icon="triangle-alert">
-  Long function durations and large memory allocations can dramatically raise your AWS Lambda bill. Always profile and optimize your code to minimize runtime.
-</Callout>
+> **triangle-alert** Long function durations and large memory allocations can dramatically raise your AWS Lambda bill. Always profile and optimize your code to minimize runtime.
 
 ## Conclusion
 
@@ -116,6 +106,4 @@ Next, dive deeper into Lambda performance tuning and cost optimization strategie
 * [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/)
 * [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-lambda/module/fdb5ec1b-18a2-4034-baed-3231f187825b/lesson/862be1c1-2852-4b11-8412-b57ed2d23f57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-lambda/module/fdb5ec1b-18a2-4034-baed-3231f187825b/lesson/862be1c1-2852-4b11-8412-b57ed2d23f57)

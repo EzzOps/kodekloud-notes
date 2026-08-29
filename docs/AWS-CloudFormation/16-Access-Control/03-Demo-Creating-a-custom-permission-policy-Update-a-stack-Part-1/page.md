@@ -124,13 +124,9 @@ What these actions do:
 | cloudformation:UpdateStack (optional) | Update a stack                          | Add later when you want the user to modify stacks |
 | cloudformation:DeleteStack (optional) | Delete a stack                          | Add later if deletion must be allowed             |
 
-<Callout icon="lightbulb">
-  Note: Some CloudFormation actions require Resource: "\*" (account-level access). When later granting update or delete permissions, add actions such as `cloudformation:UpdateStack`, `cloudformation:DeleteStack`, and change-set actions. Scope permissions to specific stacks or use IAM conditions where possible to follow least privilege.
-</Callout>
+> **lightbulb** Note: Some CloudFormation actions require Resource: "\*" (account-level access). When later granting update or delete permissions, add actions such as `cloudformation:UpdateStack`, `cloudformation:DeleteStack`, and change-set actions. Scope permissions to specific stacks or use IAM conditions where possible to follow least privilege.
 
-<Callout icon="warning">
-  Warning: S3 bucket names must be globally unique. Never publish real credentials or sensitive data in templates. Keep your administrator session secure and avoid leaving admin-level access open in long-lived browser windows during testing.
-</Callout>
+> **warning** Warning: S3 bucket names must be globally unique. Never publish real credentials or sensitive data in templates. Keep your administrator session secure and avoid leaving admin-level access open in long-lived browser windows during testing.
 
 ## 5 — Attach the policy and verify access
 
@@ -150,6 +146,4 @@ From here you can:
 
 This completes Part 1: creating a minimal policy that allows viewing CloudFormation stacks. In the next part you'll extend the policy to permit safe, scoped stack updates.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/913fb901-ca2a-4ed9-8d12-2abd519c1393/lesson/9eba3f9b-84f3-4e09-ab0f-9972a71ea1ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/913fb901-ca2a-4ed9-8d12-2abd519c1393/lesson/9eba3f9b-84f3-4e09-ab0f-9972a71ea1ca)

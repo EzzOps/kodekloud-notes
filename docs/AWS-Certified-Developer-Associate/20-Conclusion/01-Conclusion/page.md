@@ -12,9 +12,7 @@ Your journey continued as you embraced containerization with services like ECS, 
 
 Each module was designed to provide practical, hands-on experience through AWS CloudLabs. This real-world approach not only clarified theoretical concepts but also allowed you to apply them in meaningful scenarios. The challenges you surmounted and the skills you have refined have effectively prepared you for the AWS Developer Associate exam and for future career opportunities.
 
-<Callout icon="lightbulb">
-  Remember, embracing hands-on practice is key to mastering AWS services. Continuously challenge yourself with real-world scenarios beyond this course.
-</Callout>
+> **lightbulb** Remember, embracing hands-on practice is key to mastering AWS services. Continuously challenge yourself with real-world scenarios beyond this course.
 
 Below is an example of connecting to an EC2 instance via SSH—a practical command you might use in day-to-day operations:
 
@@ -53,6 +51,4 @@ The AWS ecosystem is continuously evolving. To stay ahead, it is essential to re
 
 Thank you for choosing KodeKloud as your trusted learning partner. We hope this course has been both enlightening and rewarding, and we wish you continued success in your AWS journey!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/f83d1f35-45ec-438d-b978-02072cba76ad/lesson/e347d52f-14a5-431a-91e2-d2fa9fe122ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/f83d1f35-45ec-438d-b978-02072cba76ad/lesson/e347d52f-14a5-431a-91e2-d2fa9fe122ef)

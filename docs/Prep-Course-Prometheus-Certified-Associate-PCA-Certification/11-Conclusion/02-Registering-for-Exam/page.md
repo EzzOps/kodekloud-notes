@@ -12,9 +12,7 @@ histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by 
 * Use exporters for third-party systems (node\_exporter, kube-state-metrics, Blackbox exporter) rather than custom scraping where possible.
 * Protect your Prometheus server: secure access to the UI, consider remote write to long-term storage, and set resource limits for scaling.
 
-<Callout icon="lightbulb">
-  We'd love your feedback. Please share topics you'd like us to cover next so we can continue creating helpful, high-quality content.
-</Callout>
+> **lightbulb** We'd love your feedback. Please share topics you'd like us to cover next so we can continue creating helpful, high-quality content.
 
 ## Further reading & references
 
@@ -24,9 +22,7 @@ histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by 
 * [Grafana](https://grafana.com/)
 * [Prometheus Exporters](https://prometheus.io/docs/instrumenting/exporters/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/803356a8-be12-48c5-b49b-4a44e66ba3a3/lesson/af00a389-409b-404b-9e18-87b0c8dce7c6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/803356a8-be12-48c5-b49b-4a44e66ba3a3/lesson/af00a389-409b-404b-9e18-87b0c8dce7c6)
 
 
 # Registering for Exam
@@ -75,9 +71,7 @@ Quick checklist: what you will need before the exam
 | Payment method                | To complete enrollment                               | Card or other supported payment options on the checkout page |
 | Scheduling preferences        | To reserve a convenient slot                         | Time zone and proctor availability affect options            |
 
-<Callout icon="lightbulb">
-  Before your test date, make sure you have the required form(s) of ID ready (usually a government-issued photo ID). Check the confirmation email or the exam page for the exact ID requirements and any proctoring instructions.
-</Callout>
+> **lightbulb** Before your test date, make sure you have the required form(s) of ID ready (usually a government-issued photo ID). Check the confirmation email or the exam page for the exact ID requirements and any proctoring instructions.
 
 Additional resources and links
 
@@ -87,6 +81,4 @@ Additional resources and links
 
 Once you've completed registration and received confirmation, you are set to take the PCA exam on your scheduled date. Good luck!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/803356a8-be12-48c5-b49b-4a44e66ba3a3/lesson/1213f02c-9690-4cae-a941-d3ebc75fe2b7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/803356a8-be12-48c5-b49b-4a44e66ba3a3/lesson/1213f02c-9690-4cae-a941-d3ebc75fe2b7)

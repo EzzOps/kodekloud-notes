@@ -13,13 +13,9 @@ Once a source event triggers an AWS Lambda function, Lambda invokes the **functi
 | **event**   | Carries data from the event source (e.g., S3 bucket details, API Gateway payload)   |
 | **context** | Provides runtime metadata (e.g., function name, memory limits, request identifiers) |
 
-<Frame>
-  ![The image illustrates the flow of data in an AWS Lambda function, showing a source triggering the function handler, which processes event and context objects to execute the Lambda function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863175/notes-assets/images/AWS-Lambda-Functions/aws-lambda-data-flow-diagram.jpg)
-</Frame>
+![The image illustrates the flow of data in an AWS Lambda function, showing a source triggering the function handler, which processes event and context objects to execute the Lambda function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863175/notes-assets/images/AWS-Lambda-Functions/aws-lambda-data-flow-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Use the `event` object to tailor your logic at runtime—extract bucket names for S3 triggers or HTTP headers for API Gateway—and leverage the `context` object to retrieve execution metadata like remaining run time.
-</Callout>
+> **lightbulb** Use the `event` object to tailor your logic at runtime—extract bucket names for S3 triggers or HTTP headers for API Gateway—and leverage the `context` object to retrieve execution metadata like remaining run time.
 
 ## Handler Parameters in Detail
 
@@ -57,14 +53,10 @@ def lambda_handler(event, context):
 * For detailed guidance on writing handlers and custom runtimes, see the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
 * To explore recommended patterns for coding style, testing, performance tuning, and service integrations, consult the [AWS Lambda Best Practices Guide](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html).
 
-<Frame>
-  ![The image is a slide titled "Functions" with a link to AWS Lambda best practices and a list of topics including writing functions, testing, performance, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863177/notes-assets/images/AWS-Lambda-Functions/functions-aws-lambda-best-practices.jpg)
-</Frame>
+![The image is a slide titled "Functions" with a link to AWS Lambda best practices and a list of topics including writing functions, testing, performance, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863177/notes-assets/images/AWS-Lambda-Functions/functions-aws-lambda-best-practices.jpg)
 
 ## Next Up: Lambda Pricing Model
 
 In the next section, we'll explore AWS Lambda's pricing structure, cost optimization strategies, and tips for estimating your monthly bill.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-lambda/module/fdb5ec1b-18a2-4034-baed-3231f187825b/lesson/2d9678dc-64d3-43f7-904d-b07b1c8d3b4c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-lambda/module/fdb5ec1b-18a2-4034-baed-3231f187825b/lesson/2d9678dc-64d3-43f7-904d-b07b1c8d3b4c)

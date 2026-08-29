@@ -47,9 +47,7 @@ Open the policy details to verify the policy content and metadata.
   <img alt="A screenshot of the AWS Identity and Access Management (IAM) console showing a custom policy named &#x22;Custom-CF-Policy&#x22; with policy details (type: Customer managed, creation/edited time, ARN) and tabs for Permissions, Entities attached, Tags, and Policy versions. The left sidebar shows IAM navigation (Access management → Policies) and the top-right has Edit and Delete buttons." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Permission changes can take a few moments to propagate in the console. If the limited user cannot see stacks right away, refresh the CloudFormation or IAM pages.
-</Callout>
+> **lightbulb** Permission changes can take a few moments to propagate in the console. If the limited user cannot see stacks right away, refresh the CloudFormation or IAM pages.
 
 ## Step 2 — Attempt to update a stack and identify missing actions
 
@@ -202,9 +200,7 @@ After granting UpdateStack, proceed through the CloudFormation update wizard (Sp
 | cloudformation:UpdateStack                           | \*                   | Submit the actual stack update                                   |
 | s3:PutObject, s3:GetObject, s3:ListBucket (or s3:\*) | specific bucket ARNs | Upload templates to staging buckets and read uploaded templates  |
 
-<Callout icon="warning">
-  The examples above use broad S3 permissions (s3:\* and Resource "\*") purely for demonstration. In production, follow the principle of least privilege: limit S3 actions and resources to only the buckets and operations required (for example, s3:PutObject, s3:GetObject, s3:ListBucket on specific bucket ARNs).
-</Callout>
+> **warning** The examples above use broad S3 permissions (s3:\* and Resource "\*") purely for demonstration. In production, follow the principle of least privilege: limit S3 actions and resources to only the buckets and operations required (for example, s3:PutObject, s3:GetObject, s3:ListBucket on specific bucket ARNs).
 
 ## Troubleshooting UI authorization errors
 
@@ -250,6 +246,4 @@ After a successful update, verify any expected resource changes in the service c
 
 This completes the step-by-step process of iteratively creating and extending a custom IAM policy to allow a restricted user to view and update a CloudFormation stack.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/913fb901-ca2a-4ed9-8d12-2abd519c1393/lesson/680e9af5-f9a1-492b-baf1-5e58302bb5d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/913fb901-ca2a-4ed9-8d12-2abd519c1393/lesson/680e9af5-f9a1-492b-baf1-5e58302bb5d5)

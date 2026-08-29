@@ -58,9 +58,7 @@ spec:
               value: {{ .Values.wordpressBlogName | quote }}
 ```
 
-<Callout icon="lightbulb">
-  The `WORDPRESS_BLOG_NAME` environment variable is directly set using the value from `values.yaml`, meaning that the application will deploy with "User's Blog!" as the default blog name unless it's overridden.
-</Callout>
+> **lightbulb** The `WORDPRESS_BLOG_NAME` environment variable is directly set using the value from `values.yaml`, meaning that the application will deploy with "User's Blog!" as the default blog name unless it's overridden.
 
 ## Overriding Default Values with Command-Line Parameters
 
@@ -130,19 +128,15 @@ If you wish to modify the built-in `values.yaml` within the chart itself, you ca
 
 In this command, `./` indicates the current directory, and Helm installs the chart using your modified files.
 
-<Callout icon="lightbulb">
-  When modifying the built-in values.yaml file, ensure you maintain the correct file structure to avoid deployment issues.
-</Callout>
+> **lightbulb** When modifying the built-in values.yaml file, ensure you maintain the correct file structure to avoid deployment issues.
 
 ***
 
 This concludes our discussion on customizing chart parameters. You have learned how to override default values in a Bitnami WordPress Helm chart using command-line options with `--set`, by employing a custom values file, or by directly modifying the chart's source after pulling it locally. For more details on Helm and managing Kubernetes resources, explore the [official Helm documentation](https://helm.sh/docs/) and [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/10d7440b-907c-46da-ac5c-d833e7022375/lesson/10e2ec05-06e0-4d72-ae09-4f0505e5573a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/10d7440b-907c-46da-ac5c-d833e7022375/lesson/10e2ec05-06e0-4d72-ae09-4f0505e5573a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/10d7440b-907c-46da-ac5c-d833e7022375/lesson/0f8530fe-a11e-4aa6-bbef-954eca42312d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/10d7440b-907c-46da-ac5c-d833e7022375/lesson/0f8530fe-a11e-4aa6-bbef-954eca42312d)
 
 
 # Helm Components
@@ -157,13 +151,9 @@ Helm is primarily composed of a command-line tool installed locally, which you c
 
 Similar to how [Docker Hub](https://hub.docker.com) hosts container images or [Vagrant Cloud](https://www.vagrantup.com) provides boxes, public repositories host Helm charts. These repositories allow you to quickly download and deploy applications on your cluster.
 
-<Callout icon="lightbulb">
-  Helm stores metadata—including information about installed releases, used charts, and revision history—directly into your Kubernetes cluster as secrets. This ensures that metadata is persistent and accessible to all team members, facilitating seamless upgrades and maintenance operations.
-</Callout>
+> **lightbulb** Helm stores metadata—including information about installed releases, used charts, and revision history—directly into your Kubernetes cluster as secrets. This ensures that metadata is persistent and accessible to all team members, facilitating seamless upgrades and maintenance operations.
 
-<Frame>
-  ![The image illustrates Helm components, showing the flow from an online chart repository to Helm CLI, and the management of releases and revisions with Kubernetes integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869780/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-components-chart-repository-diagram.jpg)
-</Frame>
+![The image illustrates Helm components, showing the flow from an online chart repository to Helm CLI, and the management of releases and revisions with Kubernetes integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869780/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-components-chart-repository-diagram.jpg)
 
 Helm maintains a comprehensive record of every action performed within the cluster, enabling precise tracking and management.
 

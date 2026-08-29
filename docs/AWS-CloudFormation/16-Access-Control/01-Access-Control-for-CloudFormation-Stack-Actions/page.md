@@ -20,9 +20,7 @@ Table: Primary CloudFormation stack actions
 | cloudformation:UpdateStack | Apply updates to an existing stack        | Change configuration or resource types in an existing stack |
 | cloudformation:DeleteStack | Delete a stack and remove its resources   | Tear down environments or test stacks                       |
 
-<Callout icon="lightbulb">
-  CloudFormation actions control stack lifecycle operations, but templates execute service-specific APIs. Ensure you also grant the required service permissions (for example, S3, EC2, IAM) so CloudFormation can create or modify the underlying resources.
-</Callout>
+> **lightbulb** CloudFormation actions control stack lifecycle operations, but templates execute service-specific APIs. Ensure you also grant the required service permissions (for example, S3, EC2, IAM) so CloudFormation can create or modify the underlying resources.
 
 <Frame>
   <img alt="A slide titled &#x22;Access Control for CloudFormation Stack Actions&#x22; showing three actions — Create, Update, and Delete — each with a short description of what users can do and the corresponding IAM permissions (cloudformation:CreateStack, cloudformation:UpdateStack, cloudformation:DeleteStack)." />
@@ -86,9 +84,7 @@ Recommended service permission examples
 | EC2     | ec2:RunInstances, ec2:TerminateInstances, ec2:CreateTags | Restrict AMI IDs, instance profiles, and subnet/resource ARNs where possible |
 | IAM     | iam:PassRole                                             | Scope to the exact role ARNs used by CloudFormation                          |
 
-<Callout icon="warning">
-  Deleting a stack (cloudformation:DeleteStack) is destructive: it removes resources created by the stack. Grant delete permissions only to trusted principals and consider safeguards such as service control policies (SCPs), approval workflows, or MFA-protected operations.
-</Callout>
+> **warning** Deleting a stack (cloudformation:DeleteStack) is destructive: it removes resources created by the stack. Grant delete permissions only to trusted principals and consider safeguards such as service control policies (SCPs), approval workflows, or MFA-protected operations.
 
 Best practices and tips
 
@@ -111,6 +107,4 @@ Summary
 * Always grant the necessary service-level permissions (S3, EC2, IAM, etc.) that your CloudFormation templates require.
 * Enforce least privilege: scope actions and resources narrowly, and grant iam:PassRole only for the specific execution role(s) CloudFormation will use.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/913fb901-ca2a-4ed9-8d12-2abd519c1393/lesson/cdfa8f26-d7de-4362-97fa-4ebb07868b5c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/913fb901-ca2a-4ed9-8d12-2abd519c1393/lesson/cdfa8f26-d7de-4362-97fa-4ebb07868b5c)

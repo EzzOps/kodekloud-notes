@@ -97,25 +97,17 @@ Beyond our basic examples, Helm charts are available for a wide range of applica
 
 Instead of visiting multiple repositories separately, you can use the centralized [Artifact Hub](https://artifacthub.io) to search for and manage charts. Artifact Hub currently features over 6,300 packages and highlights charts published by official developers with verified publisher badges for added trustworthiness.
 
-<Frame>
-  ![The image is a diagram showing Helm repositories connected to ArtifactHub.io, with nodes labeled Appscode, Community Operators, TrueCharts, and Bitnami.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869781/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-repositories-artifacthub-diagram.jpg)
-</Frame>
+![The image is a diagram showing Helm repositories connected to ArtifactHub.io, with nodes labeled Appscode, Community Operators, TrueCharts, and Bitnami.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869781/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-repositories-artifacthub-diagram.jpg)
 
 Artifact Hub also provides a searchable interface to help you quickly find the charts you need:
 
-<Frame>
-  ![The image shows a webpage from ArtifactHUB displaying search results for Helm repositories, including "kube-prometheus-stack" and "ingress-nginx," with filters and options on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869782/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/artifacthub-helm-repositories-search.jpg)
-</Frame>
+![The image shows a webpage from ArtifactHUB displaying search results for Helm repositories, including "kube-prometheus-stack" and "ingress-nginx," with filters and options on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869782/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/artifacthub-helm-repositories-search.jpg)
 
-<Callout icon="lightbulb">
-  In upcoming lessons, we will explore chart installation and customization in greater detail. Continue following our guide to deepen your knowledge of the practical applications of Helm in Kubernetes.
-</Callout>
+> **lightbulb** In upcoming lessons, we will explore chart installation and customization in greater detail. Continue following our guide to deepen your knowledge of the practical applications of Helm in Kubernetes.
 
 Happy Helm-ing, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/10d7440b-907c-46da-ac5c-d833e7022375/lesson/4017fa2b-b35c-49e3-9b73-eed0b452c8e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/10d7440b-907c-46da-ac5c-d833e7022375/lesson/4017fa2b-b35c-49e3-9b73-eed0b452c8e3)
 
 
 # Helm charts
@@ -128,9 +120,7 @@ In this lesson, we explore Helm Charts—a powerful tool for managing Kubernetes
 
 Helm Charts act as comprehensive instruction manuals for your deployments. Each chart is a structured collection of files that define an application's configuration and behavior on Kubernetes. For example, the parameters in the values.yaml file enable operators to customize configurations without modifying the underlying templates.
 
-<Callout icon="lightbulb">
-  Use Helm’s templating syntax (e.g., `{{ .Values.replicaCount }}`) in your manifests to keep configuration flexible and reusable. All dynamic values are defined in the values.yaml file.
-</Callout>
+> **lightbulb** Use Helm’s templating syntax (e.g., `{{ .Values.replicaCount }}`) in your manifests to keep configuration flexible and reusable. All dynamic values are defined in the values.yaml file.
 
 Below is a simple example of Helm template files that create two Kubernetes objects—a Deployment and a Service. The Deployment manages a set of Pods based on a specified image, and the Service exposes these Pods as a NodePort service:
 

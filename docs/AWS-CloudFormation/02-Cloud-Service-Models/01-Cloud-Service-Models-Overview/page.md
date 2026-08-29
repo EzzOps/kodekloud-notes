@@ -84,9 +84,7 @@ Common IaC use cases:
 
 Examples of IaC tools include [AWS CloudFormation](https://learn.kodekloud.com/user/courses/aws-cloud-formation) and [Terraform](https://learn.kodekloud.com/user/courses/terraform-basics-training-course). These tools let you describe resources in configuration files and apply those configurations to create and manage infrastructure consistently.
 
-<Callout icon="lightbulb">
-  IaC complements IaaS, PaaS, and SaaS: use IaC to provision and manage IaaS resources (VMs, networks), to configure and deploy PaaS services and runtime environments, or to automate SaaS setup and tenant provisioning when the provider exposes APIs.
-</Callout>
+> **lightbulb** IaC complements IaaS, PaaS, and SaaS: use IaC to provision and manage IaaS resources (VMs, networks), to configure and deploy PaaS services and runtime environments, or to automate SaaS setup and tenant provisioning when the provider exposes APIs.
 
 ## Comparative summary
 
@@ -113,6 +111,4 @@ Practical guidance:
 
 This lesson clarifies the roles of IaaS, PaaS, SaaS, and IaC and shows how they fit into typical cloud deployment and provisioning workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/c89fc2ec-13f2-4ccc-9c2d-9a8e6c97a55a/lesson/b86aafa1-c391-43ef-9bd1-62fd3fbb5609" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/c89fc2ec-13f2-4ccc-9c2d-9a8e6c97a55a/lesson/b86aafa1-c391-43ef-9bd1-62fd3fbb5609)

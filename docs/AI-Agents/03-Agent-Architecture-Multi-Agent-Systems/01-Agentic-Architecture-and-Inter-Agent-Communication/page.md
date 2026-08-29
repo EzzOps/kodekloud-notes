@@ -67,9 +67,7 @@ Common patterns for composing agent interactions:
 
 These patterns support collaboration, specialization, fault tolerance, and scalable execution.
 
-<Callout icon="lightbulb">
-  Choose communication patterns based on latency, reliability, and coupling requirements. Use REST for simple synchronous calls, message queues for decoupled and resilient workflows, and shared stores for collaborative memory and caching.
-</Callout>
+> **lightbulb** Choose communication patterns based on latency, reliability, and coupling requirements. Use REST for simple synchronous calls, message queues for decoupled and resilient workflows, and shared stores for collaborative memory and caching.
 
 ## Conversable and collaborative agent capabilities
 
@@ -179,9 +177,7 @@ Common deployment and scaling approaches for agent systems:
 
 These patterns help create production-grade, maintainable, and observable agent deployments.
 
-<Callout icon="warning">
-  Security and observability are critical. Enforce least-privilege access, validate inputs thoroughly, log decisions for audits, and instrument distributed traces to troubleshoot inter-agent workflows.
-</Callout>
+> **warning** Security and observability are critical. Enforce least-privilege access, validate inputs thoroughly, log decisions for audits, and instrument distributed traces to troubleshoot inter-agent workflows.
 
 ## Quick reference: communication selection guide
 
@@ -204,6 +200,4 @@ These patterns help create production-grade, maintainable, and observable agent 
 
 Together, these architectural principles, communication patterns, and deployment practices enable scalable, adaptable multi-agent systems able to solve complex, multi-step tasks in production environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-agents/module/2e110716-1967-4e6f-a995-9138c54fb38c/lesson/1c72afc9-6b60-48e5-9dbd-3a3418b013c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-agents/module/2e110716-1967-4e6f-a995-9138c54fb38c/lesson/1c72afc9-6b60-48e5-9dbd-3a3418b013c8)

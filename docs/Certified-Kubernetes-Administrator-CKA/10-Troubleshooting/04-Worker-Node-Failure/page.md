@@ -25,9 +25,7 @@ kubectl describe node worker-1
 
 This command produces an output with various conditions, such as OutOfDisk, MemoryPressure, DiskPressure, PIDPressure, and Ready. Each condition will have a status of true or false that helps pinpoint issues. For example, if disk space is insufficient, the OutOfDisk flag will be set to true; if there is low memory, the MemoryPressure flag will reflect that.
 
-<Callout icon="lightbulb">
-  Always review the "LastHeartbeatTime" field. It indicates when a node last communicated with the master, which can provide insights if a node has unexpectedly gone down.
-</Callout>
+> **lightbulb** Always review the "LastHeartbeatTime" field. It indicates when a node last communicated with the master, which can provide insights if a node has unexpectedly gone down.
 
 ## 2. Validate Node Operation and Kubelet Health
 
@@ -111,9 +109,7 @@ Certificate:
         ...
 ```
 
-<Callout icon="triangle-alert">
-  Be sure that the certificate is issued by the correct CA and that none of the certificate parameters (e.g., validity period) indicate an impending or current issue.
-</Callout>
+> **triangle-alert** Be sure that the certificate is issued by the correct CA and that none of the certificate parameters (e.g., validity period) indicate an impending or current issue.
 
 ## Conclusion
 
@@ -127,8 +123,6 @@ For further learning, consider exploring additional resources:
 
 Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/aff99955-65fd-443e-950f-3b25d3311bc2/lesson/b7dfc80e-01ff-4084-9047-9ab2b697df5e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/aff99955-65fd-443e-950f-3b25d3311bc2/lesson/b7dfc80e-01ff-4084-9047-9ab2b697df5e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/aff99955-65fd-443e-950f-3b25d3311bc2/lesson/f692788a-6a6b-4ecd-b66a-85653e18f3dc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/aff99955-65fd-443e-950f-3b25d3311bc2/lesson/f692788a-6a6b-4ecd-b66a-85653e18f3dc)

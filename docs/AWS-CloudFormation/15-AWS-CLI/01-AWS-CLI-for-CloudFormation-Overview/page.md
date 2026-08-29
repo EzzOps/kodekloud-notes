@@ -43,9 +43,7 @@ The command prompts for:
 * Default region name (for example, us-east-1)
 * Default output format (json, text, or table)
 
-<Callout icon="lightbulb">
-  Ensure the [AWS - IAM](https://learn.kodekloud.com/user/courses/aws-iam) user or role whose credentials you use has the necessary permissions to perform CloudFormation and any resource-specific actions (for example, creating [Amazon Elastic Compute Cloud (EC2)](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) instances or [Amazon Simple Storage Service (Amazon S3)](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3) buckets).
-</Callout>
+> **lightbulb** Ensure the [AWS - IAM](https://learn.kodekloud.com/user/courses/aws-iam) user or role whose credentials you use has the necessary permissions to perform CloudFormation and any resource-specific actions (for example, creating [Amazon Elastic Compute Cloud (EC2)](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) instances or [Amazon Simple Storage Service (Amazon S3)](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3) buckets).
 
 Workflow comparison: Console (manual) vs. AWS CLI (automated)
 
@@ -98,9 +96,7 @@ aws cloudformation describe-stacks --stack-name my-stack
 aws cloudformation describe-stack-events --stack-name my-stack
 ```
 
-<Callout icon="warning">
-  If your template creates or modifies IAM resources you must include an appropriate `--capabilities` flag such as `CAPABILITY_IAM` or `CAPABILITY_NAMED_IAM`. Omitting this will cause the stack operation to fail.
-</Callout>
+> **warning** If your template creates or modifies IAM resources you must include an appropriate `--capabilities` flag such as `CAPABILITY_IAM` or `CAPABILITY_NAMED_IAM`. Omitting this will cause the stack operation to fail.
 
 Practical tips and best practices
 
@@ -130,6 +126,4 @@ Links and references
 
 This overview covers the essential ways to use the AWS CLI with CloudFormation for automated, scriptable infrastructure management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/da18dc16-b0d4-49b1-a85d-32b98462fd6c/lesson/2baf7c4b-20b8-4d93-8938-6b1c7aa25a2f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/da18dc16-b0d4-49b1-a85d-32b98462fd6c/lesson/2baf7c4b-20b8-4d93-8938-6b1c7aa25a2f)

@@ -65,9 +65,7 @@ In this section, we shift our focus from individual services to architectural de
 
 Following these core principles, you’ll take on an ultimate design challenge that synthesizes your learning. The section concludes with a review session designed to prepare you for the final mock exam and, eventually, the real certification exam.
 
-<Callout icon="lightbulb">
-  This course integrates interactive labs, dynamic lectures, real-world demos, and quizzes to provide a comprehensive learning experience.
-</Callout>
+> **lightbulb** This course integrates interactive labs, dynamic lectures, real-world demos, and quizzes to provide a comprehensive learning experience.
 
 ## Final Thoughts
 
@@ -77,6 +75,4 @@ If you have any questions or need support as you progress, feel free to join our
 
 Good studying, and best of luck on your journey to becoming an AWS Solutions Architect!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/1a87a522-2fb5-41e9-a36f-0157341c75d9/lesson/434b54ce-4887-4b52-b79c-e03eefcb9a54" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/1a87a522-2fb5-41e9-a36f-0157341c75d9/lesson/434b54ce-4887-4b52-b79c-e03eefcb9a54)

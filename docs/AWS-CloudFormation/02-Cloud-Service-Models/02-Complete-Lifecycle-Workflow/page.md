@@ -59,9 +59,7 @@ Common template sections and when to use them
 | Outputs          | Expose values after deployment                      | Public IP, load balancer DNS                                         |
 | Metadata         | Store template-level metadata or tooling hints      | cfn-nag suppressions or documentation                                |
 
-<Callout icon="lightbulb">
-  Iterative cycles let you catch mistakes early, increase template reusability, and safely evolve infrastructure. Use linting and validation on every change before deployment.
-</Callout>
+> **lightbulb** Iterative cycles let you catch mistakes early, increase template reusability, and safely evolve infrastructure. Use linting and validation on every change before deployment.
 
 Best practices summary
 
@@ -75,9 +73,7 @@ Best practices summary
   <img alt="A slide titled &#x22;Why Do We Repeat the Process?&#x22; that outlines three numbered steps for working with CloudFormation: write, lint, validate and deploy simple templates; add metadata, intrinsic functions, parameters and mappings to make templates reusable; and apply skills to build real infrastructure (EC2, permission policies). The slide includes KodeKloud copyright at the bottom." />
 </Frame>
 
-<Callout icon="warning">
-  Never skip validation or testing in a non-production environment. Changes to IAM, networking, or shared services can have wide impact — always review changes with a change set and, when appropriate, a peer review or automated policy checks.
-</Callout>
+> **warning** Never skip validation or testing in a non-production environment. Changes to IAM, networking, or shared services can have wide impact — always review changes with a change set and, when appropriate, a peer review or automated policy checks.
 
 Links and references
 
@@ -90,6 +86,4 @@ Further reading
 * Explore CloudFormation change sets and nested stacks for safer updates and modularization.
 * Consider integrating policy-as-code (e.g., cfn-nag, AWS Config Rules, or AWS IAM Access Analyzer) into your CI to prevent accidental misconfigurations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/c89fc2ec-13f2-4ccc-9c2d-9a8e6c97a55a/lesson/34e8ee7d-0849-4ad3-9f46-17c0261aef93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/c89fc2ec-13f2-4ccc-9c2d-9a8e6c97a55a/lesson/34e8ee7d-0849-4ad3-9f46-17c0261aef93)

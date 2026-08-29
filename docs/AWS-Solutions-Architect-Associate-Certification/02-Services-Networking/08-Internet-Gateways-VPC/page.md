@@ -8,10 +8,8 @@ In this guide, you'll learn how Internet Gateways enable public connectivity for
 
 By default, subnets in a VPC are created as private. Devices within these subnets cannot access the Internet, and external resources cannot reach them. To convert a subnet into a public subnet, you must attach an Internet Gateway to your VPC.
 
-<Callout icon="lightbulb">
-  * Each VPC can have only **one Internet Gateway** attached.
+> **lightbulb** * Each VPC can have only **one Internet Gateway** attached.
   * An Internet Gateway can only be attached to **one VPC** at a time.
-</Callout>
 
 An Internet Gateway is a horizontally scaled, redundant, and highly available component that spans all Availability Zones within a region. It provides the essential communication bridge between resources inside your VPC and the Internet. Without an Internet Gateway, all subnets in your VPC remain private by default.
 
@@ -27,9 +25,7 @@ To transform a private subnet into a public one, follow these essential steps:
 5. **Associate the desired subnet with the custom route table.**\
    This association enables all resources within that subnet to access the Internet.
 
-<Frame>
-  ![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating the gateway, attaching it to the VPC, and configuring route tables. It includes a diagram of a region with a public subnet in an availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865571/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Internet-Gateways-VPC/internet-gateway-vpc-setup-diagram.jpg)
-</Frame>
+![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating the gateway, attaching it to the VPC, and configuring route tables. It includes a diagram of a region with a public subnet in an availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865571/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Internet-Gateways-VPC/internet-gateway-vpc-setup-diagram.jpg)
 
 ## Public and Private IP Addressing
 
@@ -42,9 +38,7 @@ For example:
 
 It's important to note that the resource itself only recognizes its private IP. AWS manages the translation between the public and private IP addresses. When an external request is directed to the public IP, AWS forwards it to the corresponding private IP.
 
-<Frame>
-  ![The image is a diagram illustrating a network setup with a public IP, showing a resource within a public subnet in a VPC (default) in Availability Zone 2. It includes IP addresses and a checkbox indicating the intention to assign a public IP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865571/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Internet-Gateways-VPC/network-setup-public-ip-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a network setup with a public IP, showing a resource within a public subnet in a VPC (default) in Availability Zone 2. It includes IP addresses and a checkbox indicating the intention to assign a public IP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865571/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Internet-Gateways-VPC/network-setup-public-ip-diagram.jpg)
 
 Each network interface on a resource can have its own pair of public and private IP addresses. AWS seamlessly manages the mapping between these IP addresses to ensure smooth communication.
 
@@ -57,10 +51,6 @@ To recap the key points about Internet Gateways and VPC connectivity:
 * Each VPC is limited to one Internet Gateway, and an Internet Gateway can be attached to only a single VPC.
 * A subnet is converted to a public subnet when its route table includes a default route pointing to the Internet Gateway.
 
-<Frame>
-  ![The image is a summary slide with three key points about internet gateways and VPCs: enabling internet connectivity, attachment to VPCs with regional resilience, and the limitation of one internet gateway per VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865572/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Internet-Gateways-VPC/internet-gateways-vpcs-summary-slide.jpg)
-</Frame>
+![The image is a summary slide with three key points about internet gateways and VPCs: enabling internet connectivity, attachment to VPCs with regional resilience, and the limitation of one internet gateway per VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865572/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Internet-Gateways-VPC/internet-gateways-vpcs-summary-slide.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/e03ffb87-3345-4fbb-9576-cb53d21d7a6a/lesson/ced0c275-2031-4453-9149-38390b24009f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/e03ffb87-3345-4fbb-9576-cb53d21d7a6a/lesson/ced0c275-2031-4453-9149-38390b24009f)

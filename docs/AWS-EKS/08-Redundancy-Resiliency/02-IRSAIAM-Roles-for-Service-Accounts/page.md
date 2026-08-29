@@ -64,9 +64,7 @@ Define a trust policy that allows your EKS OIDC provider to assume the role:
 }
 ```
 
-<Callout icon="lightbulb">
-  Replace the OIDC issuer URL, AWS account ID, and Kubernetes namespace/serviceaccount in the trust policy to match your environment.
-</Callout>
+> **lightbulb** Replace the OIDC issuer URL, AWS account ID, and Kubernetes namespace/serviceaccount in the trust policy to match your environment.
 
 Attach an S3 read permissions policy:
 
@@ -89,9 +87,7 @@ Attach an S3 read permissions policy:
 
 EKS deploys a mutating webhook that intercepts pod creation. It mounts a projected service account token and injects AWS environment variables (`AWS_ROLE_ARN`, `AWS_WEB_IDENTITY_TOKEN_FILE`, etc.) into pods that reference an annotated ServiceAccount.
 
-<Frame>
-  ![The image illustrates a setup for webhook and service account annotation, showing the integration of AWS IAM, an EKS cluster, and AWS S3 using IRSA.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862889/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/webhook-service-account-aws-eks-s3.jpg)
-</Frame>
+![The image illustrates a setup for webhook and service account annotation, showing the integration of AWS IAM, an EKS cluster, and AWS S3 using IRSA.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862889/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/webhook-service-account-aws-eks-s3.jpg)
 
 ***
 
@@ -160,17 +156,11 @@ spec:
 | STS rate limits     | Calls to `AssumeRoleWithWebIdentity` have per-role/issuer throttling.         | Create additional IAM roles or rotate usage patterns.       |
 | Granularity         | Fine-grained roles per namespace/ServiceAccount increase management overhead. | Use naming conventions and automation to manage many roles. |
 
-<Callout icon="triangle-alert">
-  If you run more than 100 EKS clusters in one AWS account, you will hit the OIDC provider limit. Consider using fewer providers or multiple AWS accounts.
-</Callout>
+> **triangle-alert** If you run more than 100 EKS clusters in one AWS account, you will hit the OIDC provider limit. Consider using fewer providers or multiple AWS accounts.
 
-<Frame>
-  ![The image is a diagram illustrating scalability concerns and limitations in an AWS EKS environment, showing interactions between components like EKS Clusters, IAM, OIDC, and AWS S3. It highlights the use of IRSA, webhooks, and service accounts within the architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862890/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-scalability-diagram-components.jpg)
-</Frame>
+![The image is a diagram illustrating scalability concerns and limitations in an AWS EKS environment, showing interactions between components like EKS Clusters, IAM, OIDC, and AWS S3. It highlights the use of IRSA, webhooks, and service accounts within the architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862890/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-scalability-diagram-components.jpg)
 
-<Frame>
-  ![The image is a diagram illustrating management and maintenance challenges with AWS EKS clusters across different regions, showing connections between AWS IAM, ARN, and STS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862891/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-management-challenges-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating management and maintenance challenges with AWS EKS clusters across different regions, showing connections between AWS IAM, ARN, and STS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862891/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-management-challenges-diagram.jpg)
 
 ***
 
@@ -185,9 +175,7 @@ IRSA is ideal when you need per-pod, least-privilege AWS access without distribu
   * Your cluster fleet exceeds OIDC limits.
   * You prefer a simpler EC2 metadata or sidecar proxy solution.
 
-<Callout icon="lightbulb">
-  AWS EKS Pod Identity provides another AWS-native approach that may scale better in large, multi-region environments.
-</Callout>
+> **lightbulb** AWS EKS Pod Identity provides another AWS-native approach that may scale better in large, multi-region environments.
 
 ***
 
@@ -198,6 +186,4 @@ IRSA is ideal when you need per-pod, least-privilege AWS access without distribu
 * [AWS STS AssumeRoleWithWebIdentity API](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html)
 * [Setting Up IAM Roles for Service Accounts (IRSA)](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-eks/module/1bbca08a-6f11-4fbe-89db-aeee53fccb0d/lesson/bf6e4d70-5762-47ba-bbc3-673fc821b0bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-eks/module/1bbca08a-6f11-4fbe-89db-aeee53fccb0d/lesson/bf6e4d70-5762-47ba-bbc3-673fc821b0bc)

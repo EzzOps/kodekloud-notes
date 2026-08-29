@@ -104,9 +104,7 @@ async def main():
         print(f"Could not save to Downloads: {e}")
 ```
 
-<Callout icon="warning">
-  The script performs live web searches using the `WebSearchTool`. Expect variability in outputs and occasional missing source links. Monitor API usage and rate limits for your API key to avoid unexpected charges.
-</Callout>
+> **warning** The script performs live web searches using the `WebSearchTool`. Expect variability in outputs and occasional missing source links. Monitor API usage and rate limits for your API key to avoid unexpected charges.
 
 ## 3 — Running the script
 
@@ -153,11 +151,9 @@ This output is ready for sorting, filtering, or importing into other analytics t
 
 That’s it — you now have a working stock news tracker that searches headlines, summarizes one recent update per company, classifies sentiment, and exports the results to Excel for later analysis. Hope you enjoyed this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-agents/module/a433ab93-c13a-4a03-adf7-f89a6f61ced3/lesson/a2ef1e56-45a5-4172-8f3e-f8bc485dbc36" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-agents/module/a433ab93-c13a-4a03-adf7-f89a6f61ced3/lesson/a2ef1e56-45a5-4172-8f3e-f8bc485dbc36)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/ai-agents/module/a433ab93-c13a-4a03-adf7-f89a6f61ced3/lesson/b0b26272-8019-4ea2-b8ba-5aeebd0ac0f8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/ai-agents/module/a433ab93-c13a-4a03-adf7-f89a6f61ced3/lesson/b0b26272-8019-4ea2-b8ba-5aeebd0ac0f8)
 
 
 # Demo Exploring Computer Tools Playwright
@@ -174,9 +170,7 @@ In this lesson we'll build a compact, practical AI browser agent using Python an
   <img alt="This image shows a webpage from the Playwright documentation, specifically the installation page, with sections on how to install Playwright and related learning topics." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Install Playwright and its browser binaries once per environment. In Jupyter notebooks, prefix shell commands with `!`.
-</Callout>
+> **lightbulb** Install Playwright and its browser binaries once per environment. In Jupyter notebooks, prefix shell commands with `!`.
 
 ## Installation and imports
 
@@ -209,9 +203,7 @@ from IPython.display import Image, display
 
 Keep your [OpenAI API key](https://platform.openai.com/docs/guides/api-keys) in an environment variable (for example, `OPENAI_API_KEY`). Set the key for the `openai` library as shown below.
 
-<Callout icon="warning">
-  Never commit API keys to source control. Use environment variables or a secrets manager, and avoid printing your key in logs.
-</Callout>
+> **warning** Never commit API keys to source control. Use environment variables or a secrets manager, and avoid printing your key in logs.
 
 ```python theme={null}
 openai.api_key = os.environ.get("OPENAI_API_KEY")

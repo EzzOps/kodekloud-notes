@@ -26,9 +26,7 @@ You can choose one of two output formats:
 
 Reports are delivered to a destination bucket in the same AWS Region, and you can configure optional encryption and prefix settings.
 
-<Callout icon="lightbulb">
-  Inventory reports can take up to 48 hours to appear when first enabled. Plan accordingly before running compliance checks.
-</Callout>
+> **lightbulb** Inventory reports can take up to 48 hours to appear when first enabled. Plan accordingly before running compliance checks.
 
 ## Metadata Fields Included
 
@@ -46,9 +44,7 @@ By default, each inventory entry includes the following metadata fields:
 | Encryption status  | e.g., `AES256` or AWS KMS key            |
 | Object lock status | Holds `GOVERNANCE` or `COMPLIANCE` locks |
 
-<Frame>
-  ![The image lists the types of information included in an inventory report, such as bucket name, key name, version ID, size, last modified date, storage class, replication status, encryption status, and object lock status. It also suggests referring to documentation for a complete list.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869386/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Inventory/inventory-report-information-types-list.jpg)
-</Frame>
+![The image lists the types of information included in an inventory report, such as bucket name, key name, version ID, size, last modified date, storage class, replication status, encryption status, and object lock status. It also suggests referring to documentation for a complete list.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869386/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Inventory/inventory-report-information-types-list.jpg)
 
 Refer to the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) for the full list of available fields.
 
@@ -88,9 +84,7 @@ aws s3api put-bucket-inventory-configuration \
   }'
 ```
 
-<Callout icon="triangle-alert">
-  If you include `VersionId`, versioning must be enabled on the source bucket. Otherwise, the report will fail.
-</Callout>
+> **triangle-alert** If you include `VersionId`, versioning must be enabled on the source bucket. Otherwise, the report will fail.
 
 ### Key Configuration Options
 
@@ -105,6 +99,4 @@ aws s3api put-bucket-inventory-configuration \
 * [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/)
 * [Querying S3 Inventory with Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/querying-s3-inventory.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3/module/985e08bc-a007-4d29-9e60-fe90b52410ae/lesson/8b752cab-ff57-4a87-a8a9-c1d36552d01f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3/module/985e08bc-a007-4d29-9e60-fe90b52410ae/lesson/8b752cab-ff57-4a87-a8a9-c1d36552d01f)

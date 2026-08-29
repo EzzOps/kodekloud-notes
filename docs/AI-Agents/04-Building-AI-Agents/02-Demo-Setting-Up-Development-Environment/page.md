@@ -98,11 +98,9 @@ References and next steps
 
 Thank you for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-agents/module/145dc5be-8a43-4ff3-ba90-7d93e142a799/lesson/cbe95d6e-1e59-4beb-9638-bbc5621f4651" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-agents/module/145dc5be-8a43-4ff3-ba90-7d93e142a799/lesson/cbe95d6e-1e59-4beb-9638-bbc5621f4651)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/ai-agents/module/145dc5be-8a43-4ff3-ba90-7d93e142a799/lesson/51ff8331-399a-48c4-a89d-76d59bd8ee67" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/ai-agents/module/145dc5be-8a43-4ff3-ba90-7d93e142a799/lesson/51ff8331-399a-48c4-a89d-76d59bd8ee67)
 
 
 # Demo Setting Up Development Environment
@@ -159,9 +157,7 @@ The menu bar contains File, Edit, View, Run, Kernel, Settings, Help. The toolbar
 | Shutdown     | Ends the kernel session.                                                               |
 | Run cell (▶) | Executes the current cell and advances depending on the option chosen.                 |
 
-<Callout icon="lightbulb">
-  Tip: If your notebook behaves unexpectedly (old variables, mismatched outputs), use Kernel → Restart & Clear Output to get a clean runtime and reproduce results deterministically.
-</Callout>
+> **lightbulb** Tip: If your notebook behaves unexpectedly (old variables, mismatched outputs), use Kernel → Restart & Clear Output to get a clean runtime and reproduce results deterministically.
 
 ***
 

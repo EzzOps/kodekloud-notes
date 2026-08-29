@@ -14,9 +14,7 @@ Let's get started!
 
 To install packages on a target host, use the module that corresponds to the host's package manager. For instance, use the `yum` module for CentOS or Red Hat Enterprise Linux and the `apt` module for Ubuntu. Starting with Ansible 2.0, you can also use the unified `package` module which automatically selects the correct package manager based on the host. However, keep in mind that package names might differ between operating systems—for example, the web server package is known as "httpd" on CentOS but "apache2" on Ubuntu. In such scenarios, managing package names with variables or conditionals becomes crucial.
 
-<Callout icon="lightbulb">
-  Using the `package` module with a single package name (e.g., `httpd`) might not work across different operating systems. Consider advanced techniques such as variables and conditionals to handle such variations.
-</Callout>
+> **lightbulb** Using the `package` module with a single package name (e.g., `httpd`) might not work across different operating systems. Consider advanced techniques such as variables and conditionals to handle such variations.
 
 Below is an example playbook that demonstrates three approaches:
 
@@ -266,8 +264,6 @@ That concludes the overview of these additional Ansible modules. In upcoming lab
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ansible-advanced-course/module/c47e8f27-3b16-4603-966c-b440295e5b75/lesson/9478e060-9029-4a0a-a881-7c3d9ae2d670" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/ansible-advanced-course/module/c47e8f27-3b16-4603-966c-b440295e5b75/lesson/9478e060-9029-4a0a-a881-7c3d9ae2d670)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/ansible-advanced-course/module/c47e8f27-3b16-4603-966c-b440295e5b75/lesson/26d68ac9-5c2d-42e7-b2b7-465622ea8883" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/ansible-advanced-course/module/c47e8f27-3b16-4603-966c-b440295e5b75/lesson/26d68ac9-5c2d-42e7-b2b7-465622ea8883)

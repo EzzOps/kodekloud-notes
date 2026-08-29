@@ -6,9 +6,7 @@ This guide explains how to host a static website using Amazon S3, covering setup
 
 In this guide, you'll learn how to serve a fully static website—HTML, CSS, JavaScript, and media—directly from an Amazon S3 bucket. We’ll cover how static hosting works, pricing considerations, and steps to configure a custom domain.
 
-<Callout icon="lightbulb">
-  Static website hosting on Amazon S3 supports only static files. If your site requires server-side processing, consider integrating Amazon EC2, Amazon ECS, or AWS Lambda.
-</Callout>
+> **lightbulb** Static website hosting on Amazon S3 supports only static files. If your site requires server-side processing, consider integrating Amazon EC2, Amazon ECS, or AWS Lambda.
 
 ## Understanding Static Websites
 
@@ -23,9 +21,7 @@ When a user enters a URL, their browser sends an HTTP GET request to a web serve
 
 By uploading these files as objects in an S3 bucket and enabling static website hosting, you can serve them directly over HTTP.
 
-<Frame>
-  ![The image is an infographic about static hosting, explaining that it allows access to website files through HTTP and provides a URL via S3. It notes that it's used only for static websites and requires a specific format for domain customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869289/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/static-hosting-infographic-s3-url.jpg)
-</Frame>
+![The image is an infographic about static hosting, explaining that it allows access to website files through HTTP and provides a URL via S3. It notes that it's used only for static websites and requires a specific format for domain customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869289/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/static-hosting-infographic-s3-url.jpg)
 
 ## How Static Hosting Works
 
@@ -44,9 +40,7 @@ Static hosting on S3 involves standard storage and data transfer fees, plus a sm
 | Data Transfer (Out) | Pay per GB transferred out  |
 | HTTP GET Requests   | \$0.0004 per 1,000 requests |
 
-<Frame>
-  ![The image shows a pricing table for different types of data requests and retrievals, including S3 Standard and S3 Intelligent-Tiering, with associated costs per 1,000 requests and per GB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869291/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/pricing-table-data-requests-s3-costs.jpg)
-</Frame>
+![The image shows a pricing table for different types of data requests and retrievals, including S3 Standard and S3 Intelligent-Tiering, with associated costs per 1,000 requests and per GB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869291/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/pricing-table-data-requests-s3-costs.jpg)
 
 Factor in both storage and request fees when estimating your total hosting cost.
 
@@ -69,19 +63,13 @@ To replace the default S3 URL with your own domain, configure DNS using Amazon R
 
 In Route 53, create an Alias record (or CNAME) that maps `bestcars.com` to your S3 website endpoint.
 
-<Callout icon="triangle-alert">
-  Your S3 bucket name **must** match your custom domain (`example.com`). If they differ, DNS routing will fail and your site will be inaccessible.
-</Callout>
+> **triangle-alert** Your S3 bucket name **must** match your custom domain (`example.com`). If they differ, DNS routing will fail and your site will be inaccessible.
 
-<Frame>
-  ![The image illustrates a process involving a custom domain name, showing a user, a Route 53 icon, a URL (http://bestcars.com), and a server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869292/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/custom-domain-route53-user-server-process.jpg)
-</Frame>
+![The image illustrates a process involving a custom domain name, showing a user, a Route 53 icon, a URL (http://bestcars.com), and a server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869292/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/custom-domain-route53-user-server-process.jpg)
 
 ## Further Reading
 
 * [Amazon S3 Static Website Hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 * [Route 53 Routing to Static Website](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-static-site.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3/module/64c3572f-57b6-4263-8818-9809392a98a1/lesson/4f726d76-5917-4962-bf81-262106e3e36a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3/module/64c3572f-57b6-4263-8818-9809392a98a1/lesson/4f726d76-5917-4962-bf81-262106e3e36a)

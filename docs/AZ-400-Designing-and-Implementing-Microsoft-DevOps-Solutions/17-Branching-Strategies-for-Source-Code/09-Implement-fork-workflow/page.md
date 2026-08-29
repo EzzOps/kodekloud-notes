@@ -12,19 +12,13 @@ In this guide, you’ll learn how to safely experiment with a project by creatin
 2. Navigate to **Repos** and locate the **KodeKloud GIFs** repository.
 3. Click **Fork**, name your fork (for example, `KodeKloudGifts.LloydChristmas`), choose the branches to include, and confirm.
 
-<Frame>
-  ![The image shows an Azure DevOps repository interface for "KodeKloudGifts," displaying a list of files and a dialog box for forking the repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867357/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-kodekloudgifts-repo-interface.jpg)
-</Frame>
+![The image shows an Azure DevOps repository interface for "KodeKloudGifts," displaying a list of files and a dialog box for forking the repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867357/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-kodekloudgifts-repo-interface.jpg)
 
-<Callout icon="lightbulb">
-  Forks are isolated copies—your changes won’t affect the original repository until you open a pull request.
-</Callout>
+> **lightbulb** Forks are isolated copies—your changes won’t affect the original repository until you open a pull request.
 
 After the fork completes, the **Clone** button points to your new repository:
 
-<Frame>
-  ![The image shows an Azure DevOps repository interface with a list of files and a "Clone Repository" dialog box open, displaying options for cloning via HTTPS or SSH.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867358/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-repository-clone-dialog.jpg)
-</Frame>
+![The image shows an Azure DevOps repository interface with a list of files and a "Clone Repository" dialog box open, displaying options for cloning via HTTPS or SSH.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867358/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-repository-clone-dialog.jpg)
 
 ## 2. Cloning and Setting Up Your Fork
 
@@ -45,19 +39,15 @@ remote:   git remote add upstream https://dev.azure.com/KodeKloudDemo/KodeKloudG
 Unpacking objects: 100% (37/37), done.
 ```
 
-<Callout icon="lightbulb">
-  After cloning, run the following to set up the original repo as `upstream`:
+> **lightbulb** After cloning, run the following to set up the original repo as `upstream`:
 
   ```bash theme={null}
   git remote add upstream https://dev.azure.com/KodeKloudDemo/KodeKloudGifts/_git/KodeKloudGifts
   ```
-</Callout>
 
 Open your project in Visual Studio Code:
 
-<Frame>
-  ![The image shows the Visual Studio Code interface with a project open, displaying the Explorer panel on the left and the Welcome page with start options and walkthroughs on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867359/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/visual-studio-code-interface-explorer-welcome.jpg)
-</Frame>
+![The image shows the Visual Studio Code interface with a project open, displaying the Explorer panel on the left and the Welcome page with start options and walkthroughs on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867359/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/visual-studio-code-interface-explorer-welcome.jpg)
 
 ## 3. Modifying the Code
 
@@ -87,9 +77,7 @@ git push origin master
 
 Switch between your fork and the upstream repository in Azure DevOps to verify changes:
 
-<Frame>
-  ![The image shows an Azure DevOps repository interface with a project named "KodeKloudGifts." It displays a list of files under the "Pages" directory, including "Counter.razor," "Home.razor," and "Weather.razor."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867360/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-kodekloudgifts-repository.jpg)
-</Frame>
+![The image shows an Azure DevOps repository interface with a project named "KodeKloudGifts." It displays a list of files under the "Pages" directory, including "Counter.razor," "Home.razor," and "Weather.razor."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867360/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-kodekloudgifts-repository.jpg)
 
 Your fork’s **Home.razor** now reflects the new content, while the upstream remains unchanged.
 
@@ -101,15 +89,11 @@ When you’re ready to merge, create a pull request:
 2. Select **master** (or your feature branch) as both source and target, if applicable.
 3. Add a descriptive title and summary.
 
-<Frame>
-  ![The image shows a pull request creation page on Azure DevOps, with fields for title, description, and reviewers. The title and description are filled with "Changing front page."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867362/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-pull-request-creation.jpg)
-</Frame>
+![The image shows a pull request creation page on Azure DevOps, with fields for title, description, and reviewers. The title and description are filled with "Changing front page."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867362/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-pull-request-creation.jpg)
 
 Tag reviewers, link work items, and adjust settings:
 
-<Frame>
-  ![The image shows a pull request creation page on Azure DevOps, with fields for title, description, and reviewers. The description mentions a change to a Python app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867363/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-pull-request-python-app.jpg)
-</Frame>
+![The image shows a pull request creation page on Azure DevOps, with fields for title, description, and reviewers. The description mentions a change to a Python app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867363/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-fork-workflow/azure-devops-pull-request-python-app.jpg)
 
 Once submitted, maintainers can review and merge your contribution.
 
@@ -130,6 +114,4 @@ Once submitted, maintainers can review and merge your contribution.
 * [AZ-400 Exam Overview](https://learn.microsoft.com/certifications/exams/az-400)
 * [MariaDB vs MySQL](https://mariadb.org)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/8e033a7f-4740-4d37-9f97-54ebc9c54fd1/lesson/465b12e5-ea7a-42f7-977a-2681ac1c9d9a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-400/module/8e033a7f-4740-4d37-9f97-54ebc9c54fd1/lesson/465b12e5-ea7a-42f7-977a-2681ac1c9d9a)

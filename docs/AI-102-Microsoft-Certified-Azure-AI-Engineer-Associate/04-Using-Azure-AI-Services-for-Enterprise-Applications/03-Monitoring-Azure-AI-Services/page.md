@@ -75,9 +75,7 @@ To configure diagnostic settings:
   <img alt="A screenshot of an Azure &#x22;Diagnostic setting&#x22; configuration page showing log categories (Audit Logs, Request and Response Logs, Azure OpenAI Request Usage, Trace Logs) and metric options on the left, with destination checkboxes on the right (Send to Log Analytics workspace, Archive to a storage account, Stream to an event hub, Send to partner solution). The top toolbar includes Save, Discard, Delete and Feedback actions." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Diagnostic Settings do not automatically send logs anywhere — you must create a diagnostic setting and choose a destination (Log Analytics, Storage, Event Hub, etc.) to collect logs for analysis and retention.
-</Callout>
+> **lightbulb** Diagnostic Settings do not automatically send logs anywhere — you must create a diagnostic setting and choose a destination (Log Analytics, Storage, Event Hub, etc.) to collect logs for analysis and retention.
 
 Logs stored in Log Analytics are queryable using Kusto Query Language (KQL). Use KQL to:
 
@@ -91,9 +89,7 @@ Useful references:
 * [Kusto Query Language (KQL)](https://learn.microsoft.com/azure/data-explorer/kusto/query/)
 * [Azure Monitor Logs overview](https://learn.microsoft.com/azure/azure-monitor/logs/logs-overview)
 
-<Callout icon="warning">
-  Carefully consider data sensitivity before exporting request/response logs. Avoid sending Personally Identifiable Information (PII) or secrets to destinations unless you have proper data governance and encryption in place.
-</Callout>
+> **warning** Carefully consider data sensitivity before exporting request/response logs. Avoid sending Personally Identifiable Information (PII) or secrets to destinations unless you have proper data governance and encryption in place.
 
 ## Alerts: detect and respond
 
@@ -147,6 +143,4 @@ Monitoring is the foundation for keeping Azure AI services reliable, performant,
 * [Kusto Query Language (KQL) quickstart](https://learn.microsoft.com/azure/data-explorer/kusto/query/)
 * [Azure Monitor alerts overview](https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-102-microsoft-certified-azure-ai-engineer-associate/module/981568f6-848e-45c2-ae00-083b3975ecb5/lesson/5c4e445d-416b-4747-88c3-267e4350f2bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-102-microsoft-certified-azure-ai-engineer-associate/module/981568f6-848e-45c2-ae00-083b3975ecb5/lesson/5c4e445d-416b-4747-88c3-267e4350f2bc)

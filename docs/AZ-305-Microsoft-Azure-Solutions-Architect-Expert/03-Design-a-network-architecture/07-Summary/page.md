@@ -36,9 +36,7 @@ The architecture requires a central Virtual Network (VNet) that is segmented int
    * Visualize the central VNet as a hub containing a dedicated subnet for the Azure Firewall.
    * All inbound and outbound traffic—from both the VPN gateway and ExpressRoute—is routed through this firewall for inspection.
 
-<Callout icon="lightbulb">
-  Each packet is inspected to ensure both security and compliance standards are maintained before it reaches other network segments.
-</Callout>
+> **lightbulb** Each packet is inspected to ensure both security and compliance standards are maintained before it reaches other network segments.
 
 2. **Bastion for RDP/SSH:**
    * Include a dedicated Bastion subnet within the central hub.
@@ -96,6 +94,4 @@ Future articles will delve into designing compute solutions in Azure and strateg
 
 Thank you for reading, and best of luck with your Azure architecture design!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-305-microsoft-azure-solutions-architect-expert/module/61e4ebd3-ea7b-4ade-94f7-e203f93b60c9/lesson/1193d894-4a3b-4117-953a-60f6e3ade47d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-305-microsoft-azure-solutions-architect-expert/module/61e4ebd3-ea7b-4ade-94f7-e203f93b60c9/lesson/1193d894-4a3b-4117-953a-60f6e3ade47d)

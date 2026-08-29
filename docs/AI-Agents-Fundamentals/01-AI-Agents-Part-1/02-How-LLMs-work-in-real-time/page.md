@@ -10,9 +10,7 @@ When you ask an AI a question, the reply usually comes from a family of models c
 
 Popular LLMs such as [OpenAI’s GPT series](https://openai.com/gpt-4), [Anthropic’s Claude](https://www.anthropic.com/claude), and [Google’s Gemini](https://gemini.google/) are built on the transformer architecture and trained on extremely large corpora. Training datasets can reach tens of trillions of tokens drawn from thousands of domains — healthcare, law, code, science, and more.
 
-<Callout icon="warning">
-  Pretraining datasets do not include your private company files (for example, TechCorp’s 500 GB of internal documents) unless they were explicitly added to the training data. To get an LLM to answer questions about private data, you must provide that data to the model at query time.
-</Callout>
+> **warning** Pretraining datasets do not include your private company files (for example, TechCorp’s 500 GB of internal documents) unless they were explicitly added to the training data. To get an LLM to answer questions about private data, you must provide that data to the model at query time.
 
 One common way to supply private data to an LLM is to include relevant material in the conversation’s context — a form of short-term memory the model uses while the conversation is active. This short-term memory is called the context window.
 
@@ -74,9 +72,7 @@ Strategies to provide relevant private data at query time
 | RAG                        | QA over large corpora where accuracy matters        | Combine vector search with a model to answer customer support queries  |
 | Summarization              | Reduce token usage when exact details aren't needed | Summarize monthly reports, then retrieve specific sections if required |
 
-<Callout icon="lightbulb">
-  When designing systems that use private documents with LLMs, combine embeddings-based retrieval with concise prompt engineering (and fine-grained chunking) to ensure the model receives only the most relevant context within its token budget.
-</Callout>
+> **lightbulb** When designing systems that use private documents with LLMs, combine embeddings-based retrieval with concise prompt engineering (and fine-grained chunking) to ensure the model receives only the most relevant context within its token budget.
 
 Further reading and references
 
@@ -86,6 +82,4 @@ Further reading and references
 * Anthropic Claude: [https://www.anthropic.com/claude](https://www.anthropic.com/claude)
 * Google Gemini: [https://gemini.google/](https://gemini.google/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-agents-fundamentals/module/dd5e8998-51f1-4352-82a5-3414cdc3299c/lesson/a4bbb336-3a3a-40de-9db7-be1887dec107" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-agents-fundamentals/module/dd5e8998-51f1-4352-82a5-3414cdc3299c/lesson/a4bbb336-3a3a-40de-9db7-be1887dec107)

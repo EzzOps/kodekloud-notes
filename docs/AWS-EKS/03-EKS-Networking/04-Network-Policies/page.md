@@ -103,11 +103,9 @@ kubectl get networkpolicies.networking.k8s.io
 
 By following this tutorial, you’ve implemented a default-deny network posture and selectively opened up pod-to-pod and DNS traffic between `app1` and `app2`. This approach helps you secure microservices communication with fine-grained policies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/9736608e-5c96-49ea-b95e-89d1d5263771" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/9736608e-5c96-49ea-b95e-89d1d5263771)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/25419f99-dffc-4624-93e8-253cf9703618" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/25419f99-dffc-4624-93e8-253cf9703618)
 
 
 # Network Policies
@@ -118,15 +116,11 @@ This article discusses Kubernetes Network Policies using AWS VPC CNI and eBPF fo
 
 Kubernetes Network Policies enable fine-grained control over Pod-to-Pod traffic (ingress and egress). While some CNI plugins like Calico pioneered policy enforcement, AWS VPC CNI now supports native NetworkPolicies using eBPF in the node kernel—bringing security rules closer to your application manifests.
 
-<Frame>
-  ![The image illustrates network policy concepts, featuring icons for Calico, CNI plugins, and network policies in various colors and shapes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862797/notes-assets/images/AWS-EKS-Network-Policies/network-policy-calico-cni-icons.jpg)
-</Frame>
+![The image illustrates network policy concepts, featuring icons for Calico, CNI plugins, and network policies in various colors and shapes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862797/notes-assets/images/AWS-EKS-Network-Policies/network-policy-calico-cni-icons.jpg)
 
 By embedding network rules alongside your Deployment YAML, you avoid external firewall tickets or manual IP table edits. As your application stack grows—databases, caches, external services—the same declarative NetworkPolicy objects evolve with it.
 
-<Frame>
-  ![The image illustrates a network traffic blocking concept, showing a Virtual Private Cloud (VPC) with a Container Network Interface (VPC-CNI) connected to a Network Policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862798/notes-assets/images/AWS-EKS-Network-Policies/vpc-cni-network-traffic-blocking.jpg)
-</Frame>
+![The image illustrates a network traffic blocking concept, showing a Virtual Private Cloud (VPC) with a Container Network Interface (VPC-CNI) connected to a Network Policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862798/notes-assets/images/AWS-EKS-Network-Policies/vpc-cni-network-traffic-blocking.jpg)
 
 ## CNI Plugins & Policy Enforcement
 
@@ -136,19 +130,13 @@ By embedding network rules alongside your Deployment YAML, you avoid external fi
 | AWS VPC CNI | Yes (with flag)              | eBPF in Linux kernel  |
 | Flannel     | Requires extension           | iptables              |
 
-<Callout icon="lightbulb">
-  AWS VPC CNI’s eBPF agent installs tiny packet-filter programs on each node. It intercepts traffic before it reaches the container network namespace.
-</Callout>
+> **lightbulb** AWS VPC CNI’s eBPF agent installs tiny packet-filter programs on each node. It intercepts traffic before it reaches the container network namespace.
 
-<Frame>
-  ![The image shows logos for three network traffic blocking tools: Flannel, Calico, and VPC-CNI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862798/notes-assets/images/AWS-EKS-Network-Policies/network-traffic-blocking-tools-logos.jpg)
-</Frame>
+![The image shows logos for three network traffic blocking tools: Flannel, Calico, and VPC-CNI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862798/notes-assets/images/AWS-EKS-Network-Policies/network-traffic-blocking-tools-logos.jpg)
 
 Traffic hits eBPF hooks that enforce ingress and egress rules defined by Kubernetes NetworkPolicy objects:
 
-<Frame>
-  ![The image illustrates network traffic blocking, showing a pod with ingress and egress controlled by a network policy, connected to a node and a Container Network Interface (CNI).](../../../../images/kodekloud.com/kk-media/image/upload/v1752862800/notes-assets/images/AWS-EKS-Network-Policies/network-traffic-blocking-pod-diagram.jpg)
-</Frame>
+![The image illustrates network traffic blocking, showing a pod with ingress and egress controlled by a network policy, connected to a node and a Container Network Interface (CNI).](../../../../images/kodekloud.com/kk-media/image/upload/v1752862800/notes-assets/images/AWS-EKS-Network-Policies/network-traffic-blocking-pod-diagram.jpg)
 
 ## Demo: Enabling and Testing Network Policies
 
@@ -204,9 +192,7 @@ This walkthrough uses an EKS cluster with AWS VPC CNI and `--enable-network-poli
    # curl: (6) Could not resolve host: kubernetes.io
    ```
 
-<Callout icon="triangle-alert">
-  A default-deny policy stops **all** egress. Verify you’ve whitelisted required endpoints before applying to production Pods.
-</Callout>
+> **triangle-alert** A default-deny policy stops **all** egress. Verify you’ve whitelisted required endpoints before applying to production Pods.
 
 You can then craft allow-rules to permit only specific ports, CIDR ranges, or peer Pods.
 
@@ -229,9 +215,7 @@ Typical entries include:
 
 These eBPF probes enforce your NetworkPolicy at the kernel level—packets are dropped before reaching the container.
 
-<Frame>
-  ![The image is a summary slide with five key points about a Kubernetes feature related to VPC-CNI, eBPF, network proximity, application-native firewall, and team communication. The design includes colorful numbered arrows and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862801/notes-assets/images/AWS-EKS-Network-Policies/kubernetes-vpc-cni-ebpf-summary-slide.jpg)
-</Frame>
+![The image is a summary slide with five key points about a Kubernetes feature related to VPC-CNI, eBPF, network proximity, application-native firewall, and team communication. The design includes colorful numbered arrows and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862801/notes-assets/images/AWS-EKS-Network-Policies/kubernetes-vpc-cni-ebpf-summary-slide.jpg)
 
 ## Learn More
 
@@ -241,6 +225,4 @@ These eBPF probes enforce your NetworkPolicy at the kernel level—packets are d
 
 By combining Kubernetes Network Policies with AWS VPC CNI’s eBPF enforcement, you achieve an application-centric firewall that lives alongside your manifests—no extra tickets, no manual IP tables, just declarative security.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/d532d4d0-52db-4bf8-a08d-6ebff5954e39" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/d532d4d0-52db-4bf8-a08d-6ebff5954e39)

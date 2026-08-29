@@ -18,9 +18,7 @@ Within Microsoft 365, Copilot is deeply integrated with popular applications suc
 * **PowerPoint**: It suggests layout designs and generates content to create dynamic presentations.
 * **Outlook and Teams**: Copilot streamlines communication, enabling efficient email management and collaborative interactions.
 
-<Callout icon="lightbulb">
-  Accessing Copilot features within Microsoft 365 requires a subscription, unlike the free AI capabilities available on the web.
-</Callout>
+> **lightbulb** Accessing Copilot features within Microsoft 365 requires a subscription, unlike the free AI capabilities available on the web.
 
 ***
 
@@ -28,15 +26,11 @@ Within Microsoft 365, Copilot is deeply integrated with popular applications suc
 
 Microsoft Copilot is an asset for business processes by optimizing operations and enhancing customer interactions. In [Microsoft Dynamics 365](https://dynamics.microsoft.com), Copilot improves customer relationship management by retrieving relevant customer data, qualifying leads, and preparing proposals—allowing teams to focus on delivering superior service.
 
-<Frame>
-  ![The image shows a screenshot of Microsoft Dynamics 365, highlighting AI features for managing customer information and leads. It includes sections for daily tasks, business processes, and software development, with a focus on improving sales and customer service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857016/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/microsoft-dynamics-365-ai-features.jpg)
-</Frame>
+![The image shows a screenshot of Microsoft Dynamics 365, highlighting AI features for managing customer information and leads. It includes sections for daily tasks, business processes, and software development, with a focus on improving sales and customer service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857016/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/microsoft-dynamics-365-ai-features.jpg)
 
 On platforms like [Power Platform](https://powerplatform.microsoft.com) and [Microsoft Fabric](https://fabric.microsoft.com), Copilot simplifies application development and data analysis. Within [Power BI](https://powerbi.microsoft.com), it can generate code to transform raw data into actionable insights, supporting real-time decision making.
 
-<Frame>
-  ![The image shows a comparison of two software interfaces related to AI in Power Platform and Microsoft Fabric, highlighting features for developing apps and using Power BI to write code. It includes sections labeled "Daily Tasks," "Business Processes," and "Infra, Security, and Software Development."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857017/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/ai-power-platform-microsoft-fabric-comparison.jpg)
-</Frame>
+![The image shows a comparison of two software interfaces related to AI in Power Platform and Microsoft Fabric, highlighting features for developing apps and using Power BI to write code. It includes sections labeled "Daily Tasks," "Business Processes," and "Infra, Security, and Software Development."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857017/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/ai-power-platform-microsoft-fabric-comparison.jpg)
 
 ***
 
@@ -94,6 +88,4 @@ For additional insights, check out these resources:
 * [Microsoft Azure](https://azure.microsoft.com)
 * [GitHub Copilot](https://github.com/features/copilot)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-900-microsoft-azure-ai-fundamental/module/d9fc37be-7893-436b-9879-0ff32041690e/lesson/cf2b78c7-7f2d-48ff-9ef6-d87756c8c2a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-900-microsoft-azure-ai-fundamental/module/d9fc37be-7893-436b-9879-0ff32041690e/lesson/cf2b78c7-7f2d-48ff-9ef6-d87756c8c2a5)

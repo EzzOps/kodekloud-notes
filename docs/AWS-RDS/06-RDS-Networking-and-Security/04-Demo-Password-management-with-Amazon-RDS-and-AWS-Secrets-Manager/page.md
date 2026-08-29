@@ -46,17 +46,13 @@ if __name__ == "__main__":
 
 When rotation is enabled, Secrets Manager updates the stored password and (if rotation is configured correctly) updates RDS with the new password. Your application must use the current credentials from Secrets Manager; otherwise, a rotated password will break connections.
 
-<Callout icon="lightbulb">
-  Make sure your application either fetches the secret on each connection, refreshes at a safe cadence, or uses an in-process Secrets Manager cache/library that automatically refreshes. Also ensure IAM policies grant only the minimum required permissions to retrieve the secret and that the application has network access to the RDS endpoint (VPC, subnets, and security groups configured correctly).
-</Callout>
+> **lightbulb** Make sure your application either fetches the secret on each connection, refreshes at a safe cadence, or uses an in-process Secrets Manager cache/library that automatically refreshes. Also ensure IAM policies grant only the minimum required permissions to retrieve the secret and that the application has network access to the RDS endpoint (VPC, subnets, and security groups configured correctly).
 
 ## What happens to the secret when you delete the RDS instance?
 
 By default, RDS can delete the Secrets Manager secret it created as part of the DB deletion process. This behavior depends on the deletion options you choose and the IAM permissions in your account, so confirm the settings when deleting a DB.
 
-<Callout icon="warning">
-  If you need to retain the secret after deleting the DB, explicitly update the secret's configuration or back it up before deleting the RDS instance — otherwise you may permanently lose the credentials needed for recovery.
-</Callout>
+> **warning** If you need to retain the secret after deleting the DB, explicitly update the secret's configuration or back it up before deleting the RDS instance — otherwise you may permanently lose the credentials needed for recovery.
 
 ## Quick checklist
 
@@ -84,9 +80,7 @@ By default, RDS can delete the Secrets Manager secret it created as part of the 
 
 I hope this lesson clarified how to integrate Amazon RDS with AWS Secrets Manager for automated credential management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/b34cdfab-5fb2-49f7-981b-17b786f03c21" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/b34cdfab-5fb2-49f7-981b-17b786f03c21)
 
 
 # Demo Password management with Amazon RDS and AWS Secrets Manager
@@ -119,9 +113,7 @@ Create the RDS instance
 
 Wait for the database to finish provisioning (typically 10–15 minutes). When creation completes, the RDS console displays a banner with connection details including the master username and the auto-generated master password. Click "View connection details" and copy the master password to a secure temporary location so you can store it in Secrets Manager.
 
-<Callout icon="warning">
-  The auto-generated master password is shown only once in the RDS creation banner. If you close the banner without saving it elsewhere, the password cannot be retrieved — you would need to reset the master password.
-</Callout>
+> **warning** The auto-generated master password is shown only once in the RDS creation banner. If you close the banner without saving it elsewhere, the password cannot be retrieved — you would need to reset the master password.
 
 <Frame>
   <img alt="A screenshot of the AWS RDS web console showing a pop-up titled &#x22;Connection details to your database my-application.&#x22; It displays the master username (admin), a generated master password, and the database endpoint with copy/close options." />
@@ -237,9 +229,7 @@ Integration and operational notes
 | Automatic rotation | Enable Secrets Manager rotation for supported engines to rotate and update DB credentials automatically               | [https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html)                                                                                                                                                           |
 | Secret format      | Store RDS secrets as JSON (username, password, host, port) to simplify parsing in apps                                | Console samples and SDK examples                                                                                                                                                                                                                                                                                                 |
 
-<Callout icon="lightbulb">
-  AWS provides sample snippets for many languages in the [Secrets Manager console](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Use those samples as a starting point and adapt them to your application's error handling, caching, and refresh strategy.
-</Callout>
+> **lightbulb** AWS provides sample snippets for many languages in the [Secrets Manager console](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Use those samples as a starting point and adapt them to your application's error handling, caching, and refresh strategy.
 
 Additional resources
 
@@ -258,6 +248,4 @@ Summary
 
 That is it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/1ac41a31-a067-48b9-bae5-a9d9bbbd17df" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-rds/module/12fd8771-ab60-4e87-8f8b-67fe9507bb76/lesson/1ac41a31-a067-48b9-bae5-a9d9bbbd17df)

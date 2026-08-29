@@ -67,9 +67,7 @@ Best practices and tips:
 | Parameters | User-supplied inputs or constrained values                     | Bucket names, allowed developer names         |
 | Conditions | Deploy resources conditionally based on parameters or mappings | Create resources only in certain environments |
 
-<Callout icon="lightbulb">
-  If you run cfn-lint you may see a message like "Mapping 'DevMap' is defined but not used." This is expected until you reference the mapping with !FindInMap in your template. Running a dry validation (aws cloudformation validate-template) or using a lint rule that checks references can help confirm correct usage.
-</Callout>
+> **lightbulb** If you run cfn-lint you may see a message like "Mapping 'DevMap' is defined but not used." This is expected until you reference the mapping with !FindInMap in your template. Running a dry validation (aws cloudformation validate-template) or using a lint rule that checks references can help confirm correct usage.
 
 References and further reading:
 
@@ -77,6 +75,4 @@ References and further reading:
 * [CloudFormation template anatomy and best practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
 * [cfn-lint GitHub repository](https://github.com/aws-cloudformation/cfn-lint)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/4e0caf18-41ee-4499-8c83-b0dc280c537a/lesson/6064fecc-859b-4c11-99f3-15f7d54fea7d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/4e0caf18-41ee-4499-8c83-b0dc280c537a/lesson/6064fecc-859b-4c11-99f3-15f7d54fea7d)

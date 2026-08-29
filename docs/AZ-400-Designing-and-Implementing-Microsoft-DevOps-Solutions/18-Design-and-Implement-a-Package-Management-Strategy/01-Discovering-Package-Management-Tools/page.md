@@ -15,9 +15,7 @@ In this lesson, we explore package management in **Azure DevOps** and **GitHub**
 * NuGet
 * npm
 
-<Frame>
-  ![The image is an introduction slide for "Package Management in Azure DevOps and GitHub," highlighting three sections: definition of package management, its importance in software development and CI/CD, and an overview of tools like Azure Artifacts and GitHub Packages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867904/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Package-Management-Tools/package-management-azure-devops-github.jpg)
-</Frame>
+![The image is an introduction slide for "Package Management in Azure DevOps and GitHub," highlighting three sections: definition of package management, its importance in software development and CI/CD, and an overview of tools like Azure Artifacts and GitHub Packages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867904/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Package-Management-Tools/package-management-azure-devops-github.jpg)
 
 ## Key Package Management Tools at a Glance
 
@@ -28,9 +26,7 @@ In this lesson, we explore package management in **Azure DevOps** and **GitHub**
 | NuGet           | .NET         | .NET libraries and tools                   | Visual Studio & `dotnet` CLI integration        |
 | npm             | Node.js      | JavaScript modules                         | Vast registry, script support, dependency audit |
 
-<Callout icon="lightbulb">
-  Consistent versioning, faster builds, and secure dependency control are essential for scalable CI/CD. A unified registry reduces “works on my machine” issues and simplifies audits.
-</Callout>
+> **lightbulb** Consistent versioning, faster builds, and secure dependency control are essential for scalable CI/CD. A unified registry reduces “works on my machine” issues and simplifies audits.
 
 ***
 

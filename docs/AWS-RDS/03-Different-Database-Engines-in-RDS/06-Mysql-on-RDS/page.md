@@ -20,9 +20,7 @@ Why choose Amazon RDS for MySQL
 * Rapid provisioning: Fast instance launches and scaling options (vertical scaling and read replicas).
 * Integration with AWS services: IAM, CloudWatch monitoring, VPC networking, and more.
 
-<Callout icon="lightbulb">
-  Choose MySQL on RDS when your application needs a reliable, easy-to-manage relational database with broad tooling support and you do not require specialized features available in other engines (for example, PostgreSQL extensions or advanced JSON/Geospatial capabilities).
-</Callout>
+> **lightbulb** Choose MySQL on RDS when your application needs a reliable, easy-to-manage relational database with broad tooling support and you do not require specialized features available in other engines (for example, PostgreSQL extensions or advanced JSON/Geospatial capabilities).
 
 When to consider MySQL on RDS
 
@@ -67,6 +65,4 @@ Links and references
 
 In this lesson/article we'll continue by comparing MySQL on RDS with other RDS engines and look at practical guidance for selecting the right database for your workloads.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/0525aa45-ab52-4496-8a27-0ab6ec827d6f/lesson/62afb7ec-3d20-4ccc-a1de-584e4cc73534" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-rds/module/0525aa45-ab52-4496-8a27-0ab6ec827d6f/lesson/62afb7ec-3d20-4ccc-a1de-584e4cc73534)

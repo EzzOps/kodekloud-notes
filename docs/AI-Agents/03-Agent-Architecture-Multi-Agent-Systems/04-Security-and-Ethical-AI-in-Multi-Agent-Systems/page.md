@@ -35,9 +35,7 @@ Designing an effective MAS requires balancing autonomy (agent independence) agai
   <img alt="The image outlines the challenges of multi-agent systems, highlighting coordination overhead, debugging difficulty, conflict resolution, and latency and cost. Each challenge is represented with an icon and a brief description." />
 </Frame>
 
-<Callout icon="warning">
-  Distributed coordination increases operational complexity: invest early in logging, tracing, and fault-injection tests to avoid brittle deployments.
-</Callout>
+> **warning** Distributed coordination increases operational complexity: invest early in logging, tracing, and fault-injection tests to avoid brittle deployments.
 
 ## Interaction patterns in MAS
 
@@ -119,9 +117,7 @@ Choose strategies aligned with fault tolerance, latency, and consistency require
 * Start with simple coordination patterns and iterate toward more complexity.
 * Automate tests with simulation environments and scenario-based testing.
 
-<Callout icon="lightbulb">
-  When designing MAS, prioritize observability and contract-driven interfaces. These reduce debugging complexity and make it easier to evolve the system over time.
-</Callout>
+> **lightbulb** When designing MAS, prioritize observability and contract-driven interfaces. These reduce debugging complexity and make it easier to evolve the system over time.
 
 ## Summary
 
@@ -135,9 +131,7 @@ Multi-agent architectures enable modular, scalable, and resilient systems by spl
 * Ray: [https://www.ray.io/](https://www.ray.io/)
 * JADE: [https://jade.tilab.com/](https://jade.tilab.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-agents/module/2e110716-1967-4e6f-a995-9138c54fb38c/lesson/f5f52dc7-bed6-4f81-b70d-93aeb7a0ef40" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-agents/module/2e110716-1967-4e6f-a995-9138c54fb38c/lesson/f5f52dc7-bed6-4f81-b70d-93aeb7a0ef40)
 
 
 # Security and Ethical AI in Multi Agent Systems

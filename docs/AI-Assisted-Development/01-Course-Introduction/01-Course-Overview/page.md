@@ -40,6 +40,4 @@ At KodeKloud, our community drives the learning experience. Join our vibrant for
 
 The future of development is here, powered by AI. Are you ready to revolutionize your coding process? Enroll today.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-assisted-development/module/bd3f2371-5582-4ed0-8116-c74ae7e5cbff/lesson/cbc9ac4b-fb86-4fa2-87c2-095377133888" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-assisted-development/module/bd3f2371-5582-4ed0-8116-c74ae7e5cbff/lesson/cbc9ac4b-fb86-4fa2-87c2-095377133888)

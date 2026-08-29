@@ -8,13 +8,9 @@ This guide demonstrates the core text-analysis capabilities available in Azure A
 
 Use these features to build multilingual, privacy-aware, and searchable applications that extract meaningful information from unstructured text.
 
-<Callout icon="warning">
-  Never hard-code secrets (endpoint, keys) in production code. Store credentials in environment variables or a secure secrets store and load them at runtime.
-</Callout>
+> **warning** Never hard-code secrets (endpoint, keys) in production code. Store credentials in environment variables or a secure secrets store and load them at runtime.
 
-<Callout icon="lightbulb">
-  For local testing, put your Azure Language endpoint and key in environment variables (or a .env file) and load them at runtime. The samples below assume you already have those values available.
-</Callout>
+> **lightbulb** For local testing, put your Azure Language endpoint and key in environment variables (or a .env file) and load them at runtime. The samples below assume you already have those values available.
 
 ***
 

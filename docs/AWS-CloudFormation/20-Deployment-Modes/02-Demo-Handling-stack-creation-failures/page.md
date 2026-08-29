@@ -59,13 +59,9 @@ Because the stack is in ROLLBACK\_COMPLETE you cannot update it — CloudFormati
 | Disable rollback at create time    | Debugging only   | Preserve created resources to inspect why the failure happened. Must clean up resources manually afterwards.                                  |
 | Use unique names / generated names | Prevent failures | Avoid fixed global names for S3 buckets — either omit `BucketName` so CloudFormation generates one, or supply a name that is globally unique. |
 
-<Callout icon="lightbulb">
-  S3 bucket names are globally unique across all AWS accounts and regions. If you specify a bucket name that already exists, CloudFormation will fail with "BucketAlreadyExists" or "BucketAlreadyOwnedByYou". Best practice: omit the `BucketName` property to let CloudFormation generate a unique name, or use a sufficiently unique naming scheme.
-</Callout>
+> **lightbulb** S3 bucket names are globally unique across all AWS accounts and regions. If you specify a bucket name that already exists, CloudFormation will fail with "BucketAlreadyExists" or "BucketAlreadyOwnedByYou". Best practice: omit the `BucketName` property to let CloudFormation generate a unique name, or use a sufficiently unique naming scheme.
 
-<Callout icon="warning">
-  If you disable rollback to inspect failed resources, remember to clean them up manually afterwards. Partially-created resources can incur charges or block future deploys.
-</Callout>
+> **warning** If you disable rollback to inspect failed resources, remember to clean them up manually afterwards. Partially-created resources can incur charges or block future deploys.
 
 If you want to preserve resources for debugging, disable rollback when creating the stack. In the console, expand Rollback configuration while creating the stack and uncheck the option to enable rollback. From the AWS CLI you can do this:
 
@@ -91,6 +87,4 @@ Useful references:
 
 That covers the standard workflow for handling CloudFormation stack creation failures: diagnose via Events, choose between delete-and-retry or disable-rollback for debugging, and always clean up any leftover resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/68ab5c12-a35c-46b7-aef2-2e274c10989c/lesson/5115e7f5-24df-49b7-b1a2-e47444e8533c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/68ab5c12-a35c-46b7-aef2-2e274c10989c/lesson/5115e7f5-24df-49b7-b1a2-e47444e8533c)

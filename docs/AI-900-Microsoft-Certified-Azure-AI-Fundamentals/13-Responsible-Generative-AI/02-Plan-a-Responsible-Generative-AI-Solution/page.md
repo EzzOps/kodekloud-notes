@@ -17,9 +17,7 @@ To build AI systems that consistently meet ethical standards, developers must fo
 | Mitigate | Implement safeguards to prevent harmful responses | Apply language filters and enforce ethical guidelines  |
 | Operate  | Ensure continuous compliance and improvement      | Regular updates and monitoring to maintain performance |
 
-<Callout icon="lightbulb">
-  Early identification and continuous evaluation are critical in minimizing risks associated with AI systems. Implementing robust safeguards not only enhances user trust but also ensures that the solution remains aligned with ethical standards.
-</Callout>
+> **lightbulb** Early identification and continuous evaluation are critical in minimizing risks associated with AI systems. Implementing robust safeguards not only enhances user trust but also ensures that the solution remains aligned with ethical standards.
 
 ## Stage 1: Identify Potential Harms
 
@@ -42,15 +40,11 @@ The goal is to establish a system that consistently delivers respectful, accurat
 
 The final stage focuses on the continuous operation of the AI system. Consistent monitoring and regular updates are crucial to ensure that the chatbot maintains ethical standards and delivers smooth performance over time. The diagram below illustrates the operational workflow for an AI-powered customer service chatbot:
 
-<Frame>
-  ![The image is a flowchart for implementing an AI-powered customer service chatbot, outlining steps: Identify, Measure, Mitigate, and Operate, with tasks like evaluating interactions and implementing filters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857054/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Plan-a-Responsible-Generative-AI-Solution/ai-customer-service-chatbot-flowchart.jpg)
-</Frame>
+![The image is a flowchart for implementing an AI-powered customer service chatbot, outlining steps: Identify, Measure, Mitigate, and Operate, with tasks like evaluating interactions and implementing filters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857054/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Plan-a-Responsible-Generative-AI-Solution/ai-customer-service-chatbot-flowchart.jpg)
 
 Regular updates guarantee that as AI technology and user expectations evolve, the chatbot remains effective, secure, and trustworthy.
 
-<Callout icon="lightbulb">
-  By rigorously following the stages of Identify, Measure, Mitigate, and Operate, developers can create AI systems that not only meet operational demands but also uphold high ethical standards. This approach lays a solid foundation for responsible AI development.
-</Callout>
+> **lightbulb** By rigorously following the stages of Identify, Measure, Mitigate, and Operate, developers can create AI systems that not only meet operational demands but also uphold high ethical standards. This approach lays a solid foundation for responsible AI development.
 
 ***
 
@@ -63,6 +57,4 @@ For more resources, see:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ai-900-microsoft-azure-ai-fundamental/module/8c9684cd-9c7a-41c3-9885-f6e16072ae9d/lesson/d327ecb6-7b1b-4507-8d44-d15fad101e81" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ai-900-microsoft-azure-ai-fundamental/module/8c9684cd-9c7a-41c3-9885-f6e16072ae9d/lesson/d327ecb6-7b1b-4507-8d44-d15fad101e81)

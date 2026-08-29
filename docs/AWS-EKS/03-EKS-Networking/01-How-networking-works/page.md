@@ -6,9 +6,7 @@ This guide explains how the AWS VPC CNI plugin assigns IPs to EKS cluster nodes 
 
 In this guide, we’ll walk through how the AWS VPC CNI plugin assigns IPs to your EKS cluster’s nodes and pods. Each node and pod runs on Elastic Network Interfaces (ENIs) within the VPC subnets in their Availability Zone. Understanding this CNI integration helps you optimize pod density, avoid IP exhaustion, and fine-tune scaling parameters.
 
-<Frame>
-  ![The image is a diagram illustrating how a Container Network Interface (CNI) works within a Virtual Private Cloud (VPC), showing a Kubernetes cluster with nodes connected to a subnet via Elastic Network Interfaces (ENIs) in an availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862792/notes-assets/images/AWS-EKS-How-networking-works/cni-vpc-kubernetes-diagram-eni.jpg)
-</Frame>
+![The image is a diagram illustrating how a Container Network Interface (CNI) works within a Virtual Private Cloud (VPC), showing a Kubernetes cluster with nodes connected to a subnet via Elastic Network Interfaces (ENIs) in an availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862792/notes-assets/images/AWS-EKS-How-networking-works/cni-vpc-kubernetes-diagram-eni.jpg)
 
 ## 1. Confirm Your EKS Cluster
 
@@ -38,9 +36,7 @@ eksdemo get subnets
 
 A `/16` VPC block yields \~65,000 IPv4 addresses—enough for control plane, nodes, pods, and endpoints.
 
-<Callout icon="triangle-alert">
-  Running multiple clusters in a single VPC can lead to IP exhaustion. Always project your pod and node scale before choosing CIDR sizes.
-</Callout>
+> **triangle-alert** Running multiple clusters in a single VPC can lead to IP exhaustion. Always project your pod and node scale before choosing CIDR sizes.
 
 ## 3. List ENIs in the VPC
 
@@ -130,9 +126,7 @@ containers:
         mountPath: /sys/fs/bpf
 ```
 
-<Callout icon="lightbulb">
-  Adjust environment variables like `WARM_ENI_TARGET` and `WARM_PREFIX_TARGET` to control how many spare IPs the plugin keeps ready.
-</Callout>
+> **lightbulb** Adjust environment variables like `WARM_ENI_TARGET` and `WARM_PREFIX_TARGET` to control how many spare IPs the plugin keeps ready.
 
 ## 7. View Init Container Logs
 
@@ -219,6 +213,4 @@ CNI protocol versions supported: 0.1.0, 0.2.0, 0.3.0, 0.3.1, 0.4.0, 1.0.0
 * [Kubernetes Networking Concepts](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 * [EKS Best Practices Guide](https://aws.github.io/aws-eks-best-practices/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/cabeb489-5520-4d29-9da2-2d118b49f36e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/aws-eks/module/fdf5f38f-ffcc-4b70-bde9-751c06d39ac1/lesson/cabeb489-5520-4d29-9da2-2d118b49f36e)

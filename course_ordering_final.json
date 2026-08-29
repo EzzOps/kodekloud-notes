@@ -444,7 +444,6 @@
     ],
     "CDK-for-Terraform-with-TypeScript": [
       "Course-Introduction",
-      "Introduction",
       "Introduction-to-TypeScript",
       "Introduction-to-CDKTF",
       "AWS-With-CDKTF",
@@ -452,7 +451,6 @@
     ],
     "Certified-Jenkins-Engineer": [
       "Introduction-and-Basics",
-      "Introduction",
       "Jenkins-Setup-and-Interface",
       "Extending-Jenkins-and-Administration",
       "Jenkins-Pipelines",
@@ -489,7 +487,6 @@
     ],
     "Certified-Kubernetes-Application-Developer-CKAD": [
       "Core-Concepts",
-      "Introduction",
       "Configuration",
       "Multi-Container-Pods",
       "Observability",
@@ -534,7 +531,6 @@
     ],
     "Cline": [
       "Introduction-to-Cline",
-      "Introduction",
       "Core-Workflows-Prompt-Engineering",
       "Resources-Next-Steps"
     ],
@@ -547,7 +543,6 @@
     ],
     "Cloud-Native-Buildpacks": [
       "Buildpacks-Basics",
-      "Introduction",
       "Creating-Buildpacks",
       "Creating-Builders",
       "Course-Introduction"
@@ -569,12 +564,10 @@
       "Motherboard"
     ],
     "Crash-Course-AWS-Basics": [
-      "AWS-Services",
-      "Introduction"
+      "AWS-Services"
     ],
     "Cursor-AI": [
       "Introduction-to-Cursor",
-      "Introduction",
       "Mastering-Autocompletion",
       "Interacting-with-your-Codebase",
       "Inline-Editing-and-Debugging",
@@ -632,7 +625,6 @@
     ],
     "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep": [
       "Docker",
-      "Introduction",
       "Kubernetes",
       "CICD-DevOps",
       "Security",
@@ -752,7 +744,6 @@
     ],
     "Fundamentals-of-MLOps": [
       "Introduction-to-MLOps",
-      "Introduction",
       "Data-Collection-and-Preparation",
       "Model-Development-and-Training",
       "Model-Deployment-and-Serving",
@@ -770,7 +761,6 @@
     ],
     "Fundamentals-of-SRE": [
       "Course-Introduction",
-      "Introduction",
       "Fundamentals-of-SRE",
       "Service-Level-Objectives-and-Measurements",
       "Managing-Complexity-Risk-and-Toil",
@@ -810,7 +800,6 @@
     ],
     "GIT-for-Beginners": [
       "GIT-Course-Introduction",
-      "Introduction",
       "GIT-Introduction",
       "Git-Branches",
       "Initialize-Remote-Repositories",
@@ -831,7 +820,6 @@
     ],
     "Generative-AI-in-Practice-Advanced-Insights-and-Operations": [
       "Evolution-of-AI-Models",
-      "Introduction",
       "Retrieval-Augmented-Generation-RAG",
       "AI-ApplicationLLM-on-Azure",
       "Large-Language-ModelsLLM",
@@ -870,7 +858,6 @@
     ],
     "GitHub-Copilot-in-Action": [
       "Introduction-to-GitHub-Copilot",
-      "Introduction",
       "Core-Features",
       "Using-Copilot-Efficiently"
     ],
@@ -915,7 +902,6 @@
     ],
     "GitOps-with-FluxCD": [
       "GitOps-Overview",
-      "Introduction",
       "Flux-Overview",
       "Source-and-Kustomize-Controller",
       "Helm-Controller-and-OCI-Registry",
@@ -926,7 +912,6 @@
     ],
     "Golang": [
       "Getting-Started",
-      "Introduction",
       "Data-Types-and-Variables",
       "Operators-and-Control-Flow",
       "Arrays-Slices-and-Maps",
@@ -992,7 +977,6 @@
     ],
     "HashiCorp-Certified-Terraform-Associate-004": [
       "Course-Introduction",
-      "Introduction",
       "Preparing-Your-Environment",
       "Terraform-Foundations",
       "The-Core-Terraform-Workflow",
@@ -1070,7 +1054,6 @@
     ],
     "Introduction-to-OpenAI": [
       "Pre-Requisites",
-      "Introduction",
       "Introduction-to-AI",
       "Text-Generation",
       "Features",
@@ -1778,7 +1761,6 @@
     ],
     "Vector-Database-for-GenAI": [
       "Introduction-to-Vector-Databases-and-Generative-AI",
-      "Introduction",
       "Vector-Database-Foundations",
       "From-Data-to-Vectors-The-Embedding-Layer",
       "Vector-Similarity-Explained",
@@ -4511,10 +4493,16 @@
       "Introduction"
     ],
     "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-and-Implement-Azure-Firewall": [
-      "Azure-Firewall"
+      "Introduction",
+      "Azure-Firewall",
+      "Deploying-Azure-Firewall",
+      "Rule-processing-in-Azure-Firewall"
     ],
     "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Working-with-Azure-Firewall-Manager": [
-      "Azure-Firewall-Manager"
+      "Introduction",
+      "Azure-Firewall-Manager",
+      "Azure-Firewall-Manager-policies",
+      "Using-Azure-Firewall-Manager"
     ],
     "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Implement-a-Web-Application-Firewall": [
       "Introduction",
@@ -5015,8 +5003,7 @@
       "Manage-parallelism"
     ],
     "Azure-Kubernetes-Service|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "Azure-Kubernetes-Service|Just-Enough-Azure-for-AKS": [
       "Session-Introduction",
@@ -5084,9 +5071,6 @@
       "CDKTF-Demo-S3-Deployment",
       "CDKTF-Overview-and-Benefits"
     ],
-    "CDK-for-Terraform-with-TypeScript|Introduction": [
-      "Introduction"
-    ],
     "CDK-for-Terraform-with-TypeScript|Introduction-to-TypeScript": [
       "Typescript-Introduction",
       "Syntax-Variables-and-Primitives-in-TypeScript",
@@ -5127,185 +5111,6 @@
       "SCM-Terminology",
       "Basics-of-CICD",
       "Software-Testing"
-    ],
-    "Certified-Jenkins-Engineer|Introduction": [
-      "Introduction"
-    ],
-    "Certified-Jenkins-Engineer|Jenkins-Setup-and-Interface": [
-      "Jenkins-Architecture",
-      "Jenkins-Installation-Options",
-      "Demo-Jenkins-Installation",
-      "Demo-Running-the-Jenkins-WAR-as-a-standalone-application",
-      "Demo-Jenkins-User-Interface-Overview",
-      "Demo-System-Settings",
-      "Demo-Build-Timeout",
-      "Demo-Timestamp",
-      "Types-of-Jenkins-Projects",
-      "Demo-Working-with-Freestyle-Job",
-      "Demo-Chained-Freestyle-Projects"
-    ],
-    "Certified-Jenkins-Engineer|Extending-Jenkins-and-Administration": [
-      "Jenkins-Plugins",
-      "Demo-Installing-Plugins",
-      "Demo-Managing-Plugins",
-      "Demo-Manage-Old-Data",
-      "Demo-Reload-Configuration-from-Disk",
-      "Demo-Controller-Failure-Freestyle-Project",
-      "Demo-Jenkins-Fingerprints"
-    ],
-    "Certified-Jenkins-Engineer|Jenkins-Pipelines": [
-      "Pipeline-and-Jenkinsfile",
-      "Additional-Pipeline-Configuration",
-      "Demo-Simple-Pipeline-Job",
-      "Demo-Build-and-Test-via-Pipeline",
-      "Demo-Pipeline-Script-from-SCM",
-      "Demo-Controller-Failure-Pipeline-Project",
-      "Demo-Create-Pipeline-using-Blue-Ocean-Graphical-Editor",
-      "Demo-Create-Pipeline-with-Parameters"
-    ],
-    "Certified-Jenkins-Engineer|Automation-and-Security": [
-      "Automating-Jenkins-using-CLI-and-APIs",
-      "Demo-Jenkins-CLI-Build-a-job",
-      "Demo-Jenkins-REST-API-install-a-plugin",
-      "Demo-Jenkins-CSRF-CRUMB",
-      "Jenkins-Security-Overview",
-      "Demo-Jenkins-Authentication",
-      "Demo-Authorization-Matrix-Authorization-Strategy",
-      "Demo-Jenkins-CLI-SSH-Authentication",
-      "Demo-Jenkins-CLI-Edit-a-Freestyle-Job",
-      "Demo-Built-in-Email-Notification"
-    ],
-    "Certified-Jenkins-Engineer|Setting-up-CI-Pipeline": [
-      "NodeJS-Application-Overview",
-      "Demo-Run-and-Test-NodeJS-App-on-Local-Machine",
-      "Understanding-DevOps-Pipeline",
-      "Demo-InstallSetup-NodeJS-Build-Tool",
-      "Demo-Create-Organization-Folder-Project",
-      "Demo-Add-Jenkinsfile-to-Solar-System-Repo",
-      "Demo-Install-Dependencies",
-      "Demo-Setup-and-Run-Dependency-Scanning",
-      "Demo-Fixing-Vulnerabilities-Publish-HTML-Report",
-      "Demo-Unit-Testing-and-Analyze-JUnit-Reports",
-      "Demo-Using-Options-Directive"
-    ],
-    "Certified-Jenkins-Engineer|Code-Quality-and-Testing": [
-      "Demo-Code-Coverage-and-Catch-Errors",
-      "Demo-Refactoring-Jenkinsfile",
-      "Demo-String-Interpolation",
-      "SonarQube-Intro",
-      "Demo-SAST-Analysis",
-      "Demo-SonarQube-Quality-Gate-Step-and-Refactoring"
-    ],
-    "Certified-Jenkins-Engineer|Containerization-and-Deployment": [
-      "Demo-Build-Docker-Image",
-      "Demo-Vulnerability-Scan-using-Trivy",
-      "Demo-Push-to-Registry",
-      "Understanding-Deployment-Approach",
-      "Demo-Exploring-AWS-and-Setting-up-Jenkins-Instance",
-      "Built-in-when-conditions",
-      "Demo-Deploy-AWS-EC2",
-      "Demo-Integration-Testing-AWS-EC2-Instance"
-    ],
-    "Certified-Jenkins-Engineer|Kubernetes-and-GitOps": [
-      "Brief-Overview-on-Kubernetes",
-      "Introduction-to-GitOps",
-      "ArgoCD-Concepts-Terminology",
-      "CICD-with-GitOps",
-      "Demo-Manifest-Repository-and-Configure-ArgoCD",
-      "Demo-Kubernetes-Deploy-Update-Image-Tag",
-      "Demo-Kubernetes-Deploy-Raise-PR",
-      "Demo-DAST-and-Manual-Input",
-      "Demo-DAST-Ignore-Rules",
-      "Demo-Publish-Reports-to-AWS-S3",
-      "Demo-Deploy-to-Prod"
-    ],
-    "Certified-Jenkins-Engineer|AWS-Lambda-and-Advanced-Deployment-Techniques": [
-      "AWS-Lambda-Basics",
-      "Demo-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment",
-      "Demo-Manual-Lambda-Deployment",
-      "Demo-Lambda-Deployment-using-Jenkinsfile",
-      "Demo-Update-Lambda-Configuration",
-      "Demo-Lambda-Invoke-Function"
-    ],
-    "Certified-Jenkins-Engineer|Jenkins-Administration-and-Monitoring-Part-1": [
-      "Demo-Jenkins-Folder-Part-1",
-      "Demo-Jenkins-Folder-Part-2",
-      "Demo-Jenkins-Folder-Part-3",
-      "Demo-Jenkins-Folder-Part-4",
-      "Demo-Script-Console",
-      "Global-Security-Settings",
-      "Demo-Markup-Formatters",
-      "Demo-Access-Control-for-Builds",
-      "Demo-Job-Restrictions",
-      "Demo-Job-Configuration-History-Plugin",
-      "Demo-Build-Monitor-View",
-      "Jenkins-Scaling-Capacity-Planning",
-      "Demo-Monitoring-using-Java-Melody",
-      "Demo-Slack-Notification-Setup",
-      "Demo-Send-Slack-Notification"
-    ],
-    "Certified-Jenkins-Engineer|Shared-Libraries-in-Jenkins": [
-      "Introduction-to-Shared-Libraries",
-      "Demo-Refactor-existing-Jenkinsfile",
-      "Demo-Create-a-Shared-Library-for-Slack-Notification",
-      "Demo-Configure-Shared-Library-in-Jenkins",
-      "Demo-Loading-the-Shared-Library-in-Pipeline",
-      "Demo-Create-Shared-Library-for-Trivy-Scan",
-      "Demo-Load-TrivyScan-Library-in-Jenkins-Pipeline",
-      "Demo-WhatWhyCreate-LibraryResource",
-      "Demo-Load-TrivyScanScript-Library-in-Jenkins-Pipeline"
-    ],
-    "Certified-Jenkins-Engineer|Agents-and-Nodes-in-Jenkins": [
-      "Types-of-Agents",
-      "Demo-Create-and-Configure-Node",
-      "Demo-Utilize-Agents-in-Jobs",
-      "Demo-Utilize-Docker-Image-Agent",
-      "Demo-Utilize-Dockerfile-Agent",
-      "Demo-Utilize-newContainerPerStage",
-      "Demo-Configure-cloud-instances-Kubernetes",
-      "Demo-Utilize-Kubernetes-Pod-as-Agent"
-    ],
-    "Certified-Jenkins-Engineer|Pipeline-Enhancement-and-Caching": [
-      "Demo-Sharing-a-file-between-containers",
-      "Demo-Refactoring-Solar-System-Pipeline",
-      "Demo-Refactoring-Unit-Test-Stage",
-      "Demo-Sequential-stages",
-      "Demo-Stash-and-Unstash",
-      "Demo-Pipeline-Caching",
-      "Demo-Invalidate-Cache"
-    ],
-    "Certified-Jenkins-Engineer|Pipeline-Structure-and-Scripted-vs-Declarative": [
-      "Declarative-vs-Scripted-Pipeline",
-      "Demo-Declarative-vs-Scripted-Pipeline",
-      "Demo-Preversing-Stash-in-Declarative-Pipeline",
-      "Demo-Scripted-Pipeline-Initialize",
-      "Demo-Scripted-Pipeline-Static-Agent",
-      "Demo-Scripted-Pipeline-K8S-Agent",
-      "Best-Practices-for-Scripted-Pipelines"
-    ],
-    "Certified-Jenkins-Engineer|Jenkins-Administration-and-Monitoring-Part-2": [
-      "Jenkins-Supervision",
-      "Demo-Monitoring-with-Prometheus-Grafana",
-      "Demo-Log-Recorder",
-      "Demo-Install-and-Configure-Audit-Trail",
-      "Demo-Forward-Audit-logs-to-External-Server",
-      "Groovy-Sandbox-and-In-process-Script-Approval",
-      "DemoGroovy-Sandbox-and-In-process-Script-Approval-Part-1",
-      "Demo-Groovy-Sandbox-and-In-process-Script-Approval-Part-2",
-      "Demo-Groovy-Sandbox-and-In-process-Script-Approval-Part-3",
-      "Demo-Migrating-Jenkins-to-Another-Node"
-    ],
-    "Certified-Jenkins-Engineer|Backup-and-Configuration-Management": [
-      "Github-Actions-Basics",
-      "Demo-Migrating-Jenkins-Pipeline-to-GitHub-Action",
-      "Backing-upRestoring-Jenkins",
-      "Demo-Backing-upRestoring-Jenkins",
-      "Demo-Validating-Backup",
-      "Demo-Upgrading-Jenkins",
-      "Jenkins-Configuration-as-Code-JCasC",
-      "Demo-Configure-and-Explore-JCasC",
-      "Demo-Use-JCasC-to-Create-Jobs",
-      "DemoPipeline-Durability"
     ],
     "Certified-Kubernetes-Administrator-CKA|Introduction": [
       "Course-Introduction",
@@ -5489,140 +5294,8 @@
       "Solution-Imperative-Commands-optional",
       "A-Quick-Reminder"
     ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Introduction": [
-      "Introduction"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Configuration": [
-      "Define-build-and-modify-container-images",
-      "Commands-and-Arguments-in-Docker",
-      "Commands-and-Arguments-in-Kubernetes",
-      "Solution-Commands-and-Arguments-Optional",
-      "Environment-Variables",
-      "ConfigMaps",
-      "Solution-ConfigMaps-Optional",
-      "Secrets",
-      "Solution-Secrets-Optional",
-      "Demo-Encrypting-Secret-Data-at-Rest",
-      "Pre-requisite-Security-in-Docker",
-      "Security-Contexts",
-      "Solutions-Security-Contexts",
-      "Resource-Requirements",
-      "Solutions-Resource-Requirements",
-      "Service-Account",
-      "Solutions-Service-Account",
-      "Taints-and-Tolerations",
-      "Solution-Taints-and-Tolerations-Optional",
-      "Node-Selectors-Logging",
-      "Node-Affinity",
-      "Solution-Node-Affinity-Optional",
-      "Taints-Tolerations-vs-Node-Affinity"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Multi-Container-Pods": [
-      "Multi-Container-Pods",
-      "Solution-Init-Containers-Optional"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Observability": [
-      "Readiness-Probes",
-      "Liveness-Probes",
-      "Solution-Readiness-and-Liveness-Probes",
-      "Logging",
-      "Solution-Logging-optional",
-      "Monitoring",
-      "Solution-Monitoring-optional"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|POD-Design": [
-      "Labels-Selectors-Annotations",
-      "Solution-Labels-and-Selectors-optional",
-      "Rolling-Updates-Rollbacks",
-      "Solution-Rolling-Updates-and-Rollbacks-optional",
-      "Deployment-Strategy-Blue-Green",
-      "Deployment-Strategy-Canary",
-      "Solution-Deployment-strategies",
-      "Jobs",
-      "Cron-Jobs",
-      "Solution-Jobs-and-Cronjobs-optional"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|State-Persistence": [
-      "Introduction-to-Docker-Storage",
-      "Storage-in-Docker",
-      "Volume-Driver-Plugins-in-Docker",
-      "Volumes-in-Kubernetes",
-      "Persistent-Volumes",
-      "Persistent-Volume-Claims",
-      "Solution-Persistent-Volumes-and-Persistent-Volume-Claims-optional",
-      "Storage-Classes",
-      "Why-Stateful-Sets",
-      "Stateful-Sets-Introduction",
-      "Headless-Services",
-      "Storage-in-StatefulSets"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Certification-Tips": [
-      "Time-Management"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Helm-Fundamentals": [
-      "Helm-Introduction",
-      "Install-Helm",
-      "Solution-Install-Helm",
-      "Helm-Concept",
-      "Solution-Helm-Concepts"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|2025-Updates-Kustomize-Basics": [
-      "Kustomize-vs-Helm",
-      "InstallationSetup",
-      "Kustomize-Output",
-      "Managing-Directories",
-      "Managing-Directories-Demo",
-      "Common-Transformers",
-      "Image-Transformers",
-      "Transformers-Demo",
-      "Patches-Intro",
-      "Different-Types-of-Patches",
-      "Patches-Dictionary",
-      "Patches-List",
-      "Overlays",
-      "Components"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Lightning-Labs": [
-      "Solution-Lightning-Lab-1",
-      "Solution-Lightning-Lab-2"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Mock-Exams": [
-      "Mock-Exam-1-Solution",
-      "Mock-Exam-2-Solution",
-      "Whats-Next"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Services-Networking": [
-      "Network-Policies",
-      "Developing-network-policies",
-      "Solution-Network-Policies-optional",
-      "Ingress-Networking",
-      "Solution-Ingress-Networking-1",
-      "Solution-Ingress-Networking-2"
-    ],
-    "Certified-Kubernetes-Application-Developer-CKAD|Security": [
-      "Authentication",
-      "KubeConfig",
-      "Solution-KubeConfig",
-      "API-Groups",
-      "Authorization",
-      "Role-Based-Access-Controls",
-      "Solution-Role-Based-Access-Controls",
-      "Cluster-Roles",
-      "Solution-Cluster-Roles",
-      "Admission-Controllers",
-      "Solution-Admission-Controllers",
-      "Validating-and-Mutating-Admission-Controllers",
-      "Solution-Validating-and-Mutating-Admission-Controllers",
-      "API-Versions",
-      "API-Deprecations",
-      "Solution-API-VersionsDeprecations",
-      "Custom-Resource-Definition",
-      "Custom-Controllers",
-      "Operator-Framework"
-    ],
     "Certified-Kubernetes-Security-Specialist-CKS|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Exam-Information"
     ],
     "Certified-Kubernetes-Security-Specialist-CKS|Understanding-the-Kubernetes-Attack-Surface": [
@@ -5740,8 +5413,7 @@
       "Ensure-Immutability-of-Containers-at-Runtime"
     ],
     "Chaos-Engineering|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "Chaos-Engineering|Building-a-Basic-FIS-experiment": [
       "FIS-Permissions",
@@ -5813,7 +5485,6 @@
     ],
     "Claude-Code-For-Beginners|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Demo-Prerequisites-and-Initial-Setup",
       "Demo-Start-Your-First-Session",
       "Demo-Understanding-Codebases-with-Claude",
@@ -5875,26 +5546,8 @@
       "Demo-Connecting-to-Local-LLMs",
       "Demo-Plan-and-Act-Mode"
     ],
-    "Cline|Introduction": [
-      "Introduction"
-    ],
-    "Cline|Core-Workflows-Prompt-Engineering": [
-      "Demo-Prompt-Anatomy-and-Best-Practices",
-      "Demo-Context-Management-Techniques",
-      "Demo-Under-the-Hood-Checkpoints-Context-Windows",
-      "Demo-Prompt-Specificity-and-Why-it-Matters",
-      "Demo-Summary"
-    ],
-    "Cline|Resources-Next-Steps": [
-      "Demo-Using-MCP-Servers-with-Cline",
-      "Demo-MCP-Marketplace",
-      "Demo-Documentation-Generation-with-AI-assistance",
-      "Demo-Official-Documentation-Navigation",
-      "Demo-Community-Forums-and-Support-Channels"
-    ],
     "Cloud-Computing-Fundamentals|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Why-Cloud"
     ],
     "Cloud-Computing-Fundamentals|Cloud-Service-and-Deployment-Models": [
@@ -5922,32 +5575,8 @@
       "Rebase",
       "Demo-Rebase"
     ],
-    "Cloud-Native-Buildpacks|Introduction": [
-      "Introduction"
-    ],
-    "Cloud-Native-Buildpacks|Creating-Buildpacks": [
-      "Creating-a-Buildpack",
-      "Demo-Application-Overview",
-      "Demo-Creating-a-Buildpack",
-      "Buildpack-Buildplan",
-      "Demo-Buildpack-Buildplan",
-      "Buildpack-Layers",
-      "Demo-Buildpack-Layers",
-      "Caching",
-      "Demo-Caching",
-      "Packaging-a-Buildpack",
-      "Demo-Packaging-a-Buildpack"
-    ],
-    "Cloud-Native-Buildpacks|Creating-Builders": [
-      "Creating-a-Builder",
-      "Demo-Creating-a-Builder"
-    ],
-    "Cloud-Native-Buildpacks|Course-Introduction": [
-      "Introduction"
-    ],
     "CompTIA-Security-Certification|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "CompTIA-Security-Certification|Controls-and-Security-Concepts": [
       "Security-Controls",
@@ -6074,8 +5703,7 @@
       "Demo-Security-Combination"
     ],
     "Computer-Architecture|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "Computer-Architecture|Computer-Components": [
       "Hardware"
@@ -6104,9 +5732,6 @@
       "Amazon-EC2",
       "Amazon-VPC"
     ],
-    "Crash-Course-AWS-Basics|Introduction": [
-      "Introduction"
-    ],
     "Cursor-AI|Introduction-to-Cursor": [
       "Course-Introduction",
       "Why-use-Cursor",
@@ -6114,48 +5739,8 @@
       "Cost-Models",
       "Demo-Installation-and-Setup"
     ],
-    "Cursor-AI|Introduction": [
-      "Introduction"
-    ],
-    "Cursor-AI|Mastering-Autocompletion": [
-      "Introduction",
-      "Demo-Intelligent-Code-Suggestions",
-      "Demo-Getting-Started-with-Composer",
-      "Demo-Auto-Imports-and-Customizing-Settings",
-      "Demo-Essential-Prompt-Engineering",
-      "Demo-Cursor-Ask-Mode"
-    ],
-    "Cursor-AI|Interacting-with-your-Codebase": [
-      "Introduction",
-      "Demo-Codebase-QA",
-      "Demo-Contextual-References",
-      "Demo-Web-and-Library-Integration",
-      "Demo-Best-Practices-for-Querying"
-    ],
-    "Cursor-AI|Inline-Editing-and-Debugging": [
-      "Introduction",
-      "Demo-Inline-AI-Edits",
-      "Demo-Debugging-with-AI",
-      "Demo-Lint-Error-Resolution"
-    ],
-    "Cursor-AI|Terminal-Productivity": [
-      "Introduction",
-      "Demo-Natural-Language-Commands",
-      "Demo-Context-Aware-Terminal-Suggestions",
-      "Demo-Common-Terminal-Commands"
-    ],
-    "Cursor-AI|Understanding-and-Customizing-Cursor": [
-      "Introduction",
-      "Demo-Choosing-Models",
-      "Demo-Privacy",
-      "Demo-Documentation-Management",
-      "Demo-Profiles-and-Features",
-      "Demo-Remote-Development",
-      "Demo-Automating-with-Agent-Mode"
-    ],
     "DP-900-Microsoft-Azure-Data-Fundamentals|Introduction": [
       "Course-Overview",
-      "Introduction",
       "Course-Introduction"
     ],
     "DP-900-Microsoft-Azure-Data-Fundamentals|File-Based-Storage": [
@@ -6210,7 +5795,6 @@
     ],
     "Data-Engineering-Fundamentals|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "The-Big-Picture"
     ],
     "Data-Engineering-Fundamentals|Ingesting-Data": [
@@ -6235,7 +5819,6 @@
       "CRUD-Commands-in-Action-Part-2"
     ],
     "Database-Fundamentals|Introduction": [
-      "Introduction",
       "What-is-Database"
     ],
     "Database-Fundamentals|Relational-vs-Non-Relational-Databases": [
@@ -6250,8 +5833,7 @@
       "DIY-Database"
     ],
     "Demystifying-DNS|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "Demystifying-DNS|Welcome-to-the-World-of-DNS": [
       "Why-DNS",
@@ -6302,8 +5884,7 @@
       "Demo-Setting-Up-DNS-Server"
     ],
     "DevOps-Interview-Preparation-Course|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "DevOps-Interview-Preparation-Course|Linux": [
       "Linux-Question-1",
@@ -6405,53 +5986,6 @@
       "Container-Died-with-Exit-Code-137",
       "Container-Data-Bind-Mounts-vs-Volumes"
     ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Introduction": [
-      "Introduction"
-    ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Kubernetes": [
-      "Your-Kubernetes-Rollout-is-Stuck",
-      "Managed-vs-Self-Managed-Kubernetes",
-      "Privileged-Pod-with-hostPath",
-      "DNS-Failing-in-Pods"
-    ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|CICD-DevOps": [
-      "You-Pushed-Secrets-to-GitHub",
-      "Server-at-98-CPU-Scale-Up-or-Out",
-      "Your-Database-Query-Takes-30-Seconds",
-      "GitOps-vs-Traditional-CD",
-      "Amazon-DevOps-Parse-This-Nginx-Log"
-    ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Security": [
-      "Leaked-S3-Bucket"
-    ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Networking": [
-      "TCP-vs-UDP-When-to-Pick-Which",
-      "What-is-a-Webhook",
-      "Pod-Cant-Reach-Cluster-DNS",
-      "dnsPolicy-Trap",
-      "ndots5-Trap"
-    ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Advanced-Concepts": [
-      "What-is-gRPC-vs-HTTP",
-      "gRPC-vs-RESTful-API"
-    ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Interview-Setup": [
-      "What-Happens-on-docker-run-nginx",
-      "What-is-Kubernetes",
-      "How-Does-Terraform-Actually-Work",
-      "How-Does-Kafka-Work"
-    ],
-    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|System-Design": [
-      "Design-an-Image-Upload-Pipeline",
-      "Design-a-Home-Feed-For-Instagram",
-      "Centralized-Logging-for-100-Microservices",
-      "Design-a-Payment-Processing-System",
-      "Webhook-Delivery-System",
-      "Why-3-or-5-Nodes-Never-2-Quorum-Split-Brain",
-      "Logs-Pipeline-Alloy-Loki-S3-Grafana",
-      "Designing-a-Caching-System",
-      "Designing-Pipeline-with-Prometheus-and-Thanos"
-    ],
     "DevOps-Pre-Requisite-Course|Introduction": [
       "Introduction",
       "Curriculum",
@@ -6525,7 +6059,6 @@
     ],
     "DevSecOps-Kubernetes-DevOps-Security|Introduction": [
       "Welcome-and-Course-Introduction",
-      "Introduction",
       "Section-1-Topics",
       "DevOps-vs-DevSecOps",
       "Security-Aspects",
@@ -6633,7 +6166,6 @@
     ],
     "Docker-Certified-Associate-Exam-Course|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Course-Curriculum",
       "Exam-Details",
       "Exam-Course-Tips"
@@ -6922,7 +6454,6 @@
       "Cluster-Information-Elasticsearch-CRUD-Commands"
     ],
     "EFK-Stack-Enterprise-Grade-Logging-and-Monitoring|Introduction": [
-      "Introduction",
       "Course-Introduction"
     ],
     "EFK-Stack-Enterprise-Grade-Logging-and-Monitoring|What-Is-Logging-and-Elasticsearch": [
@@ -6978,7 +6509,6 @@
     ],
     "Enhancing-Soft-Skills-for-DevOps-Engineers-Essential-Non-Technical-Skills-to-Thrive|Introduction": [
       "Introduction-and-Problems-this-course-solves",
-      "Introduction",
       "Why-take-this-course",
       "Course-Agenda",
       "Our-Scenarios-Story-A-DevOps-Path"
@@ -7039,7 +6569,6 @@
       "Demo-Creating-First-Topic-in-Kafka"
     ],
     "Event-Streaming-with-Kafka|Introduction": [
-      "Introduction",
       "Course-Introduction"
     ],
     "Event-Streaming-with-Kafka|Building-Blocks-of-Kafka": [
@@ -7094,8 +6623,7 @@
       "Section-Recap"
     ],
     "Exploring-WebAssembly-WASM|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "Exploring-WebAssembly-WASM|Introduction-to-WebAssembly-WASM": [
       "What-is-WebAssembly",
@@ -7147,7 +6675,6 @@
     ],
     "Fundamentals-of-DevOps|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Why-IT-struggles",
       "The-Birth-and-Evolution-of-DevOps",
       "Our-Journey-through-DevOps"
@@ -7260,7 +6787,6 @@
     ],
     "Fundamentals-of-RAG|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "What-is-RAG-and-Why-DevOps-Teams-Need-It",
       "RAG-Architecture-Deep-Dive",
       "When-to-Use-RAG-vs-Alternatives",
@@ -7365,8 +6891,7 @@
       "Next-Steps-in-Your-SRE-Journey"
     ],
     "GCP-Cloud-Digital-Leader-Certification|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "GCP-Cloud-Digital-Leader-Certification|Introduction-to-Digital-Transformation-with-Google-Cloud": [
       "Lets-understand-a-use-case",
@@ -7452,7 +6977,6 @@
     ],
     "GCP-DevOps-Project|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "What-is-a-sprint"
     ],
     "GCP-DevOps-Project|Sprint-02": [
@@ -7561,7 +7085,6 @@
     ],
     "GKE-Google-Kubernetes-Engine|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Learning-Objectives-and-Prerequisites"
     ],
     "GKE-Google-Kubernetes-Engine|High-Level-Overview": [
@@ -7673,7 +7196,6 @@
     ],
     "GitHub-Actions|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Problem-Statement-Meeting-with-Dasher-Team",
       "Introducing-Github-Actions",
       "Basics-of-CI-CD",
@@ -7781,7 +7303,6 @@
     ],
     "GitHub-Actions-Certification|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Problem-Statement-Meeting-with-Dasher-Team",
       "Introducing-Github-Actions",
       "Basics-of-CI-CD",
@@ -7918,7 +7439,6 @@
     ],
     "GitHub-Copilot-Certification|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Understanding-AI-Pair-Programming",
       "Copilots-Strengths-and-Limitations",
       "GitHub-in-the-SDLC",
@@ -7988,8 +7508,7 @@
       "Creating-API-Documentation"
     ],
     "GitHub-Foundations-Certification|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "GitHub-Foundations-Certification|Git-and-GitHub-Basics": [
       "Version-Control",
@@ -8155,7 +7674,6 @@
     ],
     "GitLab-CICD-Architecting-Deploying-and-Optimizing-Pipelines|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Problem-Statement-Meeting-with-XYZ-Team",
       "Basics-of-CICD",
       "Introducing-GitLab-CICD",
@@ -8259,7 +7777,6 @@
     ],
     "GitOps-with-ArgoCD|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "Meeting-with-Task-Dash-DevOps-Team",
       "What-is-GitOps",
       "GitOps-Principles"
@@ -8457,7 +7974,6 @@
     ],
     "Google-ADK|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "ADK-Overview",
       "Where-ADK-fits-in-the-Google-cloud-ecosystem",
       "Build-your-first-agent",
@@ -8477,8 +7993,7 @@
       "Evaluations"
     ],
     "Google-Cloud-Professional-Data-Engineer-Certification|Introduction": [
-      "Course-Overview",
-      "Introduction"
+      "Course-Overview"
     ],
     "Google-Cloud-Professional-Data-Engineer-Certification|GCP-Networking": [
       "Cloud-VPC-Introduction",
@@ -8656,8 +8171,7 @@
       "Demo-GCP-Console-Overview"
     ],
     "Grafana-Loki|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "Grafana-Loki|Grafana-Loki-Essentials-Part-1": [
       "What-is-Loki",
@@ -8746,8 +8260,7 @@
       "Comparing-initial-and-final-design"
     ],
     "HashiCorp-Certified-Consul-Associate-Certification|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "HashiCorp-Certified-Consul-Associate-Certification|Explain-Consul-Architecture": [
       "Objective-1-Section-Overview",
@@ -13844,7 +13357,6 @@
     ],
     "Virtualization-and-Containers|Introduction": [
       "Course-Introduction",
-      "Introduction",
       "VMs-and-Containers-Why-They-Matter"
     ],
     "Virtualization-and-Containers|Virtual-Machines": [
@@ -13863,8 +13375,7 @@
       "Virtual-Machines-vs-Containers"
     ],
     "n8n-Zero-to-Hero|Introduction": [
-      "Course-Introduction",
-      "Introduction"
+      "Course-Introduction"
     ],
     "n8n-Zero-to-Hero|n8n-Foundational": [
       "Foundations-of-n8n"
@@ -13908,6 +13419,424 @@
       "Retries-and-Error-Handling",
       "n8n-Workflow-Template-Marketplace",
       "Conclusion"
+    ],
+    "Certified-Jenkins-Engineer|Jenkins-Setup-and-Interface": [
+      "Demo-Build-Timeout",
+      "Demo-Chained-Freestyle-Projects",
+      "Demo-Jenkins-Installation",
+      "Demo-Jenkins-User-Interface-Overview",
+      "Demo-Running-the-Jenkins-WAR-as-a-standalone-application",
+      "Demo-System-Settings",
+      "Demo-Timestamp",
+      "Demo-Working-with-Freestyle-Job",
+      "Jenkins-Architecture",
+      "Jenkins-Installation-Options",
+      "Types-of-Jenkins-Projects"
+    ],
+    "Certified-Jenkins-Engineer|Extending-Jenkins-and-Administration": [
+      "Demo-Controller-Failure-Freestyle-Project",
+      "Demo-Installing-Plugins",
+      "Demo-Jenkins-Fingerprints",
+      "Demo-Manage-Old-Data",
+      "Demo-Managing-Plugins",
+      "Demo-Reload-Configuration-from-Disk",
+      "Jenkins-Plugins"
+    ],
+    "Certified-Jenkins-Engineer|Jenkins-Pipelines": [
+      "Additional-Pipeline-Configuration",
+      "Demo-Build-and-Test-via-Pipeline",
+      "Demo-Controller-Failure-Pipeline-Project",
+      "Demo-Create-Pipeline-using-Blue-Ocean-Graphical-Editor",
+      "Demo-Create-Pipeline-with-Parameters",
+      "Demo-Pipeline-Script-from-SCM",
+      "Demo-Simple-Pipeline-Job",
+      "Pipeline-and-Jenkinsfile"
+    ],
+    "Certified-Jenkins-Engineer|Automation-and-Security": [
+      "Automating-Jenkins-using-CLI-and-APIs",
+      "Demo-Authorization-Matrix-Authorization-Strategy",
+      "Demo-Built-in-Email-Notification",
+      "Demo-Jenkins-Authentication",
+      "Demo-Jenkins-CLI-Build-a-job",
+      "Demo-Jenkins-CLI-Edit-a-Freestyle-Job",
+      "Demo-Jenkins-CLI-SSH-Authentication",
+      "Demo-Jenkins-CSRF-CRUMB",
+      "Demo-Jenkins-REST-API-install-a-plugin",
+      "Jenkins-Security-Overview"
+    ],
+    "Certified-Jenkins-Engineer|Setting-up-CI-Pipeline": [
+      "Demo-Add-Jenkinsfile-to-Solar-System-Repo",
+      "Demo-Create-Organization-Folder-Project",
+      "Demo-Fixing-Vulnerabilities-Publish-HTML-Report",
+      "Demo-Install-Dependencies",
+      "Demo-InstallSetup-NodeJS-Build-Tool",
+      "Demo-Run-and-Test-NodeJS-App-on-Local-Machine",
+      "Demo-Setup-and-Run-Dependency-Scanning",
+      "Demo-Unit-Testing-and-Analyze-JUnit-Reports",
+      "Demo-Using-Options-Directive",
+      "NodeJS-Application-Overview",
+      "Understanding-DevOps-Pipeline"
+    ],
+    "Certified-Jenkins-Engineer|Code-Quality-and-Testing": [
+      "Demo-Code-Coverage-and-Catch-Errors",
+      "Demo-Refactoring-Jenkinsfile",
+      "Demo-SAST-Analysis",
+      "Demo-SonarQube-Quality-Gate-Step-and-Refactoring",
+      "Demo-String-Interpolation",
+      "SonarQube-Intro"
+    ],
+    "Certified-Jenkins-Engineer|Containerization-and-Deployment": [
+      "Built-in-when-conditions",
+      "Demo-Build-Docker-Image",
+      "Demo-Deploy-AWS-EC2",
+      "Demo-Exploring-AWS-and-Setting-up-Jenkins-Instance",
+      "Demo-Integration-Testing-AWS-EC2-Instance",
+      "Demo-Push-to-Registry",
+      "Demo-Vulnerability-Scan-using-Trivy",
+      "Understanding-Deployment-Approach"
+    ],
+    "Certified-Jenkins-Engineer|Kubernetes-and-GitOps": [
+      "ArgoCD-Concepts-Terminology",
+      "Brief-Overview-on-Kubernetes",
+      "CICD-with-GitOps",
+      "Demo-DAST-Ignore-Rules",
+      "Demo-DAST-and-Manual-Input",
+      "Demo-Deploy-to-Prod",
+      "Demo-Kubernetes-Deploy-Raise-PR",
+      "Demo-Kubernetes-Deploy-Update-Image-Tag",
+      "Demo-Manifest-Repository-and-Configure-ArgoCD",
+      "Demo-Publish-Reports-to-AWS-S3",
+      "Introduction-to-GitOps"
+    ],
+    "Certified-Jenkins-Engineer|AWS-Lambda-and-Advanced-Deployment-Techniques": [
+      "AWS-Lambda-Basics",
+      "Demo-Lambda-Deployment-using-Jenkinsfile",
+      "Demo-Lambda-Invoke-Function",
+      "Demo-Manual-Lambda-Deployment",
+      "Demo-Update-Lambda-Configuration",
+      "Demo-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment"
+    ],
+    "Certified-Jenkins-Engineer|Jenkins-Administration-and-Monitoring-Part-1": [
+      "Demo-Access-Control-for-Builds",
+      "Demo-Build-Monitor-View",
+      "Demo-Jenkins-Folder-Part-1",
+      "Demo-Jenkins-Folder-Part-2",
+      "Demo-Jenkins-Folder-Part-3",
+      "Demo-Jenkins-Folder-Part-4",
+      "Demo-Job-Configuration-History-Plugin",
+      "Demo-Job-Restrictions",
+      "Demo-Markup-Formatters",
+      "Demo-Monitoring-using-Java-Melody",
+      "Demo-Script-Console",
+      "Demo-Send-Slack-Notification",
+      "Demo-Slack-Notification-Setup",
+      "Global-Security-Settings",
+      "Jenkins-Scaling-Capacity-Planning"
+    ],
+    "Certified-Jenkins-Engineer|Shared-Libraries-in-Jenkins": [
+      "Demo-Configure-Shared-Library-in-Jenkins",
+      "Demo-Create-Shared-Library-for-Trivy-Scan",
+      "Demo-Create-a-Shared-Library-for-Slack-Notification",
+      "Demo-Load-TrivyScan-Library-in-Jenkins-Pipeline",
+      "Demo-Load-TrivyScanScript-Library-in-Jenkins-Pipeline",
+      "Demo-Loading-the-Shared-Library-in-Pipeline",
+      "Demo-Refactor-existing-Jenkinsfile",
+      "Demo-WhatWhyCreate-LibraryResource",
+      "Introduction-to-Shared-Libraries"
+    ],
+    "Certified-Jenkins-Engineer|Agents-and-Nodes-in-Jenkins": [
+      "Demo-Configure-cloud-instances-Kubernetes",
+      "Demo-Create-and-Configure-Node",
+      "Demo-Utilize-Agents-in-Jobs",
+      "Demo-Utilize-Docker-Image-Agent",
+      "Demo-Utilize-Dockerfile-Agent",
+      "Demo-Utilize-Kubernetes-Pod-as-Agent",
+      "Demo-Utilize-newContainerPerStage",
+      "Types-of-Agents"
+    ],
+    "Certified-Jenkins-Engineer|Pipeline-Enhancement-and-Caching": [
+      "Demo-Invalidate-Cache",
+      "Demo-Pipeline-Caching",
+      "Demo-Refactoring-Solar-System-Pipeline",
+      "Demo-Refactoring-Unit-Test-Stage",
+      "Demo-Sequential-stages",
+      "Demo-Sharing-a-file-between-containers",
+      "Demo-Stash-and-Unstash"
+    ],
+    "Certified-Jenkins-Engineer|Pipeline-Structure-and-Scripted-vs-Declarative": [
+      "Best-Practices-for-Scripted-Pipelines",
+      "Declarative-vs-Scripted-Pipeline",
+      "Demo-Declarative-vs-Scripted-Pipeline",
+      "Demo-Preversing-Stash-in-Declarative-Pipeline",
+      "Demo-Scripted-Pipeline-Initialize",
+      "Demo-Scripted-Pipeline-K8S-Agent",
+      "Demo-Scripted-Pipeline-Static-Agent"
+    ],
+    "Certified-Jenkins-Engineer|Jenkins-Administration-and-Monitoring-Part-2": [
+      "Demo-Forward-Audit-logs-to-External-Server",
+      "Demo-Groovy-Sandbox-and-In-process-Script-Approval-Part-2",
+      "Demo-Groovy-Sandbox-and-In-process-Script-Approval-Part-3",
+      "Demo-Install-and-Configure-Audit-Trail",
+      "Demo-Log-Recorder",
+      "Demo-Migrating-Jenkins-to-Another-Node",
+      "Demo-Monitoring-with-Prometheus-Grafana",
+      "DemoGroovy-Sandbox-and-In-process-Script-Approval-Part-1",
+      "Groovy-Sandbox-and-In-process-Script-Approval",
+      "Jenkins-Supervision"
+    ],
+    "Certified-Jenkins-Engineer|Backup-and-Configuration-Management": [
+      "Backing-upRestoring-Jenkins",
+      "Demo-Backing-upRestoring-Jenkins",
+      "Demo-Configure-and-Explore-JCasC",
+      "Demo-Migrating-Jenkins-Pipeline-to-GitHub-Action",
+      "Demo-Upgrading-Jenkins",
+      "Demo-Use-JCasC-to-Create-Jobs",
+      "Demo-Validating-Backup",
+      "DemoPipeline-Durability",
+      "Github-Actions-Basics",
+      "Jenkins-Configuration-as-Code-JCasC"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Configuration": [
+      "Commands-and-Arguments-in-Docker",
+      "Commands-and-Arguments-in-Kubernetes",
+      "ConfigMaps",
+      "Define-build-and-modify-container-images",
+      "Demo-Encrypting-Secret-Data-at-Rest",
+      "Environment-Variables",
+      "Node-Affinity",
+      "Node-Selectors-Logging",
+      "Pre-requisite-Security-in-Docker",
+      "Resource-Requirements",
+      "Secrets",
+      "Security-Contexts",
+      "Service-Account",
+      "Solution-Commands-and-Arguments-Optional",
+      "Solution-ConfigMaps-Optional",
+      "Solution-Node-Affinity-Optional",
+      "Solution-Secrets-Optional",
+      "Solution-Taints-and-Tolerations-Optional",
+      "Solutions-Resource-Requirements",
+      "Solutions-Security-Contexts",
+      "Solutions-Service-Account",
+      "Taints-Tolerations-vs-Node-Affinity",
+      "Taints-and-Tolerations"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Multi-Container-Pods": [
+      "Multi-Container-Pods",
+      "Solution-Init-Containers-Optional"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Observability": [
+      "Liveness-Probes",
+      "Logging",
+      "Monitoring",
+      "Readiness-Probes",
+      "Solution-Logging-optional",
+      "Solution-Monitoring-optional",
+      "Solution-Readiness-and-Liveness-Probes"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|POD-Design": [
+      "Cron-Jobs",
+      "Deployment-Strategy-Blue-Green",
+      "Deployment-Strategy-Canary",
+      "Jobs",
+      "Labels-Selectors-Annotations",
+      "Rolling-Updates-Rollbacks",
+      "Solution-Deployment-strategies",
+      "Solution-Jobs-and-Cronjobs-optional",
+      "Solution-Labels-and-Selectors-optional",
+      "Solution-Rolling-Updates-and-Rollbacks-optional"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|State-Persistence": [
+      "Headless-Services",
+      "Introduction-to-Docker-Storage",
+      "Persistent-Volume-Claims",
+      "Persistent-Volumes",
+      "Solution-Persistent-Volumes-and-Persistent-Volume-Claims-optional",
+      "Stateful-Sets-Introduction",
+      "Storage-Classes",
+      "Storage-in-Docker",
+      "Storage-in-StatefulSets",
+      "Volume-Driver-Plugins-in-Docker",
+      "Volumes-in-Kubernetes",
+      "Why-Stateful-Sets"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Certification-Tips": [
+      "Time-Management"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Helm-Fundamentals": [
+      "Helm-Concept",
+      "Helm-Introduction",
+      "Install-Helm",
+      "Solution-Helm-Concepts",
+      "Solution-Install-Helm"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|2025-Updates-Kustomize-Basics": [
+      "Common-Transformers",
+      "Components",
+      "Different-Types-of-Patches",
+      "Image-Transformers",
+      "InstallationSetup",
+      "Kustomize-Output",
+      "Kustomize-vs-Helm",
+      "Managing-Directories",
+      "Managing-Directories-Demo",
+      "Overlays",
+      "Patches-Dictionary",
+      "Patches-Intro",
+      "Patches-List",
+      "Transformers-Demo"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Lightning-Labs": [
+      "Solution-Lightning-Lab-1",
+      "Solution-Lightning-Lab-2"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Mock-Exams": [
+      "Mock-Exam-1-Solution",
+      "Mock-Exam-2-Solution",
+      "Whats-Next"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Services-Networking": [
+      "Developing-network-policies",
+      "Ingress-Networking",
+      "Network-Policies",
+      "Solution-Ingress-Networking-1",
+      "Solution-Ingress-Networking-2",
+      "Solution-Network-Policies-optional"
+    ],
+    "Certified-Kubernetes-Application-Developer-CKAD|Security": [
+      "API-Deprecations",
+      "API-Groups",
+      "API-Versions",
+      "Admission-Controllers",
+      "Authentication",
+      "Authorization",
+      "Cluster-Roles",
+      "Custom-Controllers",
+      "Custom-Resource-Definition",
+      "KubeConfig",
+      "Operator-Framework",
+      "Role-Based-Access-Controls",
+      "Solution-API-VersionsDeprecations",
+      "Solution-Admission-Controllers",
+      "Solution-Cluster-Roles",
+      "Solution-KubeConfig",
+      "Solution-Role-Based-Access-Controls",
+      "Solution-Validating-and-Mutating-Admission-Controllers",
+      "Validating-and-Mutating-Admission-Controllers"
+    ],
+    "Cline|Core-Workflows-Prompt-Engineering": [
+      "Demo-Context-Management-Techniques",
+      "Demo-Prompt-Anatomy-and-Best-Practices",
+      "Demo-Prompt-Specificity-and-Why-it-Matters",
+      "Demo-Summary",
+      "Demo-Under-the-Hood-Checkpoints-Context-Windows"
+    ],
+    "Cline|Resources-Next-Steps": [
+      "Demo-Community-Forums-and-Support-Channels",
+      "Demo-Documentation-Generation-with-AI-assistance",
+      "Demo-MCP-Marketplace",
+      "Demo-Official-Documentation-Navigation",
+      "Demo-Using-MCP-Servers-with-Cline"
+    ],
+    "Cloud-Native-Buildpacks|Creating-Buildpacks": [
+      "Buildpack-Buildplan",
+      "Buildpack-Layers",
+      "Caching",
+      "Creating-a-Buildpack",
+      "Demo-Application-Overview",
+      "Demo-Buildpack-Buildplan",
+      "Demo-Buildpack-Layers",
+      "Demo-Caching",
+      "Demo-Creating-a-Buildpack",
+      "Demo-Packaging-a-Buildpack",
+      "Packaging-a-Buildpack"
+    ],
+    "Cloud-Native-Buildpacks|Creating-Builders": [
+      "Creating-a-Builder",
+      "Demo-Creating-a-Builder"
+    ],
+    "Cloud-Native-Buildpacks|Course-Introduction": [
+      "Introduction"
+    ],
+    "Cursor-AI|Mastering-Autocompletion": [
+      "Demo-Auto-Imports-and-Customizing-Settings",
+      "Demo-Cursor-Ask-Mode",
+      "Demo-Essential-Prompt-Engineering",
+      "Demo-Getting-Started-with-Composer",
+      "Demo-Intelligent-Code-Suggestions",
+      "Introduction"
+    ],
+    "Cursor-AI|Interacting-with-your-Codebase": [
+      "Demo-Best-Practices-for-Querying",
+      "Demo-Codebase-QA",
+      "Demo-Contextual-References",
+      "Demo-Web-and-Library-Integration",
+      "Introduction"
+    ],
+    "Cursor-AI|Inline-Editing-and-Debugging": [
+      "Demo-Debugging-with-AI",
+      "Demo-Inline-AI-Edits",
+      "Demo-Lint-Error-Resolution",
+      "Introduction"
+    ],
+    "Cursor-AI|Terminal-Productivity": [
+      "Demo-Common-Terminal-Commands",
+      "Demo-Context-Aware-Terminal-Suggestions",
+      "Demo-Natural-Language-Commands",
+      "Introduction"
+    ],
+    "Cursor-AI|Understanding-and-Customizing-Cursor": [
+      "Demo-Automating-with-Agent-Mode",
+      "Demo-Choosing-Models",
+      "Demo-Documentation-Management",
+      "Demo-Privacy",
+      "Demo-Profiles-and-Features",
+      "Demo-Remote-Development",
+      "Introduction"
+    ],
+    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Kubernetes": [
+      "DNS-Failing-in-Pods",
+      "Managed-vs-Self-Managed-Kubernetes",
+      "Privileged-Pod-with-hostPath",
+      "Your-Kubernetes-Rollout-is-Stuck"
+    ],
+    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|CICD-DevOps": [
+      "Amazon-DevOps-Parse-This-Nginx-Log",
+      "GitOps-vs-Traditional-CD",
+      "Server-at-98-CPU-Scale-Up-or-Out",
+      "You-Pushed-Secrets-to-GitHub",
+      "Your-Database-Query-Takes-30-Seconds"
+    ],
+    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Security": [
+      "Leaked-S3-Bucket"
+    ],
+    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Networking": [
+      "Pod-Cant-Reach-Cluster-DNS",
+      "TCP-vs-UDP-When-to-Pick-Which",
+      "What-is-a-Webhook",
+      "dnsPolicy-Trap",
+      "ndots5-Trap"
+    ],
+    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Advanced-Concepts": [
+      "What-is-gRPC-vs-HTTP",
+      "gRPC-vs-RESTful-API"
+    ],
+    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|Interview-Setup": [
+      "How-Does-Kafka-Work",
+      "How-Does-Terraform-Actually-Work",
+      "What-Happens-on-docker-run-nginx",
+      "What-is-Kubernetes"
+    ],
+    "DevOps-Interview-Questions-and-Answers-Scenario-Based-Prep|System-Design": [
+      "Centralized-Logging-for-100-Microservices",
+      "Design-a-Home-Feed-For-Instagram",
+      "Design-a-Payment-Processing-System",
+      "Design-an-Image-Upload-Pipeline",
+      "Designing-Pipeline-with-Prometheus-and-Thanos",
+      "Designing-a-Caching-System",
+      "Logs-Pipeline-Alloy-Loki-S3-Grafana",
+      "Webhook-Delivery-System",
+      "Why-3-or-5-Nodes-Never-2-Quorum-Split-Brain"
     ]
   }
 }

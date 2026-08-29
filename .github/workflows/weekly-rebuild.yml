@@ -1,0 +1,57 @@
+name: Weekly KodeKloud Notes Rebuild
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Every Sunday at 3 AM UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Run parser
+        run: |
+          python3 scripts/kodekloud-parser-v2.py
+      
+      - name: Verify rebuild
+        run: |
+          python3 scripts/verify-rebuild.py
+      
+      - name: Commit and push changes
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Weekly rebuild: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
+      
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "Weekly KodeKloud rebuild failed!"
+          exit 1

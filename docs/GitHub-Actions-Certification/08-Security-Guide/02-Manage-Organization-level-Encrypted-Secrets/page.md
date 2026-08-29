@@ -95,7 +95,7 @@ Observe the queued workflow:
 Once complete, check that the secret is masked in the first step and fully printed in the second:
 
 <Frame>
-  ![The image shows a GitHub Actions interface displaying a successful job run for "print\_environment\_secrets," which includes steps like setting up the job and reading secret content.](https://kodekloud.com/kk-media/image/upload/v1752876384/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752876384/notes-assets/images/GitHub-Actions-Certification-Manage-Organization-level-Encrypted-Secrets/github-actions-successful-job-print-secrets.jpg)
+  ![The image shows a GitHub Actions interface displaying a successful job run for "print\_environment\_secrets," which includes steps like setting up the job and reading secret content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876384/notes-assets/images/GitHub-Actions-Certification-Manage-Organization-level-Encrypted-Secrets/github-actions-successful-job-print-secrets.jpg)
 </Frame>
 
 ***
@@ -160,7 +160,7 @@ Push and view both jobs in **Actions**:
 The environment job uses the environment-level `PROD_API_KEY`:
 
 <Frame>
-  ![The image shows a GitHub Actions interface displaying a successful job run for "print\_environment\_secrets," which includes steps like setting up the job and reading secret content.](https://kodekloud.com/kk-media/image/upload/v1752876384/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752876384/notes-assets/images/GitHub-Actions-Certification-Manage-Organization-level-Encrypted-Secrets/github-actions-successful-job-print-secrets.jpg)
+  ![The image shows a GitHub Actions interface displaying a successful job run for "print\_environment\_secrets," which includes steps like setting up the job and reading secret content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876384/notes-assets/images/GitHub-Actions-Certification-Manage-Organization-level-Encrypted-Secrets/github-actions-successful-job-print-secrets.jpg)
 </Frame>
 
 ***

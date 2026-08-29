@@ -63,7 +63,7 @@ The exam guide is organized into four key domains:
    This final domain examines pricing models (on-demand, spot, reservations, and compute savings plans) along with AWS support resources, billing processes, budgeting, and cost management. AWS does not expect you to memorize specific prices, which may change over time.
 
 <Frame>
-  ![The image outlines AWS training content on billing, pricing, and support, focusing on comparing pricing models, compute purchasing options, data transfer charges, and storage options.](https://kodekloud.com/kk-media/image/upload/v1752861624/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752861624/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Practitioners-Exam-guide/frame_570.jpg)
+  ![The image outlines AWS training content on billing, pricing, and support, focusing on comparing pricing models, compute purchasing options, data transfer charges, and storage options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861624/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Practitioners-Exam-guide/frame_570.jpg)
 </Frame>
 
 Additional details in the guide include service-specific design principles (covering cloud benefits, migration strategies, and the Cloud Adoption Framework) and comprehensive content on AWS economics, cost-saving strategies, and managed services.
@@ -111,7 +111,7 @@ The exam also introduces topics related to Application Integration and expands t
 Before concluding this section, the exam guide revisits billing and support topics, underlining the importance of mastering AWS pricing models and cost management strategies.
 
 <Frame>
-  ![The image outlines AWS training content on billing, pricing, and support, focusing on comparing pricing models, compute purchasing options, data transfer charges, and storage options.](https://kodekloud.com/kk-media/image/upload/v1752861624/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752861624/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Practitioners-Exam-guide/frame_570.jpg)
+  ![The image outlines AWS training content on billing, pricing, and support, focusing on comparing pricing models, compute purchasing options, data transfer charges, and storage options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861624/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Practitioners-Exam-guide/frame_570.jpg)
 </Frame>
 
 It also covers skills in budgeting and managing costs, as well as the various technical support options available.

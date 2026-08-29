@@ -96,7 +96,7 @@ MySQL [dmstarget]> SHOW CREATE TABLE product;
 </Callout>
 
 <Frame>
-  ![The image presents a scenario where a retail company plans to migrate their SQL database to Amazon Aurora using AWS DMS, with options for achieving continuous data replication during the migration process.](https://kodekloud.com/kk-media/image/upload/v1752864401/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864401/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-MigrationTransfer-Services/sql-database-migration-amazon-aurora.jpg)
+  ![The image presents a scenario where a retail company plans to migrate their SQL database to Amazon Aurora using AWS DMS, with options for achieving continuous data replication during the migration process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864401/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-MigrationTransfer-Services/sql-database-migration-amazon-aurora.jpg)
 </Frame>
 
 DMS supports encryption at rest, SSL/TLS for in-transit security, and full encryption of replication streams. Multiple log types (task logs and time travel logs) provide robust oversight during migration.
@@ -128,7 +128,7 @@ Furthermore, DMS ensures continuous replication of incremental data changes whil
 </Frame>
 
 <Frame>
-  ![The image presents a scenario where a retail company plans to migrate their SQL database to Amazon Aurora using AWS DMS, with options for achieving continuous data replication during the migration process.](https://kodekloud.com/kk-media/image/upload/v1752864401/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864401/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-MigrationTransfer-Services/sql-database-migration-amazon-aurora.jpg)
+  ![The image presents a scenario where a retail company plans to migrate their SQL database to Amazon Aurora using AWS DMS, with options for achieving continuous data replication during the migration process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864401/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-MigrationTransfer-Services/sql-database-migration-amazon-aurora.jpg)
 </Frame>
 
 ***

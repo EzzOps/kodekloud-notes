@@ -111,13 +111,13 @@ Hybrid computing solutions bring the power of AWS services into your on-premises
 A reference architecture for AWS Outposts includes an Amazon VPC, an Outpost subnet, and a service anchor that routes traffic over a Direct Connect line to a customer edge router. Local infrastructure components, such as dedicated VLANs and local gateways, integrate AWS services like RDS and EC2. Although Outposts benefit from traditional data center resiliency—such as redundancy across racks and locations—many resiliency settings are determined by your local infrastructure design.
 
 <Frame>
-  ![The image is a networking reference architecture diagram for AWS Outposts Rack, illustrating connectivity for LAN, WAN, and Amazon VPC. It includes components like AWS regions, customer on-premises setups, and various network devices and connections.](https://kodekloud.com/kk-media/image/upload/v1752863704/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752863704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Compute-Services-Part-3/aws-outposts-rack-network-architecture.jpg)
+  ![The image is a networking reference architecture diagram for AWS Outposts Rack, illustrating connectivity for LAN, WAN, and Amazon VPC. It includes components like AWS regions, customer on-premises setups, and various network devices and connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Compute-Services-Part-3/aws-outposts-rack-network-architecture.jpg)
 </Frame>
 
 Another diagram demonstrates an Outposts deployment supporting EKS with dual subnets: one for the management/control plane and another for data (including ALBs, volumes, and EC2 instances). While AWS provides robust connectivity and integration, the ultimate responsibility for ensuring a resilient data center lies with you.
 
 <Frame>
-  ![The image presents a scenario where an Outposts instance integrates with EKS and EC2 instances running containers, with clear separation between the control and data planes managed via local gateways and ALBs.](https://kodekloud.com/kk-media/image/upload/v1752863704/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752863704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Compute-Services-Part-3/aws-outposts-rack-network-architecture.jpg)
+  ![The image presents a scenario where an Outposts instance integrates with EKS and EC2 instances running containers, with clear separation between the control and data planes managed via local gateways and ALBs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Compute-Services-Part-3/aws-outposts-rack-network-architecture.jpg)
 </Frame>
 
 For regulatory compliance or low-latency needs, Outposts can also serve as primary or secondary failover sites, keeping critical data on-premises while maintaining connectivity with AWS cloud services.

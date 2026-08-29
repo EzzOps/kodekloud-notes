@@ -84,7 +84,7 @@ Integrate AWS X-Ray with your Lambda functions by ensuring that the execution ro
 Additionally, AWS GuardDuty can monitor CloudWatch logs and other data sources to detect potential vulnerabilities and threats. GuardDuty’s capabilities extend to Lambda, checking for any security anomalies and ensuring enhanced protection.
 
 <Frame>
-  ![The image presents a scenario where a fintech company is considering using AWS GuardDuty to monitor AWS Lambda functions for security threats, with four suggested implementation steps.](https://kodekloud.com/kk-media/image/upload/v1752864146/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-6/aws-guardduty-lambda-security-steps.jpg)
+  ![The image presents a scenario where a fintech company is considering using AWS GuardDuty to monitor AWS Lambda functions for security threats, with four suggested implementation steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-6/aws-guardduty-lambda-security-steps.jpg)
 </Frame>
 
 ## AWS Step Functions: Orchestration and Security
@@ -166,7 +166,7 @@ Furthermore, secure IAM integration on Outposts by assigning roles with specific
 For organizations looking to extend container workloads on-premises, ECS and EKS Anywhere offer integrated solutions. These services allow deployment and management of containers in traditional data centers while maintaining AWS-level security and IAM integration. For example, a global retail company running containerized applications with ECS must ensure that the ECS Anywhere agent has proper permissions for secure communication with AWS.
 
 <Frame>
-  ![The image presents a scenario where a fintech company is considering using AWS GuardDuty to monitor AWS Lambda functions for security threats, with four suggested implementation steps.](https://kodekloud.com/kk-media/image/upload/v1752864146/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-6/aws-guardduty-lambda-security-steps.jpg)
+  ![The image presents a scenario where a fintech company is considering using AWS GuardDuty to monitor AWS Lambda functions for security threats, with four suggested implementation steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-6/aws-guardduty-lambda-security-steps.jpg)
 </Frame>
 
 Similarly, when using EKS Anywhere, leverage AWS connectors and IAM to manage Kubernetes clusters securely so that integration with AWS services remains seamless.

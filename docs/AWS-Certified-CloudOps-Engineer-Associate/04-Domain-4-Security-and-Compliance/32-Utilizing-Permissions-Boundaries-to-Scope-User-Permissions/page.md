@@ -21,7 +21,7 @@ Imagine granting developers full access to a non-production account while preven
 Within an AWS account, identity-based policies determine which actions are allowed. Permission boundaries further constrain these actions by setting an upper limit. For example, an identity-based policy might enable a user to perform several actions on an S3 bucket, but a permission boundary can prevent uploading objects even if listing the bucket contents is allowed.
 
 <Frame>
-  ![The image illustrates the concept of permissions boundaries, showing a comparison between limited access and full access, with icons representing permissions boundaries and identity-based policy.](https://kodekloud.com/kk-media/image/upload/v1752860665/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752860665/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Utilizing-Permissions-Boundaries-to-Scope-User-Permissions/permissions-boundaries-access-comparison.jpg)
+  ![The image illustrates the concept of permissions boundaries, showing a comparison between limited access and full access, with icons representing permissions boundaries and identity-based policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860665/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Utilizing-Permissions-Boundaries-to-Scope-User-Permissions/permissions-boundaries-access-comparison.jpg)
 </Frame>
 
 It is important to note that explicit denies always take precedence over allows. Regardless of whether a denial comes from an identity-based policy or a permission boundary, if any policy explicitly denies an action, that action is blocked.
@@ -41,7 +41,7 @@ Effective permissions for a user result from the intersection of their identity-
 In multi-account environments, AWS Organizations and Service Control Policies (SCPs) play a key role. SCPs apply permission restrictions at an organization-wide level across all accounts. While SCPs are part of AWS Organizations and not IAM, they complement identity-based policies, resource-based policies, and permission boundaries to define a user's effective permissions.
 
 <Frame>
-  ![The image illustrates the concept of permissions boundaries, showing a comparison between limited access and full access, with icons representing permissions boundaries and identity-based policy.](https://kodekloud.com/kk-media/image/upload/v1752860665/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752860665/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Utilizing-Permissions-Boundaries-to-Scope-User-Permissions/permissions-boundaries-access-comparison.jpg)
+  ![The image illustrates the concept of permissions boundaries, showing a comparison between limited access and full access, with icons representing permissions boundaries and identity-based policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860665/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Utilizing-Permissions-Boundaries-to-Scope-User-Permissions/permissions-boundaries-access-comparison.jpg)
 </Frame>
 
 Identity-based policies, resource-based policies, and permission boundaries work together, and explicit denies from any of these layers will block an action—even if other policies allow it.

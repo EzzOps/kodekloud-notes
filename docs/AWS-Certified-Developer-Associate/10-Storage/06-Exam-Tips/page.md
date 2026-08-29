@@ -82,7 +82,7 @@ Buckets can have three versioning states:
 Multi-factor authentication (MFA) can also be enabled to protect the versioning state of a bucket.
 
 <Frame>
-  ![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](https://kodekloud.com/kk-media/image/upload/v1752859666/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
+  ![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
 </Frame>
 
 ### S3 Bucket Policies and Encryption
@@ -112,7 +112,7 @@ Files in S3 are encrypted on a per-object basis, and you can choose different en
    Manage and create your own keys using AWS KMS. S3 integrates with KMS so you can establish custom access policies for encryption and decryption.
 
 <Frame>
-  ![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](https://kodekloud.com/kk-media/image/upload/v1752859666/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
+  ![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
 </Frame>
 
 ### Pre-signed URLs in S3

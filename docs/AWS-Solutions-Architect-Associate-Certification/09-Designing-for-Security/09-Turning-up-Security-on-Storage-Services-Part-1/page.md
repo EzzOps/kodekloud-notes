@@ -158,7 +158,7 @@ FSx for Windows File Server is tailored for Windows-based applications and suppo
 For instance, a multinational corporation migrating on-premise Windows applications to AWS would benefit from a managed, secure Windows file system integrated with Active Directory.
 
 <Frame>
-  ![The image presents a scenario about a corporation migrating to AWS, considering Amazon FSx for Windows File Server, and lists four statements regarding its security features and considerations.](https://kodekloud.com/kk-media/image/upload/v1752864543/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
+  ![The image presents a scenario about a corporation migrating to AWS, considering Amazon FSx for Windows File Server, and lists four statements regarding its security features and considerations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
 </Frame>
 
 ***
@@ -207,7 +207,7 @@ FSx for NetApp ONTAP is a managed file system built for shared storage with adva
 These capabilities make FSx for NetApp ONTAP particularly attractive for sensitive industries like healthcare, where managing patient data securely is paramount.
 
 <Frame>
-  ![The image presents a scenario about a healthcare provider considering migrating their file storage solution to FSx for NetApp ONTAP, listing four statements regarding its security features and considerations.](https://kodekloud.com/kk-media/image/upload/v1752864543/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
+  ![The image presents a scenario about a healthcare provider considering migrating their file storage solution to FSx for NetApp ONTAP, listing four statements regarding its security features and considerations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
 </Frame>
 
 ***

@@ -140,7 +140,7 @@ We want to pick up `test-results.xml` from the `unit_testing` job and push it in
 Once the bucket exists, it’s initially empty:
 
 <Frame>
-  ![The image shows a MinIO Object Store interface with a bucket named "solar-system-reports-bucket," which currently has 0 objects and 0.0B usage.](https://kodekloud.com/kk-media/image/upload/v1752877440/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752877440/notes-assets/images/GitLab-CICD-Architecting-Deploying-and-Optimizing-Pipelines-Use-Local-Template-to-Upload-Reports-to-AWSMinio-S3-Bucket/minio-object-store-solar-system-reports.jpg)
+  ![The image shows a MinIO Object Store interface with a bucket named "solar-system-reports-bucket," which currently has 0 objects and 0.0B usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877440/notes-assets/images/GitLab-CICD-Architecting-Deploying-and-Optimizing-Pipelines-Use-Local-Template-to-Upload-Reports-to-AWSMinio-S3-Bucket/minio-object-store-solar-system-reports.jpg)
 </Frame>
 
 <Callout icon="lightbulb">
@@ -308,7 +308,7 @@ PRE reports-1169963093/
 Open the MinIO browser again—you should now see the `reports-<pipeline_id>/test-results.xml` folder and file:
 
 <Frame>
-  ![The image shows a MinIO Object Store interface with a bucket named "solar-system-reports-bucket," containing a reports folder and its contents.](https://kodekloud.com/kk-media/image/upload/v1752877440/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752877440/notes-assets/images/GitLab-CICD-Architecting-Deploying-and-Optimizing-Pipelines-Use-Local-Template-to-Upload-Reports-to-AWSMinio-S3-Bucket/minio-object-store-solar-system-reports.jpg)
+  ![The image shows a MinIO Object Store interface with a bucket named "solar-system-reports-bucket," containing a reports folder and its contents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877440/notes-assets/images/GitLab-CICD-Architecting-Deploying-and-Optimizing-Pipelines-Use-Local-Template-to-Upload-Reports-to-AWSMinio-S3-Bucket/minio-object-store-solar-system-reports.jpg)
 </Frame>
 
 ## 8. Runner Configuration Interface

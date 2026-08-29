@@ -150,14 +150,14 @@ For containerized storage:
 * **EBS Volumes:** Use the EBS CSI driver with your Storage Class defined to enable encryption by default when persistent volumes are dynamically provisioned.
 
 <Frame>
-  ![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](https://kodekloud.com/kk-media/image/upload/v1752864104/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
+  ![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
 </Frame>
 
 * **EFS:** Ensure storage classes or PersistentVolume definitions are configured to enforce data encryption.
 * **FSx for Lustre or OpenZFS:** Although many FSx solutions are encrypted by default, review the CSI driver configuration to confirm proper encryption parameters.
 
 <Frame>
-  ![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](https://kodekloud.com/kk-media/image/upload/v1752864105/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
+  ![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
 </Frame>
 
 ***
@@ -248,7 +248,7 @@ When working with Container Storage Interface (CSI) drivers for persistent stora
   Ensure your Storage Class is defined with encryption enabled. The EBS CSI driver will provision encrypted volumes when the encrypted parameter is set to true.
 
 <Frame>
-  ![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](https://kodekloud.com/kk-media/image/upload/v1752864104/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
+  ![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
 </Frame>
 
 * **EFS:**\
@@ -257,7 +257,7 @@ When working with Container Storage Interface (CSI) drivers for persistent stora
   Although many FSx solutions are encrypted by default, verify the CSI driver configuration to ensure encryption settings are correctly specified.
 
 <Frame>
-  ![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](https://kodekloud.com/kk-media/image/upload/v1752864105/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
+  ![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
 </Frame>
 
 ***

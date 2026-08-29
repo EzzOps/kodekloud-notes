@@ -112,13 +112,13 @@ You may enable both if you require active-active writes and automatic failover.
 1. In the portal menu, choose **Data Explorer** (or press Ctrl + F and search for it).
 
 <Frame>
-  ![The image shows the Azure Cosmos DB Data Explorer interface, featuring options for creating a new container, launching a quick start, and connecting to a database. The left panel displays a navigation menu with sections like Overview, Activity log, and Data Explorer.](https://kodekloud.com/kk-media/image/upload/v1752872935/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752872935/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Create-Cosmos-DB-Account/azure-cosmos-db-data-explorer-interface.jpg)
+  ![The image shows the Azure Cosmos DB Data Explorer interface, featuring options for creating a new container, launching a quick start, and connecting to a database. The left panel displays a navigation menu with sections like Overview, Activity log, and Data Explorer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752872935/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Create-Cosmos-DB-Account/azure-cosmos-db-data-explorer-interface.jpg)
 </Frame>
 
 2. Expand your **items** database and container.
 
 <Frame>
-  ![The image shows the Azure Cosmos DB Data Explorer interface, featuring options for creating a new container, launching a quick start, and connecting to a database. The left panel displays a navigation menu with sections like Overview, Activity log, and Data Explorer.](https://kodekloud.com/kk-media/image/upload/v1752872935/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752872935/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Create-Cosmos-DB-Account/azure-cosmos-db-data-explorer-interface.jpg)
+  ![The image shows the Azure Cosmos DB Data Explorer interface, featuring options for creating a new container, launching a quick start, and connecting to a database. The left panel displays a navigation menu with sections like Overview, Activity log, and Data Explorer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752872935/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Create-Cosmos-DB-Account/azure-cosmos-db-data-explorer-interface.jpg)
 </Frame>
 
 3. Click **New Item**. Replace the default JSON:

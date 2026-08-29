@@ -13,7 +13,7 @@ We’ll use a sample project called **TestWeb** and demonstrate:
 * Generating, copying, and committing the release notes
 
 <Frame>
-  ![The image shows a README file in an Azure DevOps Wiki, detailing a .NET Web API application called TestWeb, with sections on description, installation, usage, contributing, and licensing.](https://kodekloud.com/kk-media/image/upload/v1752867369/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752867369/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-wiki-readme-testweb.jpg)
+  ![The image shows a README file in an Azure DevOps Wiki, detailing a .NET Web API application called TestWeb, with sections on description, installation, usage, contributing, and licensing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867369/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-wiki-readme-testweb.jpg)
 </Frame>
 
 ***

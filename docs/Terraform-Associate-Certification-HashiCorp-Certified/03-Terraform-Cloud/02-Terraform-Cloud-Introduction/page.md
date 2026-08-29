@@ -99,7 +99,7 @@ Review and update your organization settings by navigating to your organization 
 </Frame>
 
 <Frame>
-  ![The image shows a Terraform Cloud settings page for version control, connected to a GitHub repository, with options for automatic run triggering and speculative plans.](https://kodekloud.com/kk-media/image/upload/v1752884123/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752884123/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1000.jpg)
+  ![The image shows a Terraform Cloud settings page for version control, connected to a GitHub repository, with options for automatic run triggering and speculative plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884123/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1000.jpg)
 </Frame>
 
 This lesson provided a comprehensive walkthrough of using Terraform Cloud—from account creation to advanced policy enforcement with Sentinel. For further insights, explore the accompanying multiple-choice quiz to test your knowledge of Terraform Cloud features.

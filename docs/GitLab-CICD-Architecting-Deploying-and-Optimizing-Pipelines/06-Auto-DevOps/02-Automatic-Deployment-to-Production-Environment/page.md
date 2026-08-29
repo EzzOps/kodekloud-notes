@@ -6,7 +6,7 @@
 Traffic splits according to ingress weights configured in each rollout step.
 
 <Frame>
-  ![The image shows a GitLab pipeline interface for a customized AutoDevOps job, displaying stages like build, test, and incremental rollout with various completion statuses.](https://kodekloud.com/kk-media/image/upload/v1752877065/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752877065/notes-assets/images/GitLab-CICD-Architecting-Deploying-and-Optimizing-Pipelines-AutoDevOps-Customization/gitlab-pipeline-autodevops-job-2.jpg)
+  ![The image shows a GitLab pipeline interface for a customized AutoDevOps job, displaying stages like build, test, and incremental rollout with various completion statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877065/notes-assets/images/GitLab-CICD-Architecting-Deploying-and-Optimizing-Pipelines-AutoDevOps-Customization/gitlab-pipeline-autodevops-job-2.jpg)
 </Frame>
 
 ## Approving Protected Deployments

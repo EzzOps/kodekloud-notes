@@ -212,14 +212,14 @@ If you encounter an error due to overlapping subnets (for example, with the Jump
   Create a public IP address for the front-end of the Application Gateway.
 
 <Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically focusing on adding a public IP address. A dialog box is open for entering details like the name, SKU, and assignment type for the public IP.](https://kodekloud.com/kk-media/image/upload/v1752882135/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
+  ![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically focusing on adding a public IP address. A dialog box is open for entering details like the name, SKU, and assignment type for the public IP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
 </Frame>
 
 * **Back-end Pools:**\
   Create backend pools for the red, green, and blue servers. Initially, you may create the pools without adding servers. Later, attach the appropriate virtual machines to their corresponding pools.
 
 <Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, displaying the configuration where the backend servers and public IP are being added.](https://kodekloud.com/kk-media/image/upload/v1752882135/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
+  ![The image shows a Microsoft Azure portal interface for creating an application gateway, displaying the configuration where the backend servers and public IP are being added.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
 </Frame>
 
 ### Step 4: Configure Routing Rules

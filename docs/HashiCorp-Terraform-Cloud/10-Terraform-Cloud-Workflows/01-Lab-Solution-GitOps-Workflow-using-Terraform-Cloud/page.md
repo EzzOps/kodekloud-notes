@@ -157,7 +157,7 @@ Once the PR is open, Terraform Cloud runs a speculative plan in **staging**:
 Click **Details** to review:
 
 <Frame>
-  ![The image shows a Terraform Cloud interface with a plan running for a pull request. It includes details of resources to be created.](https://kodekloud.com/kk-media/image/upload/v1752878891/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
+  ![The image shows a Terraform Cloud interface with a plan running for a pull request. It includes details of resources to be created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
 </Frame>
 
 When checks succeed, merge the PR.
@@ -193,7 +193,7 @@ Repeat the PR process from `staging` into `main`:
 Terraform Cloud runs the final plan for **prod**:
 
 <Frame>
-  ![The image shows a Terraform Cloud interface with a plan running for a pull request, indicating resources to be created in AWS, such as S3 buckets and related configurations. The sidebar includes navigation options like Workspaces, Runs, and Settings.](https://kodekloud.com/kk-media/image/upload/v1752878891/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
+  ![The image shows a Terraform Cloud interface with a plan running for a pull request, indicating resources to be created in AWS, such as S3 buckets and related configurations. The sidebar includes navigation options like Workspaces, Runs, and Settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
 </Frame>
 
 Merge the PR. Once the apply finishes, verify all three buckets exist:

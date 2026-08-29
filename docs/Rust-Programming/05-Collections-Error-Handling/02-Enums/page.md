@@ -60,7 +60,7 @@ The Rust standard library also provides useful enums such as `Option` and `Resul
 * **Result:** Used for error handling. It is either `Ok(value)` for success or `Err(error)` for failure.
 
 <Frame>
-  ![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](https://kodekloud.com/kk-media/image/upload/v1752883842/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
+  ![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
 </Frame>
 
 <Callout icon="lightbulb">
@@ -219,7 +219,7 @@ This code attempts to open "hello.txt" and:
 When "hello.txt" is absent, you'll see the "File not found" message. Creating the file will result in a successful file details printout.
 
 <Frame>
-  ![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](https://kodekloud.com/kk-media/image/upload/v1752883842/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
+  ![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
 </Frame>
 
 <Callout icon="lightbulb">

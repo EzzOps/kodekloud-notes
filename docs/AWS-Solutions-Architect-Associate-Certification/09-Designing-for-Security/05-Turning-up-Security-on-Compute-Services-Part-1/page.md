@@ -267,7 +267,7 @@ Integrating AWS CloudTrail with CloudWatch is essential for monitoring API calls
 For instance, an e-commerce company can integrate these services to audit system activities without requiring instances to have public IP addresses.
 
 <Frame>
-  ![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](https://kodekloud.com/kk-media/image/upload/v1752864066/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
+  ![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
 </Frame>
 
 Option 2 is correct: CloudTrail captures API calls and streams logs to CloudWatch for real-time analysis.
@@ -289,7 +289,7 @@ AWS EC2 integrates advanced security features such as UEFI Secure Boot and Nitro
 This process protects against unauthorized modifications during boot, thereby enhancing overall system security.
 
 <Frame>
-  ![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](https://kodekloud.com/kk-media/image/upload/v1752864066/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
+  ![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
 </Frame>
 
 <Frame>

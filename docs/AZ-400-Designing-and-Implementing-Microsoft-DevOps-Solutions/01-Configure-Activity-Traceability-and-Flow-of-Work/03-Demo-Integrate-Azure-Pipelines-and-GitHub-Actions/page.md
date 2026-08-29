@@ -143,7 +143,7 @@ Copying C:\agent\_work\7\releasenotes\_1216.md to C:\agent\_work\7\s\wiki\releas
 Finally, navigate to your Azure DevOps Wiki—each build now publishes a new `releasenotes_<BuildId>.md` page:
 
 <Frame>
-  ![The image shows a README file in an Azure DevOps Wiki, detailing a .NET Web API application called TestWeb, with sections on description, installation, usage, contributing, and licensing.](https://kodekloud.com/kk-media/image/upload/v1752867369/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752867369/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-wiki-readme-testweb.jpg)
+  ![The image shows a README file in an Azure DevOps Wiki, detailing a .NET Web API application called TestWeb, with sections on description, installation, usage, contributing, and licensing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867369/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-wiki-readme-testweb.jpg)
 </Frame>
 
 <Callout icon="lightbulb">

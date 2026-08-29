@@ -158,7 +158,7 @@ For Consul storage, enforce TLS, trusted certs, ACLs, and gossip encryption (gen
 Activate one or more audit devices, send logs to a centralized server, archive them, and configure alerts for critical events.
 
 <Frame>
-  ![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878532/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
+  ![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
 </Frame>
 
 ### 3.4 Avoid Clear-Text Credentials
@@ -180,7 +180,7 @@ seal "awskms" {
 </Callout>
 
 <Frame>
-  ![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878532/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
+  ![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
 </Frame>
 
 ### 3.5 Upgrade Vault Frequently

@@ -232,7 +232,7 @@ Within your workspace settings, you can modify:
 Locking a workspace prevents concurrent plans, and version control settings display which repository is connected.
 
 <Frame>
-  ![The image shows a Terraform Cloud settings page for version control, connected to a GitHub repository, with options for automatic run triggering and speculative plans.](https://kodekloud.com/kk-media/image/upload/v1752884123/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752884123/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1000.jpg)
+  ![The image shows a Terraform Cloud settings page for version control, connected to a GitHub repository, with options for automatic run triggering and speculative plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884123/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1000.jpg)
 </Frame>
 
 To manage your organization, access the user settings on the left to update organization details (like password changes and two-factor authentication). Organization-specific settings allow you to review the organization name and manage deletion if necessary.

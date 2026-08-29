@@ -159,7 +159,7 @@ A user can belong to multiple groups. For example, if "Sanjeev" is part of both 
 When a read-only user tries to delete an S3 bucket, they will receive a permissions error.
 
 <Frame>
-  ![The image shows an AWS S3 console screen for deleting a bucket named "sanjeevkodekloudbucket," with a warning about permissions needed to delete the bucket.](https://kodekloud.com/kk-media/image/upload/v1752858935/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752858935/notes-assets/images/AWS-Certified-Developer-Associate-IAM-Demo/aws-s3-delete-bucket-warning.jpg)
+  ![The image shows an AWS S3 console screen for deleting a bucket named "sanjeevkodekloudbucket," with a warning about permissions needed to delete the bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858935/notes-assets/images/AWS-Certified-Developer-Associate-IAM-Demo/aws-s3-delete-bucket-warning.jpg)
 </Frame>
 
 ***
@@ -252,7 +252,7 @@ After switching, a badge labeled "S3 role" with your chosen color confirms that 
 For example, try deleting the "Sanjeev KodeKloud" bucket:
 
 <Frame>
-  ![The image shows an AWS S3 console screen for deleting a bucket named "sanjeevkodekloudbucket," with a warning about permissions needed to delete the bucket.](https://kodekloud.com/kk-media/image/upload/v1752858935/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752858935/notes-assets/images/AWS-Certified-Developer-Associate-IAM-Demo/aws-s3-delete-bucket-warning.jpg)
+  ![The image shows an AWS S3 console screen for deleting a bucket named "sanjeevkodekloudbucket," with a warning about permissions needed to delete the bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858935/notes-assets/images/AWS-Certified-Developer-Associate-IAM-Demo/aws-s3-delete-bucket-warning.jpg)
 </Frame>
 
 Once the deletion is successful, switch back to your regular user session by clicking **Switch Back**.

@@ -89,7 +89,7 @@ jobs:
           echo "- Groups" >> $GITHUB_STEP_SUMMARY
           echo "Secret Key from previous step: $key" >> $GITHUB_STEP_SUMMARY
           echo "Output from previous step: ${{ steps.my_output.outputs.myOutput }}" >> $GITHUB_STEP_SUMMARY
-          echo "![](https://raw.githubusercontent.com/sidd-harth/ga-workflow-step-cmd-demo/main/kk-logo.png)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
 ```
 
 ***

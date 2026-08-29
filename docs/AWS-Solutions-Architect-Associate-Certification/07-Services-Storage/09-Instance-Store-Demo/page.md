@@ -13,7 +13,7 @@ To begin, navigate to the EC2 console and launch a new instance. For this demons
 After choosing an appropriate instance type, select any key pair of your preference.
 
 <Frame>
-  ![The image shows an AWS EC2 instance launch configuration screen, where a user is selecting a key pair and reviewing instance details like type, security group, and storage.](https://example.com/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store-Demo/aws-ec2-instance-launch-configuration.jpg)
+  
 </Frame>
 
 Review the configuration details. You will notice that the default root volume is 8 GB, and further down, you will see an instance store volume (approximately 75 GB, reported as 69.8 GB). The device name for the instance store is typically something like `/dev/nvme0n1` or `/dev/nvme1n1`. Also, ensure that "Auto-assign Public IP" is enabled so you can easily connect to your instance.
@@ -21,7 +21,7 @@ Review the configuration details. You will notice that the default root volume i
 Once your instance is deployed, return to the EC2 console's instance tab. You should now see the instance with its assigned public IP.
 
 <Frame>
-  ![The image shows an AWS EC2 dashboard indicating the successful launch of an instance, with options for next steps like creating billing alerts, connecting to the instance, and managing monitoring.](https://example.com/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store-Demo/aws-ec2-dashboard-instance-launch.jpg)
+  
 </Frame>
 
 ## Connecting and Configuring the Instance Store
@@ -95,7 +95,7 @@ The file "test" is now stored on your instance store volume.
 Data on an instance store is ephemeral. A simple reboot will not change the physical host, so your instance store volume and its data remain intact. You can verify this by rebooting the instance from the EC2 console (right-click the instance and select "Reboot"). After the reboot, the public IP address will remain the same.
 
 <Frame>
-  ![The image shows an AWS EC2 management console with two running instances, displaying details such as instance ID, type, state, and IP addresses.](https://example.com/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store-Demo/aws-ec2-management-console-instances.jpg)
+  
 </Frame>
 
 However, when you stop and then start your instance, it is relocated to a different physical host. This process replaces the instance store with a new, empty volume. To observe this behavior:
@@ -105,7 +105,7 @@ However, when you stop and then start your instance, it is relocated to a differ
 3. Wait a few minutes, then start the instance again.
 
 <Frame>
-  ![The image shows an AWS EC2 management console with a pop-up window asking for confirmation to stop an instance. The user is prompted to click "Stop" to proceed.](https://example.com/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store-Demo/aws-ec2-stop-instance-confirmation.jpg)
+  
 </Frame>
 
 After the instance restarts, note the change in the public IP address, which confirms it now runs on a different physical host. SSH into the instance again and run:

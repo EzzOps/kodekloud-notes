@@ -27,7 +27,7 @@ Key toolbar buttons and what they insert
 | Mention            | Autocompletes users/teams                        |                     `@username` |
 | Issue/PR reference | Autocompletes issues/PRs in the repo             |                          `#123` |
 | Emoji              | Inserts emoji shortcodes                         |         `:rocket:` (becomes 🚀) |
-| Insert image       | Adds image markdown or upload                    |      `![alt text](https://...)` |
+| Insert image       | Adds image markdown or upload                    |      `` |
 | Formatting help    | Opens Markdown help and shortcuts                |           Link to documentation |
 
 Examples of Markdown the toolbar generates

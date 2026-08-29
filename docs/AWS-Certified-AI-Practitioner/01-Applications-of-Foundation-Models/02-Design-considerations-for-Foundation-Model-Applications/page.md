@@ -118,7 +118,7 @@ Customization can be achieved through different approaches:
 Fine-tuning generally incurs lower costs while still improving model specificity.
 
 <Frame>
-  ![The image is a comparison chart of customizing pre-trained models, contrasting fine-tuning with full retraining, highlighting differences in adjustments, resource requirements, and suitability for tasks.](https://images/AWS-Certified-AI-Practitioner-Design-considerations-for-Foundation-Model-Applications/model-customization-comparison-chart.jpg)
+  
 </Frame>
 
 Always analyze these trade-offs holistically, considering model complexity, performance metrics, and cost implications together.

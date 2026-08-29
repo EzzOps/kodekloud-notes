@@ -51,7 +51,7 @@ Links and images share a similar syntax. Put the link text in square brackets an
 
 ```markdown theme={null}
 [Display text](https://example.com)
-![Alt text](https://example.com/image.png)
+
 ```
 
 Best practices:

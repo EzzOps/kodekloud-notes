@@ -1,0 +1,50 @@
+# Course Introduction
+
+Source: https://notes.kodekloud.com/docs/AWS-Lambda/Introduction/Course-Introduction/page
+
+This article introduces an AWS Lambda course covering serverless architecture, function configuration, and best practices for deployments.
+
+Welcome to the **AWS Lambda** course on cloud computing! In this tutorial, you’ll master serverless architecture with AWS Lambda, learn to configure functions for common use cases, and explore best practices for production-ready deployments.
+
+## What You’ll Learn
+
+| Section       | Topics Covered                                                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Fundamentals  | • What is AWS Lambda?<br />• Key terminology (functions, triggers, handlers)<br />• Benefits vs. servers                                   |
+| Integration   | • Event sources (S3, API Gateway, DynamoDB Streams)<br />• IAM roles & permissions                                                         |
+| Core Concepts | • Function components (code, runtime, environment variables)<br />• Deployment packages                                                    |
+| Pricing Model | • Request pricing<br />• Duration pricing<br />• Free tier overview                                                                        |
+| Configuration | • AWS Management Console<br />• AWS CLI commands ([install guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)) |
+| Monitoring    | • Amazon CloudWatch metrics & logs<br />• Setting up alarms                                                                                |
+| Advanced      | • Networking (VPCs, subnets, security groups)<br />• Concurrency (unreserved, reserved, provisioned)<br />• Container images support       |
+
+## Course Structure
+
+1. **Lecture Videos**\
+   We break down complex concepts into concise lectures, guiding you step-by-step through AWS Lambda features.
+2. **Interactive Labs**\
+   Practice in-browser labs after each lesson. You’ll deploy functions, configure triggers, and troubleshoot in real time.
+3. **Community Support**\
+   Join our community channel to ask questions, share insights, and learn from peers and instructors.
+
+<Callout icon="lightbulb">
+  Each lesson includes a self-paced lab environment—no local setup required. Instant feedback helps reinforce your learning.
+</Callout>
+
+<Callout icon="triangle-alert">
+  Remember AWS Lambda has default quotas (e.g., concurrency limits). Review [Lambda quotas](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html) before scaling.
+</Callout>
+
+## Getting Started
+
+1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Lambda** under the **Compute** section.
+3. Create your first function using the **Author from scratch** option.
+
+## Next Steps
+
+Proceed to **Lesson 1: AWS Lambda Fundamentals**, where we’ll define serverless computing and compare Lambda with traditional server setups. Let’s dive in!
+
+<CardGroup>
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-lambda/module/62d18943-4002-4492-b282-76c167276f41/lesson/e7379729-92c7-40ad-a669-914d0857a6ea" />
+</CardGroup>

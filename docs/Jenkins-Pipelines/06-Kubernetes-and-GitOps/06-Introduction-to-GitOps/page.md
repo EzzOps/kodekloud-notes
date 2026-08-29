@@ -1,0 +1,46 @@
+# Introduction to GitOps
+
+Source: https://notes.kodekloud.com/docs/Jenkins-Pipelines/Kubernetes-and-GitOps/Introduction-to-GitOps/page
+
+GitOps is a framework for automating code delivery processes using Git as the single source of truth for infrastructure and application code.
+
+GitOps is a modern framework for managing and automating code delivery processes by using Git as the single source of truth. This approach integrates infrastructure and application code, enabling robust continuous integration and deployment practices.
+
+## How GitOps Works
+
+Developers collaborate by committing to a shared Git repository. Typically, they work on feature branches—isolated copies of the main codebase—to develop and test new features independently. Once changes are committed, a continuous integration (CI) service automatically builds the code and runs unit tests. After successful tests and the necessary code reviews, the modifications are merged into the central repository.
+
+Following the merge, continuous deployment (CD) processes take over:
+
+* Approved changes are automatically released to production clusters.
+* A GitOps operator, generally running within a Kubernetes cluster, ensures that the desired state defined in Git matches the actual state in production.
+* The operator continuously monitors the repository for any updates and applies them to the cluster as needed.
+
+<Callout icon="lightbulb">
+  Using Git as the source of truth not only simplifies deployments but also provides a complete audit trail for all infrastructure and application changes.
+</Callout>
+
+## CI/CD Pipeline and GitOps
+
+When new code is merged into the application Git repository, an automated CI/CD pipeline is triggered, performing the following steps:
+
+1. **Run Unit Tests:** Ensures code quality and functionality.
+2. **Build Application:** Compiles and packages the application.
+3. **Create and Push Docker Image:** Builds the Docker image and pushes it to a container registry.
+4. **Update Kubernetes Manifest:** Modifies the Kubernetes configuration stored in another Git repository.
+
+The GitOps operator then detects any discrepancy between the desired state (as defined in Git) and the actual cluster state, retrieving and applying the updates to maintain consistency.
+
+<Callout icon="triangle-alert">
+  Ensure that your Git repositories and CI/CD pipelines are secured and properly managed to prevent unauthorized modifications or breaches.
+</Callout>
+
+## GitOps Workflow Diagram
+
+<Frame>
+  ![The image illustrates a GitOps workflow, showing the process from application code merging to continuous integration, and synchronization of Kubernetes manifests to achieve the desired state in production environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879722/notes-assets/images/Jenkins-Pipelines-Introduction-to-GitOps/gitops-workflow-continuous-integration.jpg)
+</Frame>
+
+<CardGroup>
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/584239f7-4360-4a86-b401-6a649d9f9cb7" />
+</CardGroup>

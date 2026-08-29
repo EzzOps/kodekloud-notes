@@ -176,7 +176,7 @@ Here are the details for each power-up that can drop from a destroyed brick.
 | Code inline  | `` `code` ``                  | `code`                      |
 | Code block   | triple backticks \`\`\`       | `code`                      |
 | Link         | `[text](https://example.com)` | [text](https://example.com) |
-| Image        | `![alt](path/to/image.png)`   | <img alt="alt" />           |
+| Image        | ``   | <img alt="alt" />           |
 | Table        | Pipes and dashes              | See example above           |
 
 > **warning** Markdown dialects (CommonMark, GitHub Flavored Markdown, etc.) vary slightly — tables, task lists, and some extensions may behave differently depending on the renderer. Test on your target platform.

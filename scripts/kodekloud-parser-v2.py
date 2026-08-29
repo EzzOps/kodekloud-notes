@@ -127,6 +127,10 @@ def fix_image_paths(content, md_file_path):
         if path.startswith('http://') or path.startswith('https://'):
             return match.group(0)
         
+        # SKIP template variables that aren't real images
+        if path.startswith('$') or path.startswith('${') or re.match(r'^[A-Z_]+$', path) or path == 'path/to/image.png':
+            return ''  # Remove the broken image reference
+        
         # If it's already a relative path starting with ../../../../images/
         if path.startswith('../../../../images/'):
             # Verify the image exists
@@ -172,6 +176,14 @@ def fix_callout_syntax(content):
     # Convert <Frame>![alt](path)</Frame> to standard markdown image
     content = re.sub(
         r'<Frame>\s*!\[([^\]]*)\]\(([^)]+)\)\s*</Frame>',
+        lambda m: f"![{m.group(1)}]({m.group(2)})",
+        content,
+        flags=re.DOTALL
+    )
+    
+    # Convert <Frame><img alt="..." src="..." /></Frame> to standard markdown image
+    content = re.sub(
+        r'<Frame>\s*<img\s+alt="([^"]*)"\s+src="([^"]*)"\s*/?>\s*</Frame>',
         lambda m: f"![{m.group(1)}]({m.group(2)})",
         content,
         flags=re.DOTALL

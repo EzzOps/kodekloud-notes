@@ -57,7 +57,7 @@ Use the Issues API to add a comment:
 curl -s -X POST \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Authorization: Bearer $GITHUB_TOKEN" \
-  -d '{"body":"![GIF](GIF_URL)\nThank you for this contribution!"}' \
+  -d '{"body":"\nThank you for this contribution!"}' \
   https://api.github.com/repos/OWNER/REPO/issues/ISSUE_NUMBER/comments
 ```
 

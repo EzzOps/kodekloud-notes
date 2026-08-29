@@ -32,7 +32,7 @@ echo "GIF URL: $gif_url"
 comment=$(curl -s -X POST \
   -H "Authorization: token $GITHUB_TOKEN" \
   -H "Accept: application/vnd.github.v3+json" \
-  -d "{\"body\":\"### PR #$pr_number\n\n🎉 Thank you for this contribution!\n\n![GIF]($gif_url)\"}" \
+  -d "{\"body\":\"### PR #$pr_number\n\n🎉 Thank you for this contribution!\n\n\"}" \
   "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$pr_number/comments")
 
 echo "Comment posted: $(echo "$comment" | jq --raw-output .html_url)"
@@ -318,7 +318,7 @@ async function run() {
       owner,
       repo,
       issue_number,
-      body: `### 🎉 Thanks for contributing!\n![Giphy GIF](${gifUrl})`
+      body: `### 🎉 Thanks for contributing!\n`
     });
 
     core.setOutput('gif-url', gifUrl);

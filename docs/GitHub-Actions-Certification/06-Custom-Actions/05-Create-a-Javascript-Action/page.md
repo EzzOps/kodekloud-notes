@@ -42,7 +42,7 @@ echo "GIF URL: $gif_url"
 response=$(curl -s -X POST \
   -H "Authorization: token $GITHUB_TOKEN" \
   -H "Accept: application/vnd.github.v3+json" \
-  -d "{\"body\": \"Thank you for your contribution! 🎉\n![GIF]($gif_url)\"}" \
+  -d "{\"body\": \"Thank you for your contribution! 🎉\n\"}" \
   "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$pr_number/comments")
 echo "Comment posted: $(echo "$response" | jq --raw-output .html_url)"
 ```
@@ -248,7 +248,7 @@ async function run() {
       body: [
         '### 🎉 Thank you for your contribution!',
         '',
-        `![Giphy](${prComment.data.images.downsized.url})`
+        ``
       ].join('\n')
     });
 
